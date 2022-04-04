@@ -797,8 +797,8 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 # }
 $databases['default']['default'] = array (
   'database' => 'business_portal',
-  'username' => 'haroon123',
-  'password' => 'haroon123123',
+  'username' => 'root',
+  'password' => 'haroon123123123',
   'prefix' => '',
   'host' => '',
   'port' => '3306',
