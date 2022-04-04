@@ -800,9 +800,9 @@ $databases['default']['default'] = array (
   'username' => 'root',
   'password' => 'haroon123123123',
   'prefix' => '',
-  'host' => '',
+  'host' => 'localhost',
   'port' => '3306',
-  'namespace' => 'haroon12345-dev',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
   'driver' => 'mysql',
 );
 $settings['config_sync_directory'] = 'sites/default/files/config_9f2pOTjN82czUBotJtydVC-Q2cJIGnBVwXsO1H7vOlSXEreh4NE7JZEYisTiJQSG4C2L-jMccw/sync';
