@@ -797,10 +797,10 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 # }
 $databases['default']['default'] = array (
   'database' => 'business_portal',
-  'username' => 'root',
-  'password' => 'haroon123123123',
+  'username' => 'haroon123',
+  'password' => 'haroon123123',
   'prefix' => '',
-  'host' => 'localhost',
+  'host' => 'mysql.haroon12345-dev.svc.cluster.local',
   'port' => '3306',
   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
   'driver' => 'mysql',
