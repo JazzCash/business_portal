@@ -1,0 +1,13 @@
+{
+    "name": "user_admin_manager",
+    "type": "drupal-module",
+    "description": "My Awesome Module",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/user_admin_manager",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/user_admin_manager",
+        "source": "http://cgit.drupalcode.org/user_admin_manager",
+    },
+}

@@ -1,0 +1,21 @@
+uuid: 25294b06-7427-458e-bcf6-ca6125588079
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_jazz_q_a_body
+    - paragraphs.paragraphs_type.jazz_q_a
+  module:
+    - text
+id: paragraph.jazz_q_a.field_jazz_q_a_body
+field_name: field_jazz_q_a_body
+entity_type: paragraph
+bundle: jazz_q_a
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

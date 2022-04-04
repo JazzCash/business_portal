@@ -1,0 +1,5 @@
+name: 'jazz_payroll_section_banner'
+type: module
+description: 'My Awesome Module'
+core: 8.x
+package: 'Custom'

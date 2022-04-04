@@ -1,0 +1,44 @@
+<?php
+
+/**
+ * @file
+ * Contains banner_section.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function banner_section_help($route_name, RouteMatchInterface $route_match)
+{
+  switch ($route_name) {
+      // Main module help for the banner_section module.
+    case 'help.page.banner_section':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('My Awesome Module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function banner_section_theme()
+{
+  return [
+    'banner_section' => [
+      'render element' => 'children',
+    ],
+    'jazz_banner' => [
+      'render element' => 'children',
+      'variables' =>
+      [
+        'data' => []
+      ]
+    ],
+  ];
+}

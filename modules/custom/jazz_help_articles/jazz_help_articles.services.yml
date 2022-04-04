@@ -1,0 +1,5 @@
+services:
+  jazz_help_articles.twig.CustomTwig:
+    class: Drupal\jazz_help_articles\CustomTwig
+    tags:
+      - { name: twig.extension }

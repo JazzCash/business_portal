@@ -1,0 +1,23 @@
+uuid: 2067779f-3679-481d-ab39-407a7abdc2b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.jazz_payment_section_4
+  module:
+    - text
+id: node.jazz_payment_section_4.body
+field_name: body
+entity_type: node
+bundle: jazz_payment_section_4
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

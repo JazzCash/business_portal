@@ -1,0 +1,5 @@
+<!-- Add you custom twig html here -->
+{% for content in data.content %}
+<img class="img" src="{{ content.image }}">
+<a href="{{ content.title }}">{{ content.title }}</a>
+{% endfor %}

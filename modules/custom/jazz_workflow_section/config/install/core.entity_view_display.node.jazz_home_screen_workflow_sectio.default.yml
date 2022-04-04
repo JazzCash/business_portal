@@ -1,0 +1,39 @@
+uuid: 64e650bc-c548-4e20-8d68-4b77c42548de
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.jazz_home_screen_workflow_sectio.body
+    - field.field.node.jazz_home_screen_workflow_sectio.field_workflow_images_and_descri
+    - node.type.jazz_home_screen_workflow_sectio
+  module:
+    - entity_reference_revisions
+    - text
+    - user
+id: node.jazz_home_screen_workflow_sectio.default
+targetEntityType: node
+bundle: jazz_home_screen_workflow_sectio
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_workflow_images_and_descri:
+    type: entity_reference_revisions_entity_view
+    weight: 102
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

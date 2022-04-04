@@ -1,0 +1,7 @@
+jazz_manage_bank_account_status.status_update_form:
+  path: '/admin/user/{user}/account_bank_status_update/{term}'
+  defaults:
+    _form: '\Drupal\jazz_manage_bank_account_status\Form\StatusUpdateForm'
+    _title: 'Account Bank Status Update Form'
+  requirements:
+    _access: 'TRUE'

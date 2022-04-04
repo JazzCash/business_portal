@@ -1,0 +1,133 @@
+.price-listing-item {
+    background-color: orange;
+}
+
+.center {
+    text-align: center;
+}
+
+.block-jazz-listing-section {
+    position: relative;
+    width: 1366px;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 0 100px;
+}
+
+.block-jazz-listing-section table {
+    width: 822px;
+    max-width: 100%;
+}
+
+.block-jazz-listing-section table tr.first-cont td.f-td {
+    padding: 10px 20px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 40px;
+    color: #000;
+    background: #C4C4C4;
+    font-family: 'work-sans';
+}
+
+.block-jazz-listing-section table tr.first-cont td.s-td {
+    padding: 10px 20px;
+    background: #ffe186;
+    font-family: 'Work-Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 46px;
+    line-height: 56px;
+}
+
+.block-jazz-listing-section td {
+    padding: 15px;
+    font-style: normal;
+    font-size: 20px;
+    background: #fff;
+    opacity: 1;
+    position: relative;
+    line-height: 32px;
+    z-index: 9;
+}
+
+.block-jazz-listing-section img {
+    position: absolute;
+    top: 1px;
+    right: 0px;
+}
+
+.block-jazz-listing-section .contextual-region {
+    font-family: 'Work-Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 56px;
+    text-align: left;
+    padding: 20px 0px;
+    color: #262626;
+}
+
+.block-jazz-listing-section tr:nth-of-type(1) td {
+    background: #ffe186;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+    .block-jazz-listing-section .contextual-region {
+        font-size: 36px;
+        line-height: 50px;
+    }
+    .block-jazz-listing-section img {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 100%;
+        left: 0;
+    }
+    .block-jazz-listing-section table tr {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .block-jazz-listing-section td {
+        width: 100% !important;
+    }
+    .block-jazz-listing-section .contextual-region>p {
+        display: none;
+    }
+    .block-jazz-get-started-now-section>h1 {
+        font-size: 36px;
+        line-height: 60px;
+        text-align: center;
+        color: #262626;
+        font-family: 'Work-Sans';
+        padding-bottom: 0;
+    }
+    .qa-parent {
+        display: block;
+    }
+    .qa-section {
+        width: 100%;
+    }
+    .block-jazz-listing-section {
+        max-width: 90%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .block-jazz-listing-section {
+        max-width: 90%;
+    }
+    .block-jazz-get-started-now-section {
+        max-width: 90%;
+    }
+    .getstarted-section {
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+    .block-jazz-listing-section {
+        max-width: 90%;
+    }
+}

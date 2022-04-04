@@ -1,0 +1,69 @@
+.payment-everywhere-section {
+    display: flex;
+    justify-content: space-between;
+    /* padding: 0 110px; */
+    margin-bottom: 50px;
+}
+
+.block-jazz-payment-everywhere-section-block {
+    width: 1366px;
+    padding: 0 100px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.payment-everywhere p {
+    font-family: 'work-sans-medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    color: #262626;
+    padding-top: 46px;
+}
+
+.payment-everywhere {
+    width: 33%;
+    text-align: center;
+}
+
+.block-jazz-payment-everywhere-section-block h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 46px;
+    line-height: 60px;
+    text-align: center;
+    color: #262626;
+    font-family: 'Work-Sans';
+    padding-bottom: 50px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+    .payment-everywhere-section {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        flex-wrap: wrap;
+    }
+    .payment-everywhere {
+        width: 100%;
+        text-align: center;
+    }
+    .block-jazz-more-solution-section h1 {
+        font-size: 36px;
+        line-height: 40px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .payment-everywhere-section {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+    .payment-everywhere {
+        width: 31%;
+        text-align: center;
+    }
+}

@@ -1,0 +1,175 @@
+/* ------------------------ jazz payment banner section  ------------------------ */
+
+.block-jazz-payment-collection-banner-s {
+    position: relative;
+    /* width: 1366px; */
+    width: 100%;
+}
+
+.block-jazz-payment-collection-banner-s img {
+    width: 100%;
+    height: 790px;
+}
+
+.block-jazz-payment-collection-banner-s h1 {
+    font-size: 72px;
+    font-family: 'work-sans';
+    color: #fff;
+    padding-left: 122px;
+    width: 59%;
+    line-height: 76px;
+}
+
+.block-jazz-payment-collection-banner-s a {
+    width: 200px;
+    height: 40px;
+    background: #FFC20C;
+    border-radius: 25px;
+    text-align: center;
+    padding-top: 10px;
+    color: #000;
+    font-family: 'work-sans';
+    display: block;
+}
+
+.links-block {
+    display: flex;
+    padding-left: 122px;
+    padding-top: 40px;
+}
+
+.block-jazz-payment-collection-banner-s a:hover {
+    color: #000;
+}
+
+.page-node-type-page .main-container .row>.col-sm-12,
+.page-node-type-page .main-container .row>.col-sm-12 {
+    padding: 0;
+}
+
+.block-jazz-payment-collection-banner-s a:nth-of-type(2) {
+    width: 241px;
+    height: 40px;
+    background: #F3F3F3;
+    border-radius: 25px;
+    text-align: center;
+    padding-top: 10px;
+    color: #000;
+    font-family: 'work-sans';
+    margin-left: 50px;
+    display: block;
+}
+
+.path-frontpage section.col-sm-12 {
+    padding: 0;
+}
+
+.jazz-pay-new {
+    width: 1366px !important;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.new-container-jazz {
+    position: absolute;
+    top: 120px;
+    width: 1366px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    max-width: 100%;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+    .block-jazz-payment-collection-banner-s a {
+        top: 57%;
+        left: 20px;
+    }
+    .block-jazz-payment-everywhere-section-block h1 {
+        font-size: 36px;
+        line-height: 46px;
+    }
+    .block-jazz-payment-collection-banner-s img {
+        width: 100%;
+        height: 600px;
+    }
+    .block-jazz-payment-collection-banner-s h1 {
+        font-size: 40px;
+        font-family: 'work-sans';
+        color: #fff;
+        padding-left: 30px;
+        width: 96%;
+        line-height: 45px;
+    }
+    .links-block {
+        display: flex;
+        padding-left: 30px;
+        padding-top: 75px;
+    }
+    .block-jazz-payment-collection-banner-s a:nth-of-type(2) {
+        position: absolute;
+        top: 104%;
+        width: 185px;
+        background: #F3F3F3;
+        border-radius: 25px;
+        text-align: center;
+        left: 0;
+        color: #000;
+        margin-left: 30px;
+        font-family: 'work-sans';
+        padding: 12px 20px;
+        height: auto;
+    }
+    .block-jazz-payment-collection-banner-s a {
+        width: 185px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .block-jazz-payment-collection-banner-s h1 {
+        position: absolute;
+        font-size: 54px;
+        font-family: 'work-sans';
+        color: #fff;
+        top: 0px;
+        padding-left: 122px;
+        width: 59%;
+        line-height: 46px;
+    }
+    .block-jazz-payment-collection-banner-s a {
+        top: 63%;
+    }
+    .block-jazz-payment-collection-banner-s a:nth-of-type(2) {
+        top: 79%;
+        left: 16%;
+    }
+    .payment-everywhere-section {
+        padding: 0 20px;
+    }
+    .links-block {
+        padding-top: 300px;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+    .block-jazz-payment-collection-banner-s h1 {
+        position: absolute;
+        font-size: 54px;
+        font-family: 'work-sans';
+        color: #fff;
+        top: 0px;
+        padding-left: 122px;
+        width: 59%;
+        line-height: 60px;
+    }
+    .block-jazz-payment-collection-banner-s a {
+        top: 63%;
+    }
+    .block-jazz-payment-collection-banner-s a:nth-of-type(2) {
+        top: 79%;
+        left: 12%;
+    }
+    .payment-everywhere-section {
+        padding: 0 20px;
+    }
+}

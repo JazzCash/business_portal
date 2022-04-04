@@ -1,0 +1,30 @@
+uuid: ca24e5cd-f6df-4480-896d-2a97f2f468a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.footer_left_section_link.field_link
+    - field.field.paragraph.footer_left_section_link.field_link_t
+    - paragraphs.paragraphs_type.footer_left_section_link
+id: paragraph.footer_left_section_link.default
+targetEntityType: paragraph
+bundle: footer_left_section_link
+mode: default
+content:
+  field_link:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_link_t:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

@@ -1,0 +1,8 @@
+uuid: 8f2e19bb-a08f-4916-bed1-d1e48946c34e
+langcode: en
+status: true
+dependencies: {  }
+name: 'Bank Names'
+vid: bank_names
+description: ''
+weight: 0

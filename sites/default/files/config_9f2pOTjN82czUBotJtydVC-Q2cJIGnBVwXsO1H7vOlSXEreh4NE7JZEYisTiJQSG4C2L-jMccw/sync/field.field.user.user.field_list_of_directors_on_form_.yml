@@ -1,0 +1,27 @@
+uuid: 3b4b85af-061a-4672-95b9-6eb350c54d9c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_list_of_directors_on_form_
+  module:
+    - file
+    - user
+id: user.user.field_list_of_directors_on_form_
+field_name: field_list_of_directors_on_form_
+entity_type: user
+bundle: user
+label: 'List of Directors on ‘Form-A/Form-B’'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: pdf
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

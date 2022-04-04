@@ -1,0 +1,7 @@
+devtoolstestingandgolive_lib:
+  version: 1.x
+  css:
+    theme:
+      css/testingandgolive.css: {}
+  js:
+    js/testingandgolive.js: {}

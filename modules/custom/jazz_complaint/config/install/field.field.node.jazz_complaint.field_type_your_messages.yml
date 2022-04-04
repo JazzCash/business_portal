@@ -1,0 +1,21 @@
+uuid: d20897e8-90d3-4ba1-871c-6ac1af605633
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_type_your_messages
+    - node.type.jazz_complaint
+_core:
+  default_config_hash: '-rQ2LL9r2PWI7cAaovk6krrGi9WcwPDh6vCdj132-so'
+id: node.jazz_complaint.field_type_your_messages
+field_name: field_type_your_messages
+entity_type: node
+bundle: jazz_complaint
+label: 'Type Your Messages'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

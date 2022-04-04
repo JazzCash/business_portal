@@ -1,0 +1,27 @@
+uuid: e4cfda31-56ae-48f2-83c8-be1cdd646e83
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_level_2_branchless_banking
+  module:
+    - file
+    - user
+id: user.user.field_level_2_branchless_banking
+field_name: field_level_2_branchless_banking
+entity_type: user
+bundle: user
+label: 'Level 2 Branchless Banking Account Form'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: pdf
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

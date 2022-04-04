@@ -1,0 +1,60 @@
+<?php
+
+/**
+ * @file
+ * Contains jazzcash_community.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function jazzcash_community_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the jazzcash_community module.
+    case 'help.page.jazzcash_community':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Jazzcash commnutiny module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function jazzcash_community_theme() {
+  return [
+    'jazzcash_community' => [
+      'render element' => 'children',
+    ],
+    'jazzcash_community_banner_block' => [
+      'variables' => [
+        'content' => NULL
+      ],
+      'render element' => 'children',
+    ],
+    'popular_topics_block' => [
+      'variables' => [
+        'data' => []
+      ],
+      'render element' => 'children',
+    ],
+    'discussion_page' => [
+      'variables' => [
+        'data' => []
+      ],
+      'render element' => 'children',
+    ],
+    'ask_question_form' => [
+      'render element' => 'form',
+    ],
+    'ask_question_form2' => [
+      'render element' => 'form',
+    ]
+  ];
+}
+

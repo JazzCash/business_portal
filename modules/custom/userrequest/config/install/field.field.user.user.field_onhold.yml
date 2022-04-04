@@ -1,0 +1,24 @@
+uuid: c482908a-5fa3-4be1-b531-f8b5f7143360
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_onhold
+  module:
+    - user
+id: user.user.field_onhold
+field_name: field_onhold
+entity_type: user
+bundle: user
+label: onhold
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

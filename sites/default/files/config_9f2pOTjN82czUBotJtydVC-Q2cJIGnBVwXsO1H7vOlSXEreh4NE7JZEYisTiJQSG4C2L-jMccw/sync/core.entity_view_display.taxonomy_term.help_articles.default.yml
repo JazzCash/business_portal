@@ -1,0 +1,32 @@
+uuid: 52644da7-9944-4686-9319-e2eb32fa117b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.help_articles.field_help_article_icon
+    - taxonomy.vocabulary.help_articles
+  module:
+    - image
+    - text
+id: taxonomy_term.help_articles.default
+targetEntityType: taxonomy_term
+bundle: help_articles
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_help_article_icon:
+    weight: 1
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden: {  }

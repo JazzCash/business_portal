@@ -1,0 +1,20 @@
+uuid: fcad8d53-b8d9-4572-b3d7-9782a2b76d5b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.jazz_complaint
+_core:
+  default_config_hash: kqwn5FoyNtna_744cU0jq-FlA1ihHSnxJy8EjYY2Fc0
+id: node.jazz_complaint.title
+field_name: title
+entity_type: node
+bundle: jazz_complaint
+label: 'Full Name'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

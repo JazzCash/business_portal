@@ -1,0 +1,26 @@
+uuid: ad1b098d-9001-43a9-9c87-95636ac75284
+langcode: en
+status: true
+dependencies:
+  module:
+    - jazz_client_review_section
+    - system
+  theme:
+    - bootstrap
+id: jazzclientreviewsectionblock
+theme: bootstrap
+region: content
+weight: 2
+provider: null
+plugin: jazz_client_review_section_block
+settings:
+  id: jazz_client_review_section_block
+  label: 'Jazz client review section block'
+  provider: jazz_client_review_section
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/22
+    negate: false
+    context_mapping: {  }

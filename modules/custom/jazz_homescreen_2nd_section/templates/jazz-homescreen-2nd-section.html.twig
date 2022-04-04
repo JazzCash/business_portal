@@ -1,0 +1,13 @@
+<!-- Add you custom twig html here -->
+<h1>Find the right solutions for your business needs</h1>
+<div class="jazz-home-2nd-parent">
+{% for content in data.content %}
+    <div class="jazz-home-2nd-sec">
+       <div class="img-second-sec">
+            <img class="img" src="{{ content.image }}">
+        </div>
+        <div class="link-second-sec">
+            <a href="{{ content.link }}">{{ content.title }}</a>
+        </div>
+    </div>
+{% endfor %}

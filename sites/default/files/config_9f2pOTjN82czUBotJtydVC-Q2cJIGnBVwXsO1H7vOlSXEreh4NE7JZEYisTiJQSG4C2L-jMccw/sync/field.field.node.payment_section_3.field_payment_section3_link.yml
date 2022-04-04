@@ -1,0 +1,19 @@
+uuid: bbd78ddc-de20-4a84-bf28-d064bdd912fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_payment_section3_link
+    - node.type.payment_section_3
+id: node.payment_section_3.field_payment_section3_link
+field_name: field_payment_section3_link
+entity_type: node
+bundle: payment_section_3
+label: link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

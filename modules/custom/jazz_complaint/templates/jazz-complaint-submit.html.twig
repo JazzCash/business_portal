@@ -1,0 +1,30 @@
+<H1>Tickent: #{{ data.ticket }}</H1>
+
+<ul>
+	<li class="status-complete">
+		<div>
+			<h1>Complaint Received</h1>
+			<p>We have received your order</p>
+		</div>
+	</li>
+	<li class="status-complete">
+		<div>
+			<h1>Processing</h1>
+			<p>Our team is evaluating your complaint</p>
+		</div>
+	</li>
+	<li class="{{ (data.answer|length > 0)?"status-complete":"status-incomplete" }}">
+		<div>
+			<h1>Answered</h1>
+				<div class="alert alert-warning alert-ans">
+			<p>
+				{% if data.answer|length > 0 %}
+					{{ data.answer[0].value|raw }}
+				{% else %}
+					Not answered yet
+				{% endif %}
+			</p>
+		</div>
+		</div>
+	</li>
+</ul>

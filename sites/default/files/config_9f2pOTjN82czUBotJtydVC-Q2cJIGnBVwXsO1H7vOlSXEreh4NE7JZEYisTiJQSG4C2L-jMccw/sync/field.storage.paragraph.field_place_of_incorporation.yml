@@ -1,0 +1,21 @@
+uuid: 6984c023-dd9e-47dd-862b-2dfc68a65452
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_place_of_incorporation
+field_name: field_place_of_incorporation
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

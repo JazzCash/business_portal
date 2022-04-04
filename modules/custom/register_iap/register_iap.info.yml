@@ -1,0 +1,5 @@
+name: 'register_iap'
+type: module
+description: 'Module for footer block register integrate accept payments'
+core: 8.x
+package: 'Custom'

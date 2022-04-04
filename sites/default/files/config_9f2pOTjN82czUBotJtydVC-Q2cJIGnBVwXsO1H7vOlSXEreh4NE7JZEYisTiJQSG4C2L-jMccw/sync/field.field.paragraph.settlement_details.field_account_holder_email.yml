@@ -1,0 +1,19 @@
+uuid: d30e5976-b5a7-4166-9d1e-3cc4c571259b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_account_holder_email
+    - paragraphs.paragraphs_type.settlement_details
+id: paragraph.settlement_details.field_account_holder_email
+field_name: field_account_holder_email
+entity_type: paragraph
+bundle: settlement_details
+label: 'Account Holder Email'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

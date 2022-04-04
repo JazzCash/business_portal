@@ -1,0 +1,19 @@
+uuid: e2323235-9828-420b-a58e-47f4bcf57910
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_banner_allowed_page
+    - node.type.jazz_site_banner
+id: node.jazz_site_banner.field_banner_allowed_page
+field_name: field_banner_allowed_page
+entity_type: node
+bundle: jazz_site_banner
+label: 'Banner allowed page'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

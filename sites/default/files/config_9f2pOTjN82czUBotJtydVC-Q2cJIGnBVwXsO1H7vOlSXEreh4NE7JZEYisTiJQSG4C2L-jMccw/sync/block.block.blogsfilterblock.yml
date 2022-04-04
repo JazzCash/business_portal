@@ -1,0 +1,26 @@
+uuid: 1be389ba-6d8e-48e6-a5e7-3bd014330012
+langcode: en
+status: true
+dependencies:
+  module:
+    - jazz_guides_blog
+    - system
+  theme:
+    - bootstrap
+id: blogsfilterblock
+theme: bootstrap
+region: content
+weight: -4
+provider: null
+plugin: blogs_filter_block
+settings:
+  id: blogs_filter_block
+  label: 'Blogs filter block'
+  provider: jazz_guides_blog
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/82
+    negate: false
+    context_mapping: {  }

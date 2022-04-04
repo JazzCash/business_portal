@@ -1,0 +1,39 @@
+<?php
+
+/**
+ * @file
+ * Contains jazz_workflow_section.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function jazz_workflow_section_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the jazz_workflow_section module.
+    case 'help.page.jazz_workflow_section':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('My Awesome Module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function jazz_workflow_section_theme() {
+  return [
+    'jazz_workflow_section' => [
+      'render element' => 'children',
+      'variables' =>
+      [
+        'data' => []
+      ]
+    ],
+  ];
+}

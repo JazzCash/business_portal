@@ -1,0 +1,28 @@
+uuid: d0050894-c358-4382-a2d9-b4c58b3599eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.jazz_videos.field_jazz_video_url
+    - node.type.jazz_videos
+  module:
+    - user
+id: node.jazz_videos.default
+targetEntityType: node
+bundle: jazz_videos
+mode: default
+content:
+  field_jazz_video_url:
+    weight: 101
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

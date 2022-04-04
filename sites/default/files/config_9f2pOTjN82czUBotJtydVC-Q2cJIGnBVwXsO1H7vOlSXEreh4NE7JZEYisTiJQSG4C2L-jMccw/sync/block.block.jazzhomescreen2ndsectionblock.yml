@@ -1,0 +1,26 @@
+uuid: fff8b995-f98f-45d7-8978-95b6d436deb2
+langcode: en
+status: true
+dependencies:
+  module:
+    - jazz_homescreen_2nd_section
+    - system
+  theme:
+    - bootstrap
+id: jazzhomescreen2ndsectionblock
+theme: bootstrap
+region: content
+weight: -21
+provider: null
+plugin: jazz_homescreen2nd_section_block
+settings:
+  id: jazz_homescreen2nd_section_block
+  label: 'Jazz homescreen2nd section block'
+  provider: jazz_homescreen_2nd_section
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/22
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,19 @@
+uuid: a772ac7a-4836-40fe-ae44-a559be708f61
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_ntn_number
+    - paragraphs.paragraphs_type.business_information
+id: paragraph.business_information.field_ntn_number
+field_name: field_ntn_number
+entity_type: paragraph
+bundle: business_information
+label: 'NTN Number'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,19 @@
+uuid: 0125bdcf-72d8-4191-9d05-3064dcb81de3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_link
+    - paragraphs.paragraphs_type.footer_left_section_link
+id: paragraph.footer_left_section_link.field_link
+field_name: field_link
+entity_type: paragraph
+bundle: footer_left_section_link
+label: Link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

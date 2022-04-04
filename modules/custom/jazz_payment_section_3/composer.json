@@ -1,0 +1,13 @@
+{
+    "name": "jazz_payment_section_3",
+    "type": "drupal-module",
+    "description": "My Awesome Module",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/jazz_payment_section_3",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/jazz_payment_section_3",
+        "source": "http://cgit.drupalcode.org/jazz_payment_section_3",
+    },
+}

@@ -1,0 +1,24 @@
+uuid: 17df5a46-a00c-4893-a9b8-f9decb75ef9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.support_articles.field_support_article_icon
+    - field.field.node.support_articles.field_support_article_link
+    - node.type.support_articles
+  module:
+    - user
+id: node.support_articles.teaser
+targetEntityType: node
+bundle: support_articles
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_support_article_icon: true
+  field_support_article_link: true

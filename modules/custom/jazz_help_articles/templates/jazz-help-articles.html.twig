@@ -1,0 +1,9 @@
+<!-- Add you custom twig html here -->
+<div class="jazz-help-article">
+{% for content in data.content %}
+<img class="img" src="{{ content.image }}">
+<h1>{{ content.title }}</h1>
+{{ content.body|raw }}
+<a href="#">View More</a>
+{% endfor %}
+</div>

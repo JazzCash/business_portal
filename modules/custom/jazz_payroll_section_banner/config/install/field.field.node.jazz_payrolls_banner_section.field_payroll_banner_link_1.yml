@@ -1,0 +1,19 @@
+uuid: 7313e6fd-3f35-4aa7-946e-c83085fdf93c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_payroll_banner_link_1
+    - node.type.jazz_payrolls_banner_section
+id: node.jazz_payrolls_banner_section.field_payroll_banner_link_1
+field_name: field_payroll_banner_link_1
+entity_type: node
+bundle: jazz_payrolls_banner_section
+label: 'Payroll Banner Link 1'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

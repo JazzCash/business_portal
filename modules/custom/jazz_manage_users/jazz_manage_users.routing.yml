@@ -1,0 +1,7 @@
+jazz_manage_users.status_update_form:
+  path: '/admin/user/{user}/status_update/{term}'
+  defaults:
+    _form: '\Drupal\jazz_manage_users\Form\StatusUpdateForm'
+    _title: 'StatusUpdateForm'
+  requirements:
+    _access: 'TRUE'

@@ -1,0 +1,19 @@
+uuid: 5054ccd3-79fa-4272-acaf-d0d703b89a46
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_account_holder_mobile_numb
+    - paragraphs.paragraphs_type.settlement_details
+id: paragraph.settlement_details.field_account_holder_mobile_numb
+field_name: field_account_holder_mobile_numb
+entity_type: paragraph
+bundle: settlement_details
+label: 'Account Holder Mobile Number'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

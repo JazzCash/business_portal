@@ -1,0 +1,20 @@
+{#
+/**
+* @file
+* Default theme implementation to display a block.
+*
+* @see template_preprocess_block()
+*
+* @ingroup themeable
+*/
+#}
+{% set classes = [
+    'clear-both',
+] %}
+<div{{ attributes.addClass(classes) }} style="position:relative;">
+    <img src="{{ content.image }}" style="width:100%;" />
+    <div class="community-title">
+        <h1>{{ content.title }}</h1>
+        <div class="community-body">{{ content.body|raw }}</div>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+uuid: 758acc32-0ed2-4464-a073-a04e8ee60ab4
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.jazz_payment_section_4
+id: node.jazz_payment_section_4.promote
+field_name: promote
+entity_type: node
+bundle: jazz_payment_section_4
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

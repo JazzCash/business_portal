@@ -1,0 +1,19 @@
+uuid: 2076be95-e74e-45ed-a28a-2bd5dec08291
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_full_name
+    - paragraphs.paragraphs_type.technology_person_of_contact
+id: paragraph.technology_person_of_contact.field_full_name
+field_name: field_full_name
+entity_type: paragraph
+bundle: technology_person_of_contact
+label: 'Full Name'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

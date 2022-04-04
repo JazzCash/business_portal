@@ -1,0 +1,26 @@
+uuid: d8c7106e-8c1c-423c-bda5-da067208f09a
+langcode: en
+status: true
+dependencies:
+  module:
+    - jazz_related_articles
+    - system
+  theme:
+    - bootstrap
+id: jazzrelatedarticlesblock
+theme: bootstrap
+region: content
+weight: 4
+provider: null
+plugin: jazz_related_articles_block
+settings:
+  id: jazz_related_articles_block
+  label: 'Jazz related articles block'
+  provider: jazz_related_articles
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '/help-article/*'
+    negate: false
+    context_mapping: {  }

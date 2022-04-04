@@ -1,0 +1,808 @@
+{# <div class="imges-field-top-register">
+	<ul>
+		<li>
+			<div class="image-field-child">
+            </div>
+			<div class="border-top-img"></div>
+		</li>
+		<li>
+			<div class="image-field-child"></div>
+			<div class="border-top-img"></div>
+		</li>
+		<li>
+			<div class="image-field-child"></div>
+			<div class="border-top-img"></div>
+		</li>
+		<li>
+			<div class="image-field-child"></div>
+			<div class="border-top-img"></div>
+		</li>
+	</ul>
+</div> #}
+
+{# <ul class="register-step-navigation">
+	<li><img src="">
+		Product selection</li>
+	<li><img src="">
+		Company information</li>
+	<li><img src="">
+		Application Submited</li>
+	<li><img src="">
+		Application Approved</li>
+</ul> #}
+
+
+<!-- Step 1 -->
+<div class="custom-register registration-from register-step-container">
+
+	<div class="container">
+		<div class="row">
+
+			<div class="register-step">
+				<div class="col-md-6">
+					<div class="featured-imagebox ">
+						<div
+							class="ttm-box-view-content-inner">
+							<!-- featured-thumbnail -->
+							<div>
+								<img class="img-fluid img-cont" src="{{ workflow_path }}/Group.png" alt="image"><br>
+								<div style="margin-left: 20px;">
+									<h2>
+										<b>Business Account</b>
+									</h2>
+									<p>As a business account you’ll get</p><br>
+									<p>
+										&nbsp;&nbsp; &#10004; &nbsp;&nbsp;Account in your business’ name</p>
+									<p>
+										&nbsp;&nbsp; &#10004;&nbsp;&nbsp;Unlimited company cards for employees</p>
+									<p>&nbsp; &nbsp;&#10004;&nbsp;&nbsp;Unlimited users and permissions</p>
+									<br>
+
+									<p>In the next steps, we’ll ask for information about your company, like business name, address, registration, leadership and ownership.<br>
+										payouts.
+									</p>
+								</div>
+							</div>
+							<!-- featured-thumbnail end-->
+						</div>
+
+					</div>
+					<!-- featured-imagebox end-->
+
+				</div>
+				<div class="col-md-6">
+					<h1 class="heading-register" style=" font-size: 30px;">Let’s create your account</h1>
+					<p class="text-muted">Signing up for JazzCash business is fast and free</p>
+					<div class="h-divider"></div>
+					<p class="text-muted">To begin this journey please tell us what type of account
+																								you’d be opening.</p>
+
+					<div data-target="#next" class="registration-link">
+						<div class="container business-container">
+							<div class="row">
+								<div class="col-12 custom-business">
+									<div class="card" style="border-radius: 1em; width: 30em; height: 8em; margin-top: 7%;">
+										<label class="card-body">
+											<div class="row mt-3">
+												<div class="col-2"><img class="img-fluid" src="{{ workflow_path }}/business.png" alt="image"></div>
+												<div class="col-8">
+													<h1 style="margin-top: -4px; font-size: 18px;">
+														<b>Business</b>
+													</h1>
+													<p class="text-secondary" style="font-size: 13px;">Own or belong to a business</p>
+												</div>
+												<div class="col-2">
+													<span class="register-checkbox"></span>
+
+												</div>
+											</div>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<br>
+					<br>
+					<div data-target="https://www.google.com" class="registration-link">
+						<div class="container">
+							<div class="row">
+								<div class="col-12 custom-business">
+									<div class="card" style="border-radius: 1em; width: 30em; height: 8em;">
+										<label class="card-body">
+											<div class="row mt-3">
+												<div class="col-2"><img class="img-fluid" src="{{ workflow_path }}/developer.png" alt="image"></div>
+												<div class="col-8">
+													<h1 style="margin-top: -3px; font-size: 18px;">
+														<b>Developer</b>
+													</h1>
+													<p class="text-secondary" style="font-size: 13px;">Account to manage all your activities</p>
+												</div>
+												<div
+													class="col-2">
+													{# <img class="img-fluid" src="{{ workflow_path }}/check.png" alt="image" > #}
+													<span class="register-checkbox"></span>
+												</div>
+											</div>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<br>
+					<br>
+					<div data-target="https://www.youtube.com" class="registration-link">
+						<div class="container">
+							<div class="row">
+								<div class="col-12 custom-business">
+									<div class="card" style="border-radius: 1em; width: 30em; height: 8em; ">
+										<label class="card-body">
+											<div class="row mt-3">
+												<div class="col-2"><img class="img-fluid" src="{{ workflow_path }}/developer.png" alt="image"></div>
+												<div class="col-8">
+													<h1 style="margin-top: -4px; font-size: 18px;">
+														<b>Don’t have a business yet?</b>
+													</h1>
+													<p class="text-secondary" style="font-size: 12px;">Your company is not yet registered or you want to learn more about JazzCash Business</p>
+												</div>
+												<div
+													class="col-2">
+													{# <img class="img-fluid" src="{{ workflow_path }}/check.png" alt="image" > #}
+													<span class="register-checkbox"></span>
+												</div>
+											</div>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+
+			<!-- Step 2 -->
+
+
+			<div
+				class="container step-two-regis"><!-- featured-imagebox end-->
+
+			</div>
+
+			<div class="register-step">
+				<div class="col-md-6">
+					<div class="featured-imagebox ">
+						<div
+							class="ttm-box-view-content-inner">
+							<!-- featured-thumbnail -->
+							<div>
+								<img class="img-fluid img-cont" src="{{ workflow_path }}/Group.png" alt="image"><br>
+								<div style="margin-left: 20px;">
+									<h2>
+										<b>Business Account</b>
+									</h2>
+									<p>As a business account you’ll get</p><br>
+									<p>
+										&nbsp;&nbsp; ✔ &nbsp;&nbsp;Account in your business’ name</p>
+									<p>
+										&nbsp;&nbsp; ✔&nbsp;&nbsp;Unlimited company cards for employees</p>
+									<p>&nbsp; &nbsp;✔&nbsp;&nbsp;Unlimited users and permissions</p>
+									<br>
+
+									<p>In the next steps, we’ll ask for information about your company, like business name, address, registration, leadership and ownership.<br>
+										payouts.
+									</p>
+								</div>
+							</div>
+							<!-- featured-thumbnail end-->
+						</div>
+
+					</div>
+
+				</div>
+				<div class="col-md-6">
+					<div class="header-title">
+						<h1 class="wv-heading--title heading-register" style="font-size: 30px; margin-right: 20px;">
+							Let’s create your account
+						</h1>
+						<p>Please enter the details below to complete your signup process</p>
+					</div>
+
+
+					<div class="myform form" style="width: 50%">
+						<form action="" method="post" name="login">
+							<div class="form-group">
+								{{ form["field_full_name"] }}
+							</div>
+
+							<div class="form-group">
+								{{ form["field_name_of_business_company"] }}
+							</div>
+
+							<div class="form-group">
+								{{ form["field_mobile_number"] }}
+							</div>
+
+							<div class="form-group">
+								{{ form["account"]["name"] }}
+							</div>
+
+							<div class="form-group">
+								{{ form["account"]["mail"] }}
+							</div>
+
+							<div class="form-group">
+								{{ form["account"]["pass"] }}
+							</div>
+
+						</form>
+
+					</div>
+				</div>
+			</div>
+
+			<!-- Step 3-->
+			<div class="register-step">
+				<h1 style="font-size: 30px; margin-left: 6%;">Products to make your life easier</h1>
+				<p style="margin-left: 6%;">Please select the products you would like to purchase</p>
+
+				<div class="container ml-5 container-cus-width" style="margin-top: 70px;">
+					<div class="row" style="margin-top: 30px;">
+						<div class="col-6">
+							<div class="card card-default" style="width: 20em; border-radius: 1em;">
+								<div class="card-body card-7-5">
+
+									<div class="card-right">
+										<div class="row">
+											<div class="col-9">
+												<h5>Online Payment Gateway</h5>
+											</div>
+											<div class="col-3">
+												<img class="img-fluid" src="{{ workflow_path }}/icon.png" alt="image"></div>
+										</div>
+									</div>
+
+									<div class='product-wrapper'>
+										<div class='product-selection'>
+											<img src='{{ form["field_online_payment_gateway"]["#icon"] }}' style="boder-radius: 1em;"/>
+											<div>
+												<button class="btn rounded-pill select-product" style="width: 80%; border: 1px solid #393939;
+																																																								                                                       box-sizing: border-box; border-radius: 100px; margin-top: 8%; margin-left: 10%;">
+													<div class="row">
+
+														<div class="col-8">
+															Select this
+														</div>
+														<div class="col-4">
+															<img class="img-fluid" src="{{ workflow_path }}/arrow.png" alt="image">
+														</div>
+
+													</div>
+
+
+												</button>
+											</div>
+										</div>
+
+										<div class='p-1 product-form'>
+											{{ form["field_online_payment_gateway"] }}
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="col-6">
+							<div class="card card-default" style="width: 20em; border-radius: 1em;">
+								<div class="card-body card-7-5">
+
+									<div class="card-right">
+										<div class="row">
+											<div class="col-9">
+												<h5>Payroll</h5>
+											</div>
+											<div class="col-3">
+												<img class="img-fluid" src="{{ workflow_path }}/icon.png" alt="image"></div>
+										</div>
+									</div>
+
+									<div class='product-wrapper'>
+
+										<div class='product-selection'>
+											<img src='{{ form["field_online_payment_gateway"]["#icon"] }}' style="border-radius: 1em;"/>
+											<div>
+												<button class="btn rounded-pill select-product" style="width: 80%; border: 1px solid #393939;
+																																																								                                                       box-sizing: border-box; border-radius: 100px; margin-top: 8%; margin-left: 10%;">
+													<div class="row">
+
+														<div class="col-8">
+															Select this
+														</div>
+														<div class="col-4">
+															<img class="img-fluid" src="{{ workflow_path }}/arrow.png" alt="image">
+														</div>
+
+													</div>
+
+
+												</button>
+
+											</div>
+										</div>
+
+										<div class='p-1 product-form'>
+											{{ form["field_online_payment_gateway"] }}
+										</div>
+
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+
+				<div class="container ml-5 container-cus-width" style="margin-top: 70px;">
+					<div class="row" style="margin-top: 30px;">
+						<div class="col-6">
+							<div class="card card-default" style="width: 20em; border-radius: 1em;">
+								<div class="card-body card-7-5">
+
+									<div class="card-right">
+										<div class="row">
+											<div class="col-9">
+												<h5>QR Payments</h5>
+											</div>
+											<div class="col-3">
+												<img class="img-fluid" src="{{ workflow_path }}/icon.png" alt="image"></div>
+										</div>
+									</div>
+
+									<div class='product-wrapper'>
+										<div class='product-selection'>
+											<img src='{{ form["field_online_payment_gateway"]["#icon"] }}' style="boder-radius: 1em;"/>
+											<div>
+												<button class="btn rounded-pill select-product" style="width: 80%; border: 1px solid #393939;
+																																																								                                                       box-sizing: border-box; border-radius: 100px; margin-top: 8%; margin-left: 10%;">
+													<div class="row">
+
+														<div class="col-8">
+															Select this
+														</div>
+														<div class="col-4">
+															<img class="img-fluid" src="{{ workflow_path }}/arrow.png" alt="image">
+														</div>
+
+													</div>
+
+
+												</button>
+											</div>
+										</div>
+
+										<div class='p-1 product-form'>
+											{{ form["field_online_payment_gateway"] }}
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="col-6">
+							<div class="card card-default" style="width: 20em; border-radius: 1em;">
+								<div class="card-body card-7-5">
+
+									<div class="card-right">
+										<div class="row">
+											<div class="col-9">
+												<h5>Corporate Collections</h5>
+											</div>
+											<div class="col-3">
+												<img class="img-fluid" src="{{ workflow_path }}/icon.png" alt="image"></div>
+										</div>
+									</div>
+
+									<div class='product-wrapper'>
+
+										<div class='product-selection'>
+											<img src='{{ form["field_online_payment_gateway"]["#icon"] }}' style="border-radius: 1em;"/>
+											<div>
+												<button class="btn rounded-pill select-product" style="width: 80%; border: 1px solid #393939;
+																																																								                                                       box-sizing: border-box; border-radius: 100px; margin-top: 8%; margin-left: 10%;">
+													<div class="row">
+
+														<div class="col-8">
+															Select this
+														</div>
+														<div class="col-4">
+															<img class="img-fluid" src="{{ workflow_path }}/arrow.png" alt="image">
+														</div>
+
+													</div>
+
+
+												</button>
+
+											</div>
+										</div>
+
+										<div class='p-1 product-form'>
+											{{ form["field_online_payment_gateway"] }}
+										</div>
+
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+
+			</div>
+
+
+			<!-- Step 4-->
+
+			<div class="register-step">
+				<h1 class="ml-2" style="font-size: 30px;">Select the Type of your Company</h1>
+				<p class="ml-2">Click on the card to select your company type</p>
+
+				<div class="container" style="margin-top: 70px;">
+
+					<div class="row">
+						<div class="col-4">
+							<div class="card" style="border-radius: 1em;">
+								<label class="card-body">
+									<div class="row">
+										<div class="col-9">
+											<img class="img-fluid" src="{{ workflow_path }}/company.png" alt="image">
+										</div>
+										<div
+											class="col-3" style="margin-top: 10px;">
+											{# <img class="img-fluid" src="{{ workflow_path }}/check.png" alt="image" > #}
+											<span class="company-type-checkbox" data-value="58"></span>
+										</div>
+									</div>
+									<div class="row mt-3">
+										{# <h4>{{ form["field_select_the_type_of_your_co"] }}</h4> #}
+										<h4>Partnerships</h4>
+										<p class="text-muted">The partners in a partnership may be individuals, businesses,interest-based organizations, schools, or governments.
+										</p>
+									</div>
+								</label>
+							</div>
+						</div>
+
+
+						<div class="col-4">
+							<div class="card h-100" style="border-radius: 1em;">
+								<label class="card-body">
+									<div class="row">
+										<div class="col-9">
+											<img class="img-fluid" src="{{ workflow_path }}/company.png" alt="image">
+										</div>
+										<div
+											class="col-3" style="margin-top: 10px;">
+											{# <img class="img-fluid" src="{{ workflow_path }}/check.png" alt="image" > #}
+											<span class="company-type-checkbox" data-value="59"></span>
+										</div>
+									</div>
+									<div class="row mt-3">
+										<h4>Sole Properitor</h4>
+										<p class="text-muted">Enterprise owned and run by one person and in which there is no legal distinction between the owner</p>
+									</div>
+								</label>
+							</div>
+						</div>
+
+
+						<div class="col-4">
+							<div class="card h-100" style="border-radius: 1em;">
+								<label class="card-body">
+									<div class="row">
+										<div class="col-9">
+											<img class="img-fluid" src="{{ workflow_path }}/company.png" alt="image">
+										</div>
+										<div
+											class="col-3" style="margin-top: 10px;">
+											{# <img class="img-fluid" src="{{ workflow_path }}/check.png" alt="image" > #}
+											<span class="company-type-checkbox" data-value="60"></span>
+										</div>
+									</div>
+									<div class="row mt-3">
+										<h4>Private & Public Limited Companies</h4>
+										<p class="text-muted">Interest-based organizations, schools, or governments.</p>
+									</div>
+								</label>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+
+				<div class="container">
+					<div class="informations">
+						<h1>Enter Details of your Company</h1>
+						<div class='company-detail'>
+							<ul class='company-detail-sidebar'>
+								<li id='business-info' class='company-detail-sidebar-item'>
+									<div>Business Information</div>
+								</li>
+								<li id='directors-info' class='company-detail-sidebar-item'>
+									<div>Directors Information</div>
+								</li>
+								<li id='authorise-details' class='company-detail-sidebar-item'>
+									<div>Authorise Personnel Details</div>
+								</li>
+								<li id='technology-contact' class='company-detail-sidebar-item'>
+									<div>Technology Person of contact</div>
+								</li>
+								<li id='jazzcash-consumer' class='company-detail-sidebar-item'>
+									<div>Jazzcash consumer app</div>
+								</li>
+								<li id='settlement-details' class='company-detail-sidebar-item'>
+									<div>Settlement Details</div>
+								</li>
+								<li id='terms-conditions' class='company-detail-sidebar-item'>
+									<div>Terms and Conditions</div>
+								</li>
+							</ul>
+							<div class='company-detail-body'>
+								<div class="company-detail-item">
+									<div data-item-name="business-info">
+										{{ form["field_business_information"] }}
+									</div>
+								</div>
+								<div class="company-detail-item">
+									<div data-item-name="directors-info">
+										{{ form["field_directors_information"] }}
+									</div>
+								</div>
+								<div class="company-detail-item">
+									<div data-item-name="authorise-details">
+										{{ form["field_authorize_personnel_detail"] }}
+									</div>
+								</div>
+								<div class="company-detail-item">
+									<div data-item-name="technology-contact">
+										{{ form["field_technology_person_of_conta"] }}
+									</div>
+								</div>
+								<div class="company-detail-item">
+									<div data-item-name="jazzcash-consumer">
+										{{ form["field_jazzcash_consumer_app"] }}
+									</div>
+								</div>
+								<div class="company-detail-item">
+									<div data-item-name="settlement-details">
+										{{ form["field_settlement_details"] }}
+									</div>
+								</div>
+								<div class="company-detail-item">
+									<div data-item-name="terms-conditions">
+										<h1>Please read and accept the terms and conditions</h1>
+										<p>
+											Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Nam condimentum tempus diam, ultricies sollicitudin erat facilisis eget. Vestibulum rhoncus dui vel eros laoreet consectetur. Vivamus eget elementum ligula, vitae pharetra quam. Nullam at ligula
+																																												                                sed metu. Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Nam condimentum tempus diam, ultricies sollicitudin erat facilisis eget. Vestibulum rhoncus dui vel eros laoreet consectetur. Vivamus eget elementum ligula,
+																																												                                vitae pharetra quam. Nullam at ligula sed metu Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Nam condimentum tempus diam, ultricies sollicitudin erat facilisis eget. Vestibulum rhoncus dui vel eros laoreet consectetur.
+																																												                                Vivamus eget elementum ligula, vitae pharetra quam. Nullam at ligula sed metu. Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Nam condimentum tempus diam, ultricies sollicitudin erat facilisis eget. Vestibulum
+																																												                                rhoncus dui vel eros laoreet consectetur. Vivamus eget elementum ligula, vitae pharetra quam. Nullam at ligula sed metu
+										</p>
+										{{ form["field_agreement"] }}
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- STEP 5 -->
+
+			<div class="register-step">
+				<h1 style="font-size: 30px;">Please Upload the following documents</h1>
+				<p>Upload the certified copies of the following</p>
+				<div class='resolution-board'>
+					<ul class='resolution-board-sidebar list-unstyled'>
+						<div class="card mr-2" style="border-radius: 1em;">
+							<div class="card-body">
+								<li id='Resolution' class='resolution-board-sidebar-item list-style-none'>
+									<div class="row">
+										<div class="col-3">
+											<img class="img-fluid" src="{{ workflow_path }}/one.png" alt="image"></div>
+										<div class="col-9">
+											<div>Resolution of Board of Directors
+											</div>
+										</div>
+									</div>
+								</li>
+							</div>
+						</div>
+
+
+						<div class="card mr-2 my-2" style="border-radius: 1em;">
+							<div class="card-body">
+								<li id='Memorandum' class='resolution-board-sidebar-item'>
+									<div class="row">
+										<div class="col-3">
+											<img class="img-fluid" src="{{ workflow_path }}/two.png" alt="image"></div>
+										<div class="col-9">
+											<div>Memorandum and Articles of Association</div>
+										</div>
+									</div>
+								</li>
+							</div>
+						</div>
+
+
+						<div class="card mr-2 my-2" style="border-radius: 1em;">
+							<div class="card-body">
+								<li id='Incorporation' class='resolution-board-sidebar-item'>
+									<div class="row">
+										<div class="col-3">
+											<img class="img-fluid" src="{{ workflow_path }}/three.png" alt="image"></div>
+										<div class="col-9">
+											<div>Certificate of Incorporation</div>
+										</div>
+									</div>
+								</li>
+							</div>
+						</div>
+
+
+						<div class="card mr-2 my-2" style="border-radius: 1em;">
+							<div class="card-body">
+								<li id='Photocopies' class='resolution-board-sidebar-item'>
+									<div class="row">
+										<div class="col-3">
+											<img class="img-fluid" src="{{ workflow_path }}/four.png" alt="image"></div>
+										<div class="col-9">
+											<div>Photocopies of CNIC of all the directors and persons authorized</div>
+										</div>
+									</div>
+								</li>
+							</div>
+						</div>
+
+
+						<div class="card mr-2 my-2" style="border-radius: 1em;">
+							<div class="card-body">
+								<li id='Directors' class='resolution-board-sidebar-item'>
+									<div class="row">
+										<div class="col-3">
+											<img class="img-fluid" src="{{ workflow_path }}/four.png" alt="image"></div>
+										<div class="col-9">
+											<div>List of Directors on ‘Form-A/Form-B’</div>
+										</div>
+									</div>
+								</li>
+							</div>
+						</div>
+
+
+						<div class="card mr-2 my-2" style="border-radius: 1em;">
+							<div class="card-body">
+								<li id='Business' class='resolution-board-sidebar-item'>
+									<div class="row">
+										<div class="col-3">
+											<img class="img-fluid" src="{{ workflow_path }}/three.png" alt="image"></div>
+										<div class="col-9">
+											<div>Certificate of Commencement of Business</div>
+										</div>
+									</div>
+								</li>
+							</div>
+						</div>
+
+
+						<div class="card mr-2 my-2" style="border-radius: 1em;">
+							<div class="card-body">
+								<li id='NTN' class='resolution-board-sidebar-item'>
+									<div class="row">
+										<div class="col-3">
+											<img class="img-fluid" src="{{ workflow_path }}/four.png" alt="image"></div>
+										<div class="col-9">
+											<div>NTN Certificate</div>
+										</div>
+									</div>
+								</li>
+							</div>
+						</div>
+
+						<div class="card mr-2 my-2" style="border-radius: 1em;">
+							<div class="card-body">
+								<li id='Branchless' class='resolution-board-sidebar-item'>
+									<div class="row">
+										<div class="col-3">
+											<img class="img-fluid" src="{{ workflow_path }}/two.png" alt="image"></div>
+										<div class="col-9">
+											<div>Level 2 Branchless Banking Account Form</div>
+										</div>
+									</div>
+								</li>
+							</div>
+						</div>
+					</ul>
+					<div class='resolution-boardl-body'>
+						<div class="resolution-board-item">
+							<div class="custom-drop-container" data-item-name="Resolution">
+								<div class="custom-drop">Upload files</div>
+								{{ form["field_resolution_of_board_of_dir"] }}
+							</div>
+						</div>
+						<div class="resolution-board-item">
+							<div class="custom-drop-container" data-item-name="Memorandum">
+								<div class="custom-drop">Upload files</div>
+								{{ form["field_memorandum_and_articles_of"] }}
+							</div>
+						</div>
+						<div class="resolution-board-item">
+							<div class="custom-drop-container" data-item-name="Incorporation">
+								<div class="custom-drop">Upload files</div>
+								{{ form["field_certificate_of_incorporati"] }}
+							</div>
+						</div>
+						<div class="resolution-board-item">
+							<div class="custom-drop-container" data-item-name="Photocopies">
+								<div class="custom-drop">Upload files</div>
+								{{ form["field_photocopies_of_cnic_of_all"] }}
+							</div>
+						</div>
+						<div class="resolution-board-item">
+							<div class="custom-drop-container" data-item-name="Directors">
+								<div class="custom-drop">Upload files</div>
+								{{ form["field_list_of_directors_on_form_"] }}
+							</div>
+						</div>
+						<div class="resolution-board-item">
+							<div class="custom-drop-container" data-item-name="Business">
+								<div class="custom-drop">Upload files</div>
+								{{ form["field_certificate_of_commencemen"] }}
+							</div>
+						</div>
+						<div class="resolution-board-item">
+							<div class="custom-drop-container" data-item-name="NTN">
+								<div class="custom-drop">Upload files</div>
+								{{ form["field_ntn_certificate"] }}
+							</div>
+						</div>
+						<div class="resolution-board-item">
+							<div class="custom-drop-container" data-item-name="Branchless">
+								<div class="custom-drop">Upload files</div>
+								{{ form["field_level_2_branchless_banking"] }}
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		{{ form|without('field_level_2_branchless_banking', 'field_ntn_certificate', 'field_certificate_of_commencemen', 'field_list_of_directors_on_form_', 'field_photocopies_of_cnic_of_all', 'field_certificate_of_incorporati', 'field_memorandum_and_articles_of',
+        'field_resolution_of_board_of_dir', 'field_agreement', 'field_settlement_details', 'field_technology_person_of_conta', 'field_jazzcash_consumer_app', 'field_authorize_personnel_detail', 'field_directors_information', 'field_business_information', 'field_company_type', 'field_corporate_collections',
+        'field_online_payment_gateway', 'field_full_name', 'field_name_of_business_company', 'field_mobile_number', 'email', 'password', 'account') }}
+		{% macro dumpIt(params, prefix) %}
+			<details>
+				<summary>{{ "{{ " ~ prefix ~ " }}" }}</summary>
+				{% for n in params|keys %}
+					<div class="list-group-item">
+						<div>
+							<b>{{ "{{ "~prefix~"[\""~n~"\"] }}"   }}</b>
+						</div>
+					</div>
+				{% endfor %}
+			</details>
+		{% endmacro %}

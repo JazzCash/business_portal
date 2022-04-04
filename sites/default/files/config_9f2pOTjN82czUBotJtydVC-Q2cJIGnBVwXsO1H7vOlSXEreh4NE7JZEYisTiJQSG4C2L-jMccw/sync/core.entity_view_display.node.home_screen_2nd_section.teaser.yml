@@ -1,0 +1,26 @@
+uuid: f1284eda-5247-4e2f-b814-dae10af41c29
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.home_screen_2nd_section.field_home_screen_2nd_section_im
+    - field.field.node.home_screen_2nd_section.field_home_screen_link
+    - field.field.node.home_screen_2nd_section.field_home_screen_link_title
+    - node.type.home_screen_2nd_section
+  module:
+    - user
+id: node.home_screen_2nd_section.teaser
+targetEntityType: node
+bundle: home_screen_2nd_section
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_home_screen_2nd_section_im: true
+  field_home_screen_link: true
+  field_home_screen_link_title: true

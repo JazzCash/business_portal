@@ -1,0 +1,26 @@
+uuid: c8101051-cad2-4e9b-929c-b7093d9a3542
+langcode: en
+status: true
+dependencies:
+  module:
+    - jazzcash_community
+    - system
+  theme:
+    - bootstrap
+id: askquestionblock
+theme: bootstrap
+region: content
+weight: 5
+provider: null
+plugin: ask_question_block
+settings:
+  id: ask_question_block
+  label: 'Ask question block'
+  provider: jazzcash_community
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: /jazz-community
+    negate: false
+    context_mapping: {  }

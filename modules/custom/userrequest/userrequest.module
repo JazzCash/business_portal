@@ -1,0 +1,50 @@
+<?php
+
+/**
+ * @file
+ * Contains userrequest.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function userrequest_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the userrequest module.
+    case 'help.page.userrequest':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('User to list count of users') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function userrequest_theme() {
+  return [
+    'user_request_block' => [
+      'variables' => [
+        'data' => []
+      ],
+      'render element' => 'children',
+    ],
+    'business_request_block' => [
+      'variables' => [
+        'data' => []
+      ],
+      'render element' => 'children',
+    ],
+    'bank_request_block' => [
+      'variables' => [
+        'data' => []
+      ],
+      'render element' => 'children',
+    ],
+  ];
+}

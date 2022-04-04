@@ -1,0 +1,32 @@
+uuid: 80347e28-712e-4551-8c73-612796e6bc11
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.workflow_section.field_workflow_section_descri
+    - field.field.paragraph.workflow_section.field_workflow_section_image
+    - paragraphs.paragraphs_type.workflow_section
+  module:
+    - image
+id: paragraph.workflow_section.default
+targetEntityType: paragraph
+bundle: workflow_section
+mode: default
+content:
+  field_workflow_section_descri:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_workflow_section_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden: {  }

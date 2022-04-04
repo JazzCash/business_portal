@@ -1,0 +1,26 @@
+uuid: 8b663272-82a4-42fd-9d38-b4b408a0e0c0
+langcode: en
+status: true
+dependencies:
+  module:
+    - jazz_more_solution_section
+    - system
+  theme:
+    - bootstrap
+id: jazzmoresolutionblock
+theme: bootstrap
+region: content
+weight: -5
+provider: null
+plugin: jazz_more_solution_block
+settings:
+  id: jazz_more_solution_block
+  label: 'Jazz more solution block'
+  provider: jazz_more_solution_section
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "/node/23\r\n/node/24\r\n/node/25\r\n/node/26"
+    negate: false
+    context_mapping: {  }

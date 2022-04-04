@@ -1,0 +1,19 @@
+uuid: 581e13cf-a4a4-43f2-ab29-032599111b07
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_email_address
+    - paragraphs.paragraphs_type.business_information
+id: paragraph.business_information.field_email_address
+field_name: field_email_address
+entity_type: paragraph
+bundle: business_information
+label: 'Email Address'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

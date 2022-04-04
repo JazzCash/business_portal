@@ -1,0 +1,41 @@
+{#
+/**
+* @file
+* Default theme implementation to display a block.
+*
+* @see template_preprocess_block()
+*
+* @ingroup themeable
+*/
+#}
+{% set classes = [
+    'clear-both',
+] %}
+<div{{ attributes.addClass(classes) }}>
+    <div class="title-footer">{{ data[0].title }}</div>
+    <div class="body-footer">{{ data[0].body }}</div>
+    <div class="img-footer">
+        <img  src="{{ data[0].image }}"/>
+    </div>
+     <ul class="social-icons">
+    {% for social in data[0].social %}
+        <li>
+        <a href="{{ social.href }}">
+            <img  src="{{ social.icon }}"/>
+        </a>
+        </li>
+    {% endfor %} 
+    </ul>
+    <div>Copyright © 2021. All rights reserved.</div>
+    <ul class="pri-section">
+    {% for link in data[0].links %}
+        <li>
+        <a href="{{ link.href }}">
+            {{ link.label }}
+        </a>
+            
+            
+        </li>
+    {% endfor %} 
+    </ul>
+</div>

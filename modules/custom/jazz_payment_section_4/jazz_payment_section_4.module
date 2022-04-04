@@ -1,0 +1,39 @@
+<?php
+
+/**
+ * @file
+ * Contains jazz_payment_section_4.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function jazz_payment_section_4_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the jazz_payment_section_4 module.
+    case 'help.page.jazz_payment_section_4':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('My Awesome Module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function jazz_payment_section_4_theme() {
+  return [
+    'jazz_payment_section_4' => [
+      'render element' => 'children',
+      'variables' =>
+      [
+        'data' => []
+      ]
+    ],
+  ];
+}

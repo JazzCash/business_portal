@@ -1,0 +1,34 @@
+uuid: 5b0c459f-e4a5-4ca6-919c-a4b63aa9c1e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.jazz_pricing_list.body
+    - field.field.node.jazz_pricing_list.field_pricing_list_allowed_page
+    - field.field.node.jazz_pricing_list.field_pricing_list_icon
+    - node.type.jazz_pricing_list
+  module:
+    - text
+    - user
+id: node.jazz_pricing_list.teaser
+targetEntityType: node
+bundle: jazz_pricing_list
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_pricing_list_allowed_page: true
+  field_pricing_list_icon: true

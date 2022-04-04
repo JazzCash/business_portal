@@ -1,0 +1,5 @@
+jazz_manage_b:
+  version: 1.x
+  css:
+    theme:
+      css/main.css: {}

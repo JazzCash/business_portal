@@ -1,0 +1,5 @@
+name: 'forumsadmin'
+type: module
+description: 'Module for jazzcash forums admin page'
+core: 8.x
+package: 'Custom'

@@ -1,0 +1,30 @@
+uuid: b7ddc866-0a20-4893-91e8-18bf610222a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.online_payment_gateway.field_payment_gate
+    - field.field.paragraph.online_payment_gateway.field_test
+    - paragraphs.paragraphs_type.online_payment_gateway
+id: paragraph.online_payment_gateway.default
+targetEntityType: paragraph
+bundle: online_payment_gateway
+mode: default
+content:
+  field_payment_gate:
+    weight: 1
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_test:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

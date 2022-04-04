@@ -1,0 +1,52 @@
+uuid: 0c8bc282-2bc3-4244-a993-1953236eb16d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_agreement
+    - paragraphs.paragraphs_type.agreement
+  module:
+    - entity_reference_revisions
+    - user
+id: user.user.field_agreement
+field_name: field_agreement
+entity_type: user
+bundle: user
+label: Agreement
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      agreement: agreement
+    target_bundles_drag_drop:
+      agreement:
+        enabled: true
+        weight: 9
+      authorize_personnel_details:
+        weight: 10
+        enabled: false
+      business_information:
+        weight: 11
+        enabled: false
+      corporate_collections:
+        weight: 12
+        enabled: false
+      directors_information:
+        weight: 13
+        enabled: false
+      online_payment_gateway:
+        weight: 14
+        enabled: false
+      settlement_details:
+        weight: 15
+        enabled: false
+      technology_person_of_contact:
+        weight: 16
+        enabled: false
+field_type: entity_reference_revisions

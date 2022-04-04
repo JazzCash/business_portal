@@ -1,0 +1,23 @@
+uuid: a12ce5ab-06f9-4acb-88fa-180aa03101e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.jazz_client_review_section
+  module:
+    - text
+id: node.jazz_client_review_section.body
+field_name: body
+entity_type: node
+bundle: jazz_client_review_section
+label: Decription
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

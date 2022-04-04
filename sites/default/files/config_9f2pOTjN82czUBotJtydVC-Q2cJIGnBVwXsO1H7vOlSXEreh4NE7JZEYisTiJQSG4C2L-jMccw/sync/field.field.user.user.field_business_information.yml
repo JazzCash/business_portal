@@ -1,0 +1,37 @@
+uuid: 64cd7846-8fbb-4cc7-b254-c84c17518ffd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_business_information
+    - paragraphs.paragraphs_type.business_information
+  module:
+    - entity_reference_revisions
+    - user
+id: user.user.field_business_information
+field_name: field_business_information
+entity_type: user
+bundle: user
+label: 'Business Information'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      business_information: business_information
+    target_bundles_drag_drop:
+      business_information:
+        enabled: true
+        weight: 4
+      corporate_collections:
+        weight: 5
+        enabled: false
+      online_payment_gateway:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions

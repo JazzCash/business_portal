@@ -1,0 +1,40 @@
+<?php
+
+/**
+ * @file
+ * Contains theme_css.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function theme_css_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the theme_css module.
+    case 'help.page.theme_css':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('My Awesome Module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function theme_css_theme() {
+  return [
+    'theme_css' => [
+      'render element' => 'children',
+    ],
+  ];
+}
+
+function theme_css_page_attachments(array &$attachments) {
+  $attachments['#attached']['library'][] = 'theme_css/tcss';
+}
+

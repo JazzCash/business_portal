@@ -1,0 +1,26 @@
+uuid: 15b1db31-808f-406b-b2c9-d46d131aa206
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.jazz_payment_banner_section.field_payment_section_banner_ima
+    - field.field.node.jazz_payment_banner_section.field_payment_section_links_1
+    - field.field.node.jazz_payment_banner_section.field_payment_section_links_2
+    - node.type.jazz_payment_banner_section
+  module:
+    - user
+id: node.jazz_payment_banner_section.teaser
+targetEntityType: node
+bundle: jazz_payment_banner_section
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_payment_section_banner_ima: true
+  field_payment_section_links_1: true
+  field_payment_section_links_2: true

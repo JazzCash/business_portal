@@ -1,0 +1,18 @@
+uuid: b9590b6d-6535-409d-8567-22a0ed47ce5f
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Jazz Payrolls Banner Section'
+type: jazz_payrolls_banner_section
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

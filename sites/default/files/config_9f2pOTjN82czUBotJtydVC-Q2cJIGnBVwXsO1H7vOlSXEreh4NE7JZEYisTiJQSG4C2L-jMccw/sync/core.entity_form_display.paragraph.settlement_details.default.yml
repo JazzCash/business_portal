@@ -1,0 +1,61 @@
+uuid: 1d73ed32-a852-4d78-ab2f-6c2f994ea7ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.settlement_details.field_account_holder_email
+    - field.field.paragraph.settlement_details.field_account_holder_mobile_numb
+    - field.field.paragraph.settlement_details.field_account_holder_name
+    - field.field.paragraph.settlement_details.field_bank_account_number
+    - field.field.paragraph.settlement_details.field_select_bank
+    - paragraphs.paragraphs_type.settlement_details
+id: paragraph.settlement_details.default
+targetEntityType: paragraph
+bundle: settlement_details
+mode: default
+content:
+  field_account_holder_email:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_account_holder_mobile_numb:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_account_holder_name:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_bank_account_number:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_select_bank:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden:
+  created: true
+  status: true

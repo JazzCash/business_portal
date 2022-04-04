@@ -1,0 +1,39 @@
+<?php
+
+/**
+ * @file
+ * Contains jazzcash_business_section.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function jazzcash_business_section_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the jazzcash_business_section module.
+    case 'help.page.jazzcash_business_section':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('My Awesome Module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function jazzcash_business_section_theme() {
+  return [
+    'jazzcash_business_section' => [
+      'render element' => 'children',
+      'variables' =>
+      [
+        'data' => []
+      ]
+    ],
+  ];
+}

@@ -1,0 +1,21 @@
+uuid: 18d1d661-a01f-4f12-8b40-ed562533f32a
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_reference_revisions
+    - paragraphs
+    - user
+id: user.field_online_payment_gateway
+field_name: field_online_payment_gateway
+entity_type: user
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

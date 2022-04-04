@@ -1,0 +1,44 @@
+
+<div class="form-group fg--search">
+<h1>How can we help?</h1>
+<form method="GET" class="help-page-form">
+	<label>
+		
+		<input name="s" id="jha_s" class="help-page-search-field"  placeholder="Search" value="{{ searchQuery }}"/>
+	</label>
+	{# <input type="submit"  class="help-page-search-button" value="Search"/> #}
+	<input type="submit" class="help-page-search-button" value=" "><i class="fa fa-search"></i></button>
+	{% if searchQuery %}
+		<input type="reset" onclick="jQuery('jha_s').val('');" value="Reset">
+	{% endif %}
+</form>
+</div>
+
+  
+
+
+
+
+<div class="help-content-container" >
+	{% for term in data %}
+		<div class="jha-term">
+			<img class="jha-term-icon" src="{{ term.icon }}"/>
+			<h1 class="jha-term-title">{{ term.name }}</h1>
+			{% if term.nodes|length > 0 %}
+				<ul class="jha-term-nodes">
+					{% for node in term.nodes %}
+						<li class="jha-term-node">
+							<a href="{{ '/help-article/'~ node.id }}">
+								<h3 class="jha-term-node-title">
+									{{ node.title }}
+								</h3>
+							</a>
+						</li>
+					{% endfor %}
+				</ul>
+			{% else %}
+				<p>No items</p>
+			{% endif %}
+		</div>
+	{% endfor %}
+<div>

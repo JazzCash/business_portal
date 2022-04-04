@@ -1,0 +1,23 @@
+uuid: 8f86261f-ce68-4604-a16b-336468b6fbf4
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - user
+id: user.field_resolution_of_board_of_dir
+field_name: field_resolution_of_board_of_dir
+entity_type: user
+type: file
+settings:
+  display_field: false
+  display_default: false
+  uri_scheme: public
+  target_type: file
+module: file
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

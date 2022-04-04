@@ -1,0 +1,13 @@
+{
+    "name": "jazz_support_articles",
+    "type": "drupal-module",
+    "description": "My Awesome Module",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/jazz_support_articles",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/jazz_support_articles",
+        "source": "http://cgit.drupalcode.org/jazz_support_articles",
+    },
+}

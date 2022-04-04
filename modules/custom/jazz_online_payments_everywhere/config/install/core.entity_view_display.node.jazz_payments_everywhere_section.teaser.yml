@@ -1,0 +1,22 @@
+uuid: 2fc85ffa-1697-4127-979e-501f704ea0f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.jazz_payments_everywhere_section.field_payment_everywhere_image
+    - node.type.jazz_payments_everywhere_section
+  module:
+    - user
+id: node.jazz_payments_everywhere_section.teaser
+targetEntityType: node
+bundle: jazz_payments_everywhere_section
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_payment_everywhere_image: true

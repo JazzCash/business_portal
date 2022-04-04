@@ -1,0 +1,32 @@
+uuid: 0765be6a-23c8-4a1a-a662-8e255f95980c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.jazz_payment_methods.body
+    - field.field.node.jazz_payment_methods.field_jazz_payment_image
+    - node.type.jazz_payment_methods
+  module:
+    - text
+    - user
+id: node.jazz_payment_methods.teaser
+targetEntityType: node
+bundle: jazz_payment_methods
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_jazz_payment_image: true

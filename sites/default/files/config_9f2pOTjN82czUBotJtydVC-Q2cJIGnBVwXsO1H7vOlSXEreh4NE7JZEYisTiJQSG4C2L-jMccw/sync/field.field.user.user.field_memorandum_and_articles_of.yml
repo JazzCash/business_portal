@@ -1,0 +1,27 @@
+uuid: 60394b62-7393-4c1b-bac9-275db91c24c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_memorandum_and_articles_of
+  module:
+    - file
+    - user
+id: user.user.field_memorandum_and_articles_of
+field_name: field_memorandum_and_articles_of
+entity_type: user
+bundle: user
+label: 'Memorandum and Articles of Association'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: pdf
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

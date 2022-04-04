@@ -1,0 +1,115 @@
+.user-count-block {
+    list-style: none;
+    /* display: flex; */
+    justify-content: space-between;
+}
+
+.block-userrequest {
+    padding: 20px 50px;
+}
+
+.user-count-container {
+    width: 23%;
+    min-height: 134px;
+    background: transparent;
+}
+
+.user-count-block .user-count-container:nth-of-type(1) {
+    border: 1px solid #393939;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.user-count-block .user-count-container:nth-of-type(1) p {
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.4px;
+    color: #9FA2B4;
+    padding-top: 24px;
+}
+
+.user-count-block .user-count-container:nth-of-type(1)>div {
+    font-weight: bold;
+    font-size: 55px;
+    line-height: 69px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #252733;
+}
+
+.user-count-block .user-count-container:nth-of-type(2) {
+    border: 1px solid #FFC20C;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.user-count-block .user-count-container:nth-of-type(2) p {
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.4px;
+    color: #FFC20C;
+    padding-top: 24px;
+}
+
+.user-count-block .user-count-container:nth-of-type(2)>div {
+    font-weight: bold;
+    font-size: 55px;
+    line-height: 69px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #FFC20C;
+}
+
+.user-count-block .user-count-container:nth-of-type(3) {
+    border: 1px solid #6FCF97;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.user-count-block .user-count-container:nth-of-type(3) p {
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.4px;
+    color: #6FCF97;
+    padding-top: 24px;
+}
+
+.user-count-block .user-count-container:nth-of-type(3)>div {
+    font-weight: bold;
+    font-size: 55px;
+    line-height: 69px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #6FCF97;
+}
+
+.user-count-block .user-count-container:nth-of-type(4) {
+    border: 1px solid #A22621;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.user-count-block .user-count-container:nth-of-type(4) p {
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.4px;
+    color: #A22621;
+    padding-top: 24px;
+}
+
+.user-count-block .user-count-container:nth-of-type(4)>div {
+    font-weight: bold;
+    font-size: 55px;
+    line-height: 69px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #A22621;
+}

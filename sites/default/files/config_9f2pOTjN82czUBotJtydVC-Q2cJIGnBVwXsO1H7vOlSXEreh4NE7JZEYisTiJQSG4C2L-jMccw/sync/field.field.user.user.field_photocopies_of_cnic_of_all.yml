@@ -1,0 +1,27 @@
+uuid: 270d895a-298f-47cc-9293-1327e6474caa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_photocopies_of_cnic_of_all
+  module:
+    - file
+    - user
+id: user.user.field_photocopies_of_cnic_of_all
+field_name: field_photocopies_of_cnic_of_all
+entity_type: user
+bundle: user
+label: 'Photocopies of CNIC of all the directors and persons authorized'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: pdf
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

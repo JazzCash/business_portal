@@ -1,0 +1,30 @@
+uuid: 75387438-1c17-4ee1-bdad-601cf05a19dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.testing_and_go_live.body
+    - node.type.testing_and_go_live
+  module:
+    - text
+    - user
+id: node.testing_and_go_live.teaser
+targetEntityType: node
+bundle: testing_and_go_live
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

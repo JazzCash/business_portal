@@ -1,0 +1,13 @@
+{
+    "name": "jazz_manage_users",
+    "type": "drupal-module",
+    "description": "My Awesome Module",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/jazz_manage_users",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/jazz_manage_users",
+        "source": "http://cgit.drupalcode.org/jazz_manage_users",
+    },
+}

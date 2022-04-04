@@ -1,0 +1,18 @@
+uuid: 9753f2b4-a739-47ee-85bb-f5795d434301
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_account_holder_email
+field_name: field_account_holder_email
+entity_type: paragraph
+type: email
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

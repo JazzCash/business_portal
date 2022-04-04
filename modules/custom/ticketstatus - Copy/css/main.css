@@ -1,0 +1,69 @@
+section#block-ticketstatusblock {
+    border: 1px solid #DFE0EB;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin: 0px 50px;
+}
+
+.container-ticket>div {
+    border-bottom: 1px solid #DFE0EB;
+    padding: 18px 32px;
+}
+
+.container-ticket>div {
+    border-bottom: 1px solid #DFE0EB;
+    padding: 18px 32px;
+}
+
+.soved-test {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #6FCF97;
+}
+
+.pending-test {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #FFD967;
+}
+
+.inprogress-test {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #8D8D8D;
+}
+
+.onhold-test {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #161616;
+}
+
+.block-ticketstatus h1 {
+    padding: 20px 32px;
+    border: 1px solid #DFE0EB;
+    border-left: unset;
+    border-radius: unset;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.1px;
+    color: #000;
+}
+
+.block-ticketstatus h1 span.light-clr {
+    color: #9FA2B4;
+}

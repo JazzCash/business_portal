@@ -1,0 +1,23 @@
+uuid: 4dd02b00-4cfc-46ce-8bc6-02c6a3dd50ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_monthly_turnover
+    - paragraphs.paragraphs_type.business_information
+id: paragraph.business_information.field_monthly_turnover
+field_name: field_monthly_turnover
+entity_type: paragraph
+bundle: business_information
+label: 'Monthly Turnover'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

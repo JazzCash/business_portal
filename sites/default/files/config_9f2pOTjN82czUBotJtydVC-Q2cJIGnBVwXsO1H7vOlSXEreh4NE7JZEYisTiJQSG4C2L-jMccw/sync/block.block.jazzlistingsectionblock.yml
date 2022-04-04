@@ -1,0 +1,26 @@
+uuid: 63969925-cb19-4315-a6cc-c63433267aae
+langcode: en
+status: true
+dependencies:
+  module:
+    - jazz_listing_section
+    - system
+  theme:
+    - bootstrap
+id: jazzlistingsectionblock
+theme: bootstrap
+region: content
+weight: -10
+provider: null
+plugin: jazz_listing_section_block
+settings:
+  id: jazz_listing_section_block
+  label: 'Jazz listing section block'
+  provider: jazz_listing_section
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "/node/22\r\n/node/23\r\n/node/24\r\n/node/25"
+    negate: false
+    context_mapping: {  }

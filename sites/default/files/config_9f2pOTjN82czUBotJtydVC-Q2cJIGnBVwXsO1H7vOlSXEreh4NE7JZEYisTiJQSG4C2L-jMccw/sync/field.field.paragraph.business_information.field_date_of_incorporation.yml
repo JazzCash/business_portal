@@ -1,0 +1,21 @@
+uuid: 8b4181d6-821f-4a20-bc77-755bbe99acf5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_date_of_incorporation
+    - paragraphs.paragraphs_type.business_information
+  module:
+    - datetime
+id: paragraph.business_information.field_date_of_incorporation
+field_name: field_date_of_incorporation
+entity_type: paragraph
+bundle: business_information
+label: 'Date of Incorporation'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

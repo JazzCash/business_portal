@@ -1,0 +1,10 @@
+uuid: 07280eca-276d-4306-a51a-8c462f26b957
+langcode: en
+status: true
+dependencies: {  }
+id: authorize_personnel_details
+label: 'Authorize Personnel Details'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

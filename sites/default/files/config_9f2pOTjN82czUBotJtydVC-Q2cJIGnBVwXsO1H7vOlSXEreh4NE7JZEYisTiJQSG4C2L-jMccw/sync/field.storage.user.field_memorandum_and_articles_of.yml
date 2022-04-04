@@ -1,0 +1,23 @@
+uuid: f901f593-54a4-432f-8779-d12ddc88d761
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - user
+id: user.field_memorandum_and_articles_of
+field_name: field_memorandum_and_articles_of
+entity_type: user
+type: file
+settings:
+  display_field: false
+  display_default: false
+  uri_scheme: public
+  target_type: file
+module: file
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

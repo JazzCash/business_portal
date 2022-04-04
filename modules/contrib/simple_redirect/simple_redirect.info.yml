@@ -1,0 +1,11 @@
+name: Simple Redirect
+type: module
+description: 'A simple redirect from a url to other url.'
+core_version_requirement: ^8.8 || ^9
+package: User
+configure: entity.simple_redirect.collection
+
+# Information added by Drupal.org packaging script on 2022-02-28
+version: '4.0.0-beta3'
+project: 'simple_redirect'
+datestamp: 1646030055

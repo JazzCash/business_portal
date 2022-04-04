@@ -1,0 +1,13 @@
+{
+    "name": "jazzcash_business_section",
+    "type": "drupal-module",
+    "description": "My Awesome Module",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/jazzcash_business_section",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/jazzcash_business_section",
+        "source": "http://cgit.drupalcode.org/jazzcash_business_section",
+    },
+}

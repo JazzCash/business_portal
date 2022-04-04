@@ -1,0 +1,5 @@
+name: 'user_profile_current'
+type: module
+description: 'My Awesome Module'
+core: 8.x
+package: 'Custom'

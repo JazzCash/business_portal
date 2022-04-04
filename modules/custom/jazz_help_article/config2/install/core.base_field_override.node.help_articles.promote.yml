@@ -1,0 +1,22 @@
+uuid: 5c638050-cdc7-48c6-b536-55318aa51f64
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.help_articles
+id: node.help_articles.promote
+field_name: promote
+entity_type: node
+bundle: help_articles
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

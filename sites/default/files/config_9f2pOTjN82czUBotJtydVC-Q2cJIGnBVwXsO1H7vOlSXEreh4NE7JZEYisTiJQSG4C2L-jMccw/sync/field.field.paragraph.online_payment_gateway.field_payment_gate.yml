@@ -1,0 +1,29 @@
+uuid: 2d626d49-17f1-4940-8fb2-8fde6ad689d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_payment_gate
+    - paragraphs.paragraphs_type.online_payment_gateway
+    - taxonomy.vocabulary.payment_gateways
+id: paragraph.online_payment_gateway.field_payment_gate
+field_name: field_payment_gate
+entity_type: paragraph
+bundle: online_payment_gateway
+label: 'Payment gateways'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      payment_gateways: payment_gateways
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

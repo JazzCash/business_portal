@@ -1,0 +1,30 @@
+uuid: 906f3dfe-c066-4108-9f36-86795c4d4917
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.jazz_video_section.field_video_section_data
+    - node.type.jazz_video_section
+  module:
+    - entity_reference_revisions
+    - user
+id: node.jazz_video_section.default
+targetEntityType: node
+bundle: jazz_video_section
+mode: default
+content:
+  field_video_section_data:
+    type: entity_reference_revisions_entity_view
+    weight: 101
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

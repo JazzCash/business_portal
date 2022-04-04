@@ -1,0 +1,33 @@
+{#
+/**
+* @file
+* Default theme implementation to display a block.
+*
+* @see template_preprocess_block()
+*
+* @ingroup themeable
+*/
+#}
+{% set classes = [
+    'clear-both',
+    'user-count-block'
+] %}
+<ul{{attributes.addClass(classes)}}>
+	<li class='user-count-container'>
+		<p>New Request</p>
+		<div>{{ data.block|length }}</div>
+	</li>
+	<li class='user-count-container'>
+		<p>Hold</p>
+		<div>{{ data.hold|length }}</div>
+	</li>
+	<li class='user-count-container'>
+		<p>Approved</p>
+		<div>{{ data.active|length }}</div>
+	</li>
+
+	<li class='user-count-container'>
+		<p>Mark Discrepant</p>
+		<div>{{ data.marked|length }}</div>
+	</li>
+</li>

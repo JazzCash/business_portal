@@ -1,0 +1,10 @@
+uuid: f2d44fe0-c7c0-4402-a5e9-31e30105b0ba
+langcode: en
+status: true
+dependencies: {  }
+id: business_information
+label: 'Business Information'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

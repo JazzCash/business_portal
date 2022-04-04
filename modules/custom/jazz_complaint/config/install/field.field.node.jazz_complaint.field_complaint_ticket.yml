@@ -1,0 +1,19 @@
+uuid: 7a8c3c62-3966-43e3-be25-8ec3c643d11c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_complaint_ticket
+    - node.type.jazz_complaint
+id: node.jazz_complaint.field_complaint_ticket
+field_name: field_complaint_ticket
+entity_type: node
+bundle: jazz_complaint
+label: 'complaint ticket'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

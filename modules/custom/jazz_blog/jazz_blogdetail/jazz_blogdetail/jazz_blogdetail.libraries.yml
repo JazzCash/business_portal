@@ -1,0 +1,7 @@
+jazz_details:
+  version: 1.x
+  css:
+    theme:
+      css/main.css: {}
+  # js:
+  #   js/cuddly-slider.js: {}

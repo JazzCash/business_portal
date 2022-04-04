@@ -1,0 +1,8 @@
+
+jazz_help_article.default_controller_article:
+  path: '/help-articles'
+  defaults:
+    _controller: '\Drupal\jazz_help_article\Controller\DefaultController::article'
+    _title: 'article'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,22 @@
+uuid: 2b16964c-9425-48c3-90a2-1a82da8f4265
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.jazz_more_solutions_section
+id: node.jazz_more_solutions_section.promote
+field_name: promote
+entity_type: node
+bundle: jazz_more_solutions_section
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

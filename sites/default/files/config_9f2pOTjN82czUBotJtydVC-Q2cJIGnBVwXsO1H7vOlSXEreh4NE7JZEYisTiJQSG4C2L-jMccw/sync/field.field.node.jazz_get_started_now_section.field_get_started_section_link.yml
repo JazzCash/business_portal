@@ -1,0 +1,19 @@
+uuid: 4eb5126e-df65-4454-8330-b1429be4397e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_get_started_section_link
+    - node.type.jazz_get_started_now_section
+id: node.jazz_get_started_now_section.field_get_started_section_link
+field_name: field_get_started_section_link
+entity_type: node
+bundle: jazz_get_started_now_section
+label: Link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

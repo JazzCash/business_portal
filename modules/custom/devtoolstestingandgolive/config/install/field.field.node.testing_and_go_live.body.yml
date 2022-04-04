@@ -1,0 +1,23 @@
+uuid: e553143b-2de2-4e4e-adf3-1ba97b0b762f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.testing_and_go_live
+  module:
+    - text
+id: node.testing_and_go_live.body
+field_name: body
+entity_type: node
+bundle: testing_and_go_live
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

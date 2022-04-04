@@ -1,0 +1,8 @@
+uuid: 93e0d03e-c25f-4e78-a2ad-a5adb5ef5ef9
+langcode: en
+status: true
+dependencies: {  }
+name: 'cat: Corporate Collections'
+vid: corporate_collections
+description: ''
+weight: 0

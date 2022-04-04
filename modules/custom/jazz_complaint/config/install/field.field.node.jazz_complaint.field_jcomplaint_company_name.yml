@@ -1,0 +1,21 @@
+uuid: d088f9c8-f742-45f1-b8af-8f8efe836d96
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_jcomplaint_company_name
+    - node.type.jazz_complaint
+_core:
+  default_config_hash: f8xE2q0zY16UwZWYj83vaWintIuetrQWzU9G84d9iWo
+id: node.jazz_complaint.field_jcomplaint_company_name
+field_name: field_jcomplaint_company_name
+entity_type: node
+bundle: jazz_complaint
+label: 'Company name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

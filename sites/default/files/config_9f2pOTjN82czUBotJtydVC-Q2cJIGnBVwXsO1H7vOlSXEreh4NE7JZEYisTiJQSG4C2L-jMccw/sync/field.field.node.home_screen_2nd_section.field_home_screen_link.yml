@@ -1,0 +1,19 @@
+uuid: 5857782c-890a-4cfe-9f70-dac1e244d88b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_home_screen_link
+    - node.type.home_screen_2nd_section
+id: node.home_screen_2nd_section.field_home_screen_link
+field_name: field_home_screen_link
+entity_type: node
+bundle: home_screen_2nd_section
+label: 'Home Screen Link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

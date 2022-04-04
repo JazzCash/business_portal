@@ -1,0 +1,8 @@
+uuid: 661e1c39-f1e1-4c83-aa2e-66dd679dd625
+langcode: en
+status: true
+dependencies: {  }
+name: 'Payment gateways'
+vid: payment_gateways
+description: ''
+weight: 0

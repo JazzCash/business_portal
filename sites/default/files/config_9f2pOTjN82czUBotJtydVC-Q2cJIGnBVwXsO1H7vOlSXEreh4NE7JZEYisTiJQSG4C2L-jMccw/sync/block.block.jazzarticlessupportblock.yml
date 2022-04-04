@@ -1,0 +1,26 @@
+uuid: f0f3a79f-e05c-4ec2-b046-3c5301a0f9d2
+langcode: en
+status: true
+dependencies:
+  module:
+    - jazz_support_articles
+    - system
+  theme:
+    - bootstrap
+id: jazzarticlessupportblock
+theme: bootstrap
+region: content
+weight: 3
+provider: null
+plugin: jazz_articles_support_block
+settings:
+  id: jazz_articles_support_block
+  label: 'Jazz articles support block'
+  provider: jazz_support_articles
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: /help-articles
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,100 @@
+.block-jazz-more-solution-section {
+    width: 1366px;
+    padding: 0 100px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.block-jazz-more-solution-section h1 {
+    font-family: 'Work-Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 56px;
+    text-align: center;
+    color: #262626;
+}
+
+.jazz-home-2nd-parent {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.jazz-home-2nd-sec {
+    width: 28%;
+    background: #393939;
+    box-shadow: 0px 7.69144px 15.3829px rgba(0, 0, 0, 0.16);
+    border-radius: 11.5372px;
+    padding: 24px 20px;
+}
+
+.img-second-sec {
+    padding: 0px 5px 10px 5px;
+}
+
+.link-second-sec a {
+    color: #FFC20C;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 23.0743px;
+    line-height: 31px;
+    font-family: 'work-sans';
+}
+
+.link-second-sec a:hover {
+    color: #FFC20C;
+    text-decoration: none;
+}
+
+.block-jazz-homescreen-2nd-section h1 {
+    font-family: 'Work-Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 46px;
+    line-height: 60px;
+    text-align: center;
+    color: #262626;
+    mix-blend-mode: normal;
+    padding-bottom: 64px;
+}
+
+.lock-jazz-more-solution-section>h1 {
+    font-family: 'Work-Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 56px;
+    text-align: center;
+    color: #262626;
+    padding-bottom: 50px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+    .block-jazz-more-solution-section {
+        max-width: 85%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .jazz-home-2nd-sec {
+        width: 27%;
+    }
+    .jazz-home-2nd-parent {
+        padding: 0 0 50px 0;
+    }
+    .link-second-sec a {
+        font-size: 19.074px;
+    }
+    ul.social-icons {
+        width: 25%;
+    }
+    ul.pri-section {
+        width: 60%;
+    }
+    .block-jazz-more-solution-section {
+        max-width: 90%;
+    }
+}

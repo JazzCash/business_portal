@@ -1,0 +1,102 @@
+<?php
+
+/**
+ * @file
+ * Contains user_bank_status.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Symfony\Component\HttpFoundation\RedirectResponse;
+use Drupal\Core\Url;
+
+/**
+ * Implements hook_help().
+ */
+function user_bank_status_help($route_name, RouteMatchInterface $route_match)
+{
+  switch ($route_name) {
+      // Main module help for the user_bank_status module.
+    case 'help.page.user_bank_status':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('My Awesome Module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function user_bank_status_theme()
+{
+  return [
+    'user_bank_status_block' => [
+      'variables' => [
+        'data' => []
+      ],
+      'render element' => 'children',
+    ],
+  ];
+}
+
+/**
+ * Implements hook_user_login().
+ */
+
+function user_bank_status_user_login($account)
+{
+  $routeName = 'entity.node.canonical';
+  $nodeId = 100;
+  $routeParameters = ['node' => $nodeId];
+  $url = \Drupal::url($routeName, $routeParameters);
+
+  $url2 = Url::fromUserInput('/admin/account-opener-home');
+  $link2 = $url2->toString();
+
+  $url3 = Url::fromUserInput('/admin/business-home');
+  $link3 = $url3->toString();
+
+  $url4 = Url::fromUserInput('/admin/bank-home');
+  $link4 = $url4->toString();
+
+  $url5 = Url::fromUserInput('/admin/admin-home');
+  $link5 = $url5->toString();
+  
+
+
+
+  $roles = $account->getRoles();
+
+  if (in_array('authenticated', $roles)) {
+
+    if (in_array('account_opener', $roles)) {
+      $response = new RedirectResponse($link2);
+      $response->send();
+      return;
+    }
+
+    if (in_array('business', $roles)) {
+      $response = new RedirectResponse($link3);
+      $response->send();
+      return;
+    }
+
+    if (in_array('bank', $roles)) {
+      $response = new RedirectResponse($link4);
+      $response->send();
+      return;
+    }
+
+    if (in_array('administrator', $roles)) {
+      $response = new RedirectResponse($link5);
+      $response->send();
+      return;
+    }
+
+    $response = new RedirectResponse($url);
+    $response->send();
+    return;
+  }
+}

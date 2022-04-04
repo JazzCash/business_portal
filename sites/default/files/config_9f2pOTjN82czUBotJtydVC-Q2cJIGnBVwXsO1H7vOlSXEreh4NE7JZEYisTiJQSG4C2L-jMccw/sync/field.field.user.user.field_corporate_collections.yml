@@ -1,0 +1,34 @@
+uuid: 811004ce-c21a-486e-bdb1-d7f23e5c5610
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_corporate_collections
+    - paragraphs.paragraphs_type.corporate_collections
+  module:
+    - entity_reference_revisions
+    - user
+id: user.user.field_corporate_collections
+field_name: field_corporate_collections
+entity_type: user
+bundle: user
+label: 'Corporate Collections'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      corporate_collections: corporate_collections
+    target_bundles_drag_drop:
+      corporate_collections:
+        enabled: true
+        weight: 3
+      online_payment_gateway:
+        weight: 4
+        enabled: false
+field_type: entity_reference_revisions

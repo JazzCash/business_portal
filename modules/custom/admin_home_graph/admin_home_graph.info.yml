@@ -1,0 +1,5 @@
+name: Admin Home page Graph'
+type: module
+description: 'Graph displays the information about the user related info'
+core: 8.x
+package: 'User Profile Display'

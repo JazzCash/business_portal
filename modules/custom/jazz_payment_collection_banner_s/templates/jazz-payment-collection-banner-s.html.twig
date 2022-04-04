@@ -1,0 +1,15 @@
+<!-- Add you custom twig html here -->
+{% for content in data.content %}
+<div class="banner-section">
+    <img class="img" src="{{ content.image }}">
+    <div class="new-container-jazz">
+        <div class="jazz-pay-new">
+            <h1>{{ content.title }}</h1>
+            <div class="links-block">
+                <a href="{{ content.link1 }}">Get Started</a>
+                <a href="{{ content.link2 }}">See How it works</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}

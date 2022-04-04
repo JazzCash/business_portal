@@ -1,0 +1,26 @@
+uuid: 9b453e85-174c-48f3-8ebb-08f72cba0195
+langcode: en
+status: true
+dependencies:
+  module:
+    - jazz_payment_banner_section
+    - system
+  theme:
+    - bootstrap
+id: jazzpaymentsectionbanner
+theme: bootstrap
+region: content
+weight: -18
+provider: null
+plugin: jazz_payment_section_banner
+settings:
+  id: jazz_payment_section_banner
+  label: 'Jazz payment section banner'
+  provider: jazz_payment_banner_section
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/23
+    negate: false
+    context_mapping: {  }

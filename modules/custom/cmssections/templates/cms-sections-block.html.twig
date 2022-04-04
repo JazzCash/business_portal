@@ -1,0 +1,32 @@
+{#
+/**
+* @file
+* Default theme implementation to display a block.
+*
+* @see template_preprocess_block()
+*
+* @ingroup themeable
+*/
+#}
+{% set classes = [
+    'clear-both',
+] %}
+<div class="cms-contianer">
+<div class="cms-title">
+<h2>CMS - Sections </h2>
+</div>
+<div class="lins-cms">
+<ul{{attributes.addClass(classes)}}>
+		{% for module in data %}
+			<li class="jazz-module {{ (module.active==true)?" active":" " }}">
+			<span>
+				<svg class="{{ (module.active==true)?"":"hidden" }}" width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M1 5L3.92929 7.92929C3.96834 7.96834 4.03166 7.96834 4.07071 7.92929L11 1" stroke="white" stroke-width="1.7" stroke-linecap="round"/>
+				</svg>
+			</span>
+				{{module.label}}
+			</li>
+		{% endfor %}
+	</ul>
+</div>
+</div>

@@ -1,0 +1,60 @@
+uuid: 707a9883-d243-41df-a6f2-432553d030f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.jazz_footer_left_section.field_jazz_footer_left_body
+    - field.field.node.jazz_footer_left_section.field_jazz_footer_left_image
+    - field.field.node.jazz_footer_left_section.field_jazz_footer_left_link
+    - field.field.node.jazz_footer_left_section.field_jazz_footer_left_social
+    - node.type.jazz_footer_left_section
+  module:
+    - entity_reference_revisions
+    - image
+    - user
+id: node.jazz_footer_left_section.default
+targetEntityType: node
+bundle: jazz_footer_left_section
+mode: default
+content:
+  field_jazz_footer_left_body:
+    weight: 101
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_jazz_footer_left_image:
+    weight: 102
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_jazz_footer_left_link:
+    type: entity_reference_revisions_entity_view
+    weight: 104
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_jazz_footer_left_social:
+    type: entity_reference_revisions_entity_view
+    weight: 103
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

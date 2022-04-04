@@ -1,0 +1,64 @@
+<?php
+use Symfony\Component\HttpFoundation\RedirectResponse;
+use Drupal\Core\Url;
+
+/**
+ * @file
+ * Contains business_workflow.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+function user_edit_form_alter(&$form, $form_state, $form_id)
+{
+  if ($form_id == 'user_register_form') {
+    $form['actions']['submit']['#submit'][] = 'redirectaccount';
+  }
+}
+
+function redirectaccount(&$form, $form_state)
+{
+  if ($form_state->getValue('uid')) {
+    $id = $form_state->getValue('uid');
+    $user = \Drupal\user\Entity\User::load($id);
+    $user->set('field_status', 57);
+    $user->set('field_account_status', 57);
+    $user->set('field_account_bank_status', 57);
+    $user->save();
+    $url = Url::fromUserInput('/node/100');
+    $form_state->setRedirectUrl($url);
+  }
+}
+
+/**
+ * Implements hook_help().
+ */
+function user_edit_help($route_name, RouteMatchInterface $route_match)
+{
+  switch ($route_name) {
+      // Main module help for the user_edit module.
+    case 'help.page.user_edit':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('My Awesome Module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function user_edit_theme()
+{
+  return [
+    'business_workflow' => [
+      'render element' => 'children',
+    ],
+    'custom_edit_form' => array(
+      'render element' => 'form',
+      'template' => 'custom-edit-form',
+    ),
+  ];
+}

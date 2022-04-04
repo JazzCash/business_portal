@@ -1,0 +1,30 @@
+uuid: 4868fe3b-5147-40db-b872-8ba07e3ce6bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.jazz_community
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap
+id: views_block__jazz_community_block_2
+theme: bootstrap
+region: content
+weight: 6
+provider: null
+plugin: 'views_block:jazz_community-block_2'
+settings:
+  id: 'views_block:jazz_community-block_2'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /jazz-community
+    negate: false
+    context_mapping: {  }

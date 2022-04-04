@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains forumsadmin.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function forumsadmin_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the forumsadmin module.
+    case 'help.page.forumsadmin':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Module for jazzcash forums admin page') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function forumsadmin_theme() {
+  return [
+    'forumsadmin' => [
+      'render element' => 'children',
+    ],
+  ];
+}

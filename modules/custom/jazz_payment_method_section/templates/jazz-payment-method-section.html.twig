@@ -1,0 +1,15 @@
+<!-- Add you custom twig html here -->
+<div class="payment-method">
+    {% for content in data.content %}
+        <div class="payment-parent">
+            <div class="text-area">
+                <h1>{{ content.title }}</h1>
+                {{ content.body|raw }}
+                <button class="payment-button">read more</button>
+            </div>
+            <div class="img-item">
+                <img class="img" src="{{ content.image }}">
+            </div>
+        </div>
+    {% endfor %}
+<div>

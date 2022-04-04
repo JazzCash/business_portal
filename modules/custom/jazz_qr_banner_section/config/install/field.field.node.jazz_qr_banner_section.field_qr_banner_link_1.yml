@@ -1,0 +1,19 @@
+uuid: e0fd0b06-0982-4247-8542-6ba5986558f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_qr_banner_link_1
+    - node.type.jazz_qr_banner_section
+id: node.jazz_qr_banner_section.field_qr_banner_link_1
+field_name: field_qr_banner_link_1
+entity_type: node
+bundle: jazz_qr_banner_section
+label: 'Qr Banner Link 1'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

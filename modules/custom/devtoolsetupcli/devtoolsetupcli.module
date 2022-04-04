@@ -1,0 +1,23 @@
+<?php 
+
+function devtoolsetupcli_page_attachments(array &$page) {
+  $page['#attached']['library'][] = 'devtoolsetupcli/devtoolsetupcli_lib';
+}
+
+
+function devtoolsetupcli_theme($existing, $type, $theme, $path) {
+  return [
+    'dev_tool_setup_cli' => [
+      'variables' => ['dev_tool_setup_cli_array' => array() ],
+    ],
+  ];
+}
+
+
+function devtoolsetupcli_preprocess(&$variables) {
+  $variables['dev_tool_setup_cli_path'] = 'modules/devtoolsetupcli/images';
+  }
+
+
+
+

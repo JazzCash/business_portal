@@ -1,0 +1,27 @@
+uuid: a62d6108-17b9-48c3-ba9b-02dd81f90b95
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_certificate_of_incorporati
+  module:
+    - file
+    - user
+id: user.user.field_certificate_of_incorporati
+field_name: field_certificate_of_incorporati
+entity_type: user
+bundle: user
+label: 'Certificate of Incorporation'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: pdf
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

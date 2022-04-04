@@ -1,0 +1,27 @@
+<!-- Add you custom twig html here -->
+{% for content in data.content %}
+	<h1 class="center">{{ content.title }}</h1>
+	<!-- Button trigger modal -->
+	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+		show me video
+	</button>
+
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close top-btn" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h4 class="modal-title">
+						Take payments online—no website required
+					</h4>
+				</div>
+				<div class="modal-body">
+					<iframe width="853" height="480" src="https://www.youtube.com/embed/{{ content.videoCode }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endfor %}

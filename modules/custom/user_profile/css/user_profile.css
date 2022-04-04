@@ -1,0 +1,35 @@
+table,
+    th,
+    td {
+      border: 0px solid #666;
+    }
+
+    table th,
+    table td {
+      padding: 15px;
+      /* Apply cell padding */
+    }
+
+    .btn-circle {
+      width: 80px;
+      height: 30px;
+      text-align: center;
+      padding: 6px 0;
+      font-size: 12px;
+      line-height: 1.42;
+      border-radius: 15px;
+    }
+
+    .h-divider {
+      margin-top: 20px;
+      margin-bottom: 5px;
+      margin-left: 7em;
+      height: 1px;
+      width: 85%;
+      border-top: 1px solid gray;
+      text-align: center;
+    }
+
+  .user-profile-image{
+    width:200px;
+  }

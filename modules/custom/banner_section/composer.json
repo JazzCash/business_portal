@@ -1,0 +1,13 @@
+{
+    "name": "banner_section",
+    "type": "drupal-module",
+    "description": "My Awesome Module",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/banner_section",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/banner_section",
+        "source": "http://cgit.drupalcode.org/banner_section",
+    },
+}

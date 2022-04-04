@@ -1,0 +1,130 @@
+.block-jazz-client-review-section-block {
+    width: 1366px;
+    padding: 0 100px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-top: 150px;
+}
+
+.clients-review-section {
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.clients-container {
+    background: #FFFFFF;
+    border: 0.956923px solid #C6C6C6;
+    box-sizing: border-box;
+    border-radius: 9.56923px;
+    width: 30.5%;
+    height: auto;
+    padding: 28px 28px 40px 28px;
+}
+
+.clients-review-fch {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title h1 {
+    font-family: 'work-sans-medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17.2246px;
+    line-height: 29px;
+    margin-top: 0px;
+    margin-bottom: 0;
+}
+
+.title {
+    padding-left: 20px;
+}
+
+.rating-client {
+    padding-left: 50px;
+}
+
+.title p {
+    font-family: 'work-sans-normal';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13.3969px;
+    line-height: 29px;
+    color: #4F5665;
+}
+
+.clients-review-discription p:nth-of-type(2) {
+    font-family: 'work-sans-normal';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15.3108px;
+    line-height: 25px;
+    color: #262626;
+    height: 100px;
+    overflow: hidden;
+}
+
+.block-jazz-client-review-section-block>h1 {
+    font-family: 'work-sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    color: #0B132A;
+    padding-bottom: 40px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+    .clients-review-section {
+        padding: 0 15px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .clients-container {
+        background: #FFFFFF;
+        border: 0.956923px solid #C6C6C6;
+        box-sizing: border-box;
+        border-radius: 9.56923px;
+        width: 100%;
+        height: auto;
+        padding: 28px 28px 40px 28px;
+        margin-bottom: 20px;
+    }
+    .block-jazz-client-review-section-block {
+        padding: 50px 15px 0 15px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .block-jazz-client-review-section-block {
+        padding: 25px 0;
+    }
+    .clients-review-section {
+        padding: 0 30px;
+    }
+    .clients-review-fch {
+        flex-wrap: wrap;
+    }
+    .clients-review-fch .client-img {
+        width: 50px;
+        margin: 0 auto 10px auto;
+    }
+    .clients-container {
+        height: auto;
+    }
+    .clients-review-discription p:nth-of-type(2) {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+    .clients-container {
+        height: auto;
+    }
+    .block-jazz-client-review-section-block {
+        padding: 0 0 50px 0;
+    }
+}

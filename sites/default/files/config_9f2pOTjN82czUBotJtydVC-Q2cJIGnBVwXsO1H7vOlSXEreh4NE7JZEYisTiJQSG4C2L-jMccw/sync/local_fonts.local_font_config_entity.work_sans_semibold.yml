@@ -1,0 +1,14 @@
+uuid: bcafed06-bb63-433a-b463-6d224c31176f
+langcode: en
+status: true
+dependencies: {  }
+id: work_sans_semibold
+label: 'Work Sans Semibold'
+font_family: work-sans-semibold
+font_classification:
+  serif: '0'
+  sans-serif: '0'
+  slab-serif: '0'
+  handwriting: '0'
+  decorative: '0'
+  monospace: '0'

@@ -1,0 +1,19 @@
+uuid: 5183317e-7b6b-4994-96ff-b0a9ed6995d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_ntn_issuing_authority
+    - paragraphs.paragraphs_type.business_information
+id: paragraph.business_information.field_ntn_issuing_authority
+field_name: field_ntn_issuing_authority
+entity_type: paragraph
+bundle: business_information
+label: 'NTN Issuing Authority'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

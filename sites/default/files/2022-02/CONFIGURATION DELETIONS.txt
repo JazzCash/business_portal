@@ -1,0 +1,44 @@
+CONFIGURATION DELETIONS
+The listed configuration will be deleted.
+Block
+
+
+
+Developer tools integration code block module
+Developer tools reference docs block module
+developer tools setup and integrate block module
+developer tools setup cli block module
+Developer tools testing and golive block module
+footer module
+front guide block
+front guide block
+Front Page Banner
+Front Page Banner
+Front Page Explore Products
+Front Page Explore Products
+front page faqs block
+front page faqs block
+Front Page loggedin getting started popup
+front page services slider block
+front page services slider block
+front page video guide block
+get started page doc and api block
+get started page doc and api block
+get started page products block
+get started page products block
+front guide block
+Front Page Banner
+Front Page Explore Products
+front page faqs block
+Front Page loggedin getting started popup
+front page services slider block
+get started page doc and api block
+get started page products block
+login page block module
+payment page add payment method module
+payment page after the payment module
+payment page clones project module
+payment page payments module
+product page banner
+product page explore products
+product page explorer services module

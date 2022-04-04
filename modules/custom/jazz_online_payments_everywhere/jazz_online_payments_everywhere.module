@@ -1,0 +1,39 @@
+<?php
+
+/**
+ * @file
+ * Contains jazz_online_payments_everywhere.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function jazz_online_payments_everywhere_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the jazz_online_payments_everywhere module.
+    case 'help.page.jazz_online_payments_everywhere':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('My Awesome Module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function jazz_online_payments_everywhere_theme() {
+  return [
+    'jazz_online_payments_everywhere' => [
+      'render element' => 'children',
+      'variables' =>
+      [
+        'data' => []
+      ]
+    ],
+  ];
+}

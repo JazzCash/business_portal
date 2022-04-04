@@ -1,0 +1,19 @@
+uuid: 0751d2e8-78ee-413c-9c39-69eb391a08ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_jazz_video_url
+    - node.type.jazz_videos
+id: node.jazz_videos.field_jazz_video_url
+field_name: field_jazz_video_url
+entity_type: node
+bundle: jazz_videos
+label: 'Jazz Video Url'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

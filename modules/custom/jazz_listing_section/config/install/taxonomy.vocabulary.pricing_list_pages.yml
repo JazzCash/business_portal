@@ -1,0 +1,8 @@
+uuid: 967ed272-fc70-41a9-ac61-30fa9c55b9f4
+langcode: en
+status: true
+dependencies: {  }
+name: 'Pricing List Pages'
+vid: pricing_list_pages
+description: ''
+weight: 0

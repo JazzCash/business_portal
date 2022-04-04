@@ -1,0 +1,19 @@
+uuid: 961c73bb-318a-4758-86f5-e6a3483b38e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_official_email
+    - paragraphs.paragraphs_type.authorize_personnel_details
+id: paragraph.authorize_personnel_details.field_official_email
+field_name: field_official_email
+entity_type: paragraph
+bundle: authorize_personnel_details
+label: 'Official Email'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

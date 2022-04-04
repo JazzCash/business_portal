@@ -1,0 +1,10 @@
+uuid: b09ad68c-356c-42fd-8800-87f32887c627
+langcode: en
+status: true
+dependencies: {  }
+id: workflow_section
+label: 'Workflow Section'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

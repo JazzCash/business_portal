@@ -1,0 +1,46 @@
+uuid: 7d70dd40-b1c5-410f-81f5-fc9f1857f7b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_technology_person_of_conta
+    - paragraphs.paragraphs_type.technology_person_of_contact
+  module:
+    - entity_reference_revisions
+    - user
+id: user.user.field_technology_person_of_conta
+field_name: field_technology_person_of_conta
+entity_type: user
+bundle: user
+label: 'Technology Person of contact'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      technology_person_of_contact: technology_person_of_contact
+    target_bundles_drag_drop:
+      authorize_personnel_details:
+        weight: 7
+        enabled: false
+      business_information:
+        weight: 8
+        enabled: false
+      corporate_collections:
+        weight: 9
+        enabled: false
+      directors_information:
+        weight: 10
+        enabled: false
+      online_payment_gateway:
+        weight: 11
+        enabled: false
+      technology_person_of_contact:
+        enabled: true
+        weight: 12
+field_type: entity_reference_revisions

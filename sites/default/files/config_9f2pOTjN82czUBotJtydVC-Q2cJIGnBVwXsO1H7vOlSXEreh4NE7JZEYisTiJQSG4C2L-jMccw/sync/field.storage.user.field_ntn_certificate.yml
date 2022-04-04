@@ -1,0 +1,23 @@
+uuid: 38615356-666c-4efc-a1df-5a7b19be473c
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - user
+id: user.field_ntn_certificate
+field_name: field_ntn_certificate
+entity_type: user
+type: file
+settings:
+  display_field: false
+  display_default: false
+  uri_scheme: public
+  target_type: file
+module: file
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,13 @@
+{
+    "name": "theme_css",
+    "type": "drupal-module",
+    "description": "My Awesome Module",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/theme_css",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/theme_css",
+        "source": "http://cgit.drupalcode.org/theme_css",
+    },
+}

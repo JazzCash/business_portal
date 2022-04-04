@@ -1,0 +1,23 @@
+uuid: b79bcfed-be42-4da0-82a1-9ff6a1bd27da
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.jazz_pricing_list
+  module:
+    - text
+id: node.jazz_pricing_list.body
+field_name: body
+entity_type: node
+bundle: jazz_pricing_list
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

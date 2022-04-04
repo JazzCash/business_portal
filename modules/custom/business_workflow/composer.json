@@ -1,0 +1,13 @@
+{
+    "name": "custom/business_workflow",
+    "type": "drupal-module",
+    "description": "My Awesome Module",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/business_workflow",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/business_workflow",
+        "source": "http://cgit.drupalcode.org/business_workflow",
+    }
+}

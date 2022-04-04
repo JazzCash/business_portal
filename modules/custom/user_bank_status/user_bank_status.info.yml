@@ -1,0 +1,5 @@
+name: 'user_bank_status'
+type: module
+description: 'My Awesome Module'
+core: 8.x
+package: 'Custom'

@@ -1,0 +1,10 @@
+uuid: 0685cda5-6864-46a4-ad77-629aa695eacc
+langcode: en
+status: true
+dependencies: {  }
+id: jazz_video_section_data
+label: 'Jazz Video Section Data'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,13 @@
+{
+    "name": "jazz_payment_collection_banner_s",
+    "type": "drupal-module",
+    "description": "My Awesome Module",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/jazz_payment_collection_banner_s",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/jazz_payment_collection_banner_s",
+        "source": "http://cgit.drupalcode.org/jazz_payment_collection_banner_s",
+    },
+}

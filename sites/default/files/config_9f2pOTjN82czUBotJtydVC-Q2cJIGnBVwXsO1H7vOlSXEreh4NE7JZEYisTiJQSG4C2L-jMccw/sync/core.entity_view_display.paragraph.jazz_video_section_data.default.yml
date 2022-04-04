@@ -1,0 +1,38 @@
+uuid: 09c9ddd0-04bc-41da-a486-054f8740d5ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.jazz_video_section_data.field_video_link
+    - field.field.paragraph.jazz_video_section_data.field_video_section_description
+    - field.field.paragraph.jazz_video_section_data.field_video_section_title
+    - paragraphs.paragraphs_type.jazz_video_section_data
+id: paragraph.jazz_video_section_data.default
+targetEntityType: paragraph
+bundle: jazz_video_section_data
+mode: default
+content:
+  field_video_link:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_video_section_description:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_video_section_title:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

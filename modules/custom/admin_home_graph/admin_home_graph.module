@@ -1,0 +1,56 @@
+<?php
+
+/**
+ * @file
+ * Contains admin_home_graph.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function admin_home_graph_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the admin_home_graph module.
+    case 'help.page.admin_home_graph':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('User to list count of users') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function admin_home_graph_theme() {
+  return [
+    'admin_home_graph_block' => [
+      'variables' => [
+        'data' => []
+      ],
+      'render element' => 'children',
+    ],
+    'business_home_graph_block' => [
+      'variables' => [
+        'data' => []
+      ],
+      'render element' => 'children',
+    ],
+    'bank_home_graph_block' => [
+      'variables' => [
+        'data' => []
+      ],
+      'render element' => 'children',
+    ],
+  ];
+}
+
+
+function frontpageguidearticles_preprocess(&$variables, $hook) {
+  $variables['admin_graph_image_path'] = file_create_url(drupal_get_path('module', 'admin_home_graph') . '/images');
+
+}

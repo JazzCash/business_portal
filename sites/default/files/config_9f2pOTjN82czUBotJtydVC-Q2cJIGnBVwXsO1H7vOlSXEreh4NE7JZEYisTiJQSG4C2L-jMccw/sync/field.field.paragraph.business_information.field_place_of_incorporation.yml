@@ -1,0 +1,19 @@
+uuid: e6d9c9e3-d619-40d6-978c-81d0be85c517
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_place_of_incorporation
+    - paragraphs.paragraphs_type.business_information
+id: paragraph.business_information.field_place_of_incorporation
+field_name: field_place_of_incorporation
+entity_type: paragraph
+bundle: business_information
+label: 'Place of Incorporation'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

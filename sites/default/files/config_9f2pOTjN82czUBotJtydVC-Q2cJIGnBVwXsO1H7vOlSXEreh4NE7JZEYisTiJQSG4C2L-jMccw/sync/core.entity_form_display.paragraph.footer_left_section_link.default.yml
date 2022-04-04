@@ -1,0 +1,32 @@
+uuid: a3ebd5bf-a795-4e00-bb32-e851acdaa576
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.footer_left_section_link.field_link
+    - field.field.paragraph.footer_left_section_link.field_link_t
+    - paragraphs.paragraphs_type.footer_left_section_link
+id: paragraph.footer_left_section_link.default
+targetEntityType: paragraph
+bundle: footer_left_section_link
+mode: default
+content:
+  field_link:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_link_t:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

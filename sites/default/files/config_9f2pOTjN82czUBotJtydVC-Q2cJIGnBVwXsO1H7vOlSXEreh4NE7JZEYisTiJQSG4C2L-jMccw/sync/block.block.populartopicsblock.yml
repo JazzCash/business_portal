@@ -1,0 +1,26 @@
+uuid: 81ba1c8f-c67d-4469-85ed-71a5a4d56e9d
+langcode: en
+status: true
+dependencies:
+  module:
+    - jazzcash_community
+    - system
+  theme:
+    - bootstrap
+id: populartopicsblock
+theme: bootstrap
+region: content
+weight: 0
+provider: null
+plugin: popular_topics_block
+settings:
+  id: popular_topics_block
+  label: 'Popular topics block'
+  provider: jazzcash_community
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: /jazz-community
+    negate: false
+    context_mapping: {  }

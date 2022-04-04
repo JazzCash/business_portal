@@ -1,0 +1,27 @@
+uuid: 9f9c124c-7aef-4ae4-9d85-d6d9455d45e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_certificate_of_commencemen
+  module:
+    - file
+    - user
+id: user.user.field_certificate_of_commencemen
+field_name: field_certificate_of_commencemen
+entity_type: user
+bundle: user
+label: 'Certificate of Commencement of Business'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: pdf
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

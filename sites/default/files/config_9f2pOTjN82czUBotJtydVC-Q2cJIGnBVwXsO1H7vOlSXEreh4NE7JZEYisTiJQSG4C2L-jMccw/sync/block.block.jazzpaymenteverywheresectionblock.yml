@@ -1,0 +1,26 @@
+uuid: fc8744de-8add-4b57-a66f-9dd7d65fea68
+langcode: en
+status: true
+dependencies:
+  module:
+    - jazz_online_payments_everywhere
+    - system
+  theme:
+    - bootstrap
+id: jazzpaymenteverywheresectionblock
+theme: bootstrap
+region: content
+weight: -13
+provider: null
+plugin: jazz_payment_everywhere_section_block
+settings:
+  id: jazz_payment_everywhere_section_block
+  label: 'Jazz payment everywhere section block'
+  provider: jazz_online_payments_everywhere
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "/node/23\r\n/node/24\r\n/node/25\r\n/node/26"
+    negate: false
+    context_mapping: {  }

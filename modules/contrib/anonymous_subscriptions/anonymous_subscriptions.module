@@ -1,0 +1,133 @@
+<?php
+
+/**
+ * @file
+ * The Anonymous Subscriptions module.
+ *
+ * Module allows a non-registered user to your site
+ * the ability to register for email notifications to certain pre-defined
+ * content types. These notifications are optional on the pre-defined
+ * content types with a flag displayed as to whether to send e-mails or not.
+ */
+
+use Drupal\Core\Url;
+use Drupal\anonymous_subscriptions\Form\SettingsForm;
+
+/**
+ * Implements hook_help().
+ */
+function anonymous_subscriptions_help($route_name) {
+  switch ($route_name) {
+    case 'help.page.anonymous_subscriptions':
+      $output = '<p>';
+      $output .= '<p>' . t('Anonymous Subscriptions allows anonymous visitors to your site to subscribe to updates to nodes. The <a href="@anon">anonymous subscriptions administration page</a> allows you to configure options including whether emails need to be verified and which content types the option should appear to send notifications for.', [
+        '@anon' => Url::fromRoute('anonymous_subscriptions.settings_form'),
+      ]);
+      $output .= '</p>';
+
+      return $output;
+  }
+
+}
+
+/**
+ * Implements hook_theme().
+ */
+function anonymous_subscriptions_theme() {
+  return [
+    'anonymous_subscriptions_message' => [
+      'variables' => [
+        'title' => FALSE,
+        'message' => FALSE,
+        'link' => FALSE,
+        'subscription' => FALSE,
+      ],
+      'template' => 'anonymous-subscriptions-message',
+    ],
+  ];
+}
+
+/**
+ * Implements hook_mail().
+ */
+function anonymous_subscriptions_mail($key, &$message, $params) {
+  switch ($key) {
+    case 'anonymous_subscriptions_key':
+      $message['subject'] = $params['subject'];
+      $message['body'][] = $params['body'];
+      break;
+  }
+}
+
+/**
+ * Implements hook_form_BASE_FORM_ID_alter() for node_form().
+ *
+ * This is used to display the checkbox as to whether or not send the
+ * notification for this particular node.
+ */
+function anonymous_subscriptions_form_node_form_alter(&$form, $form_state, $form_id) {
+  $form_object = $form_state->getFormObject();
+  /** @var \Drupal\node\NodeInterface $node */
+  $node = $form_object->getEntity();
+  $config = \Drupal::config(SettingsForm::$configName);
+  $valid_types = $config->get('anonymous_subscriptions_node_types') ?: [];
+  if (!empty($valid_types[$node->getType()])) {
+    /** @var \Drupal\Core\Session\AccountInterface $current_user */
+    $current_user = \Drupal::service('current_user');
+    $form['options']['send_emails'] = [
+      '#type' => 'checkbox',
+      '#title' => t('Send e-mails to subscribers'),
+      '#default_value' => $config->get('anonymous_subscriptions_send_default'),
+      '#group' => 'options',
+      '#access' => $current_user->hasPermission('alter anonymous_subscriptions') || $current_user->hasPermission('administer anonymous_subscriptions'),
+      '#weight' => 10,
+    ];
+    array_unshift($form['actions']['submit']['#submit'], 'anonymous_subscriptions_form_node_form_alter_submit');
+  }
+}
+
+/**
+ * Custom form submit callback.
+ */
+function anonymous_subscriptions_form_node_form_alter_submit(&$form, &$form_state) {
+  /** @var \Drupal\node\NodeInterface $node */
+  $node = $form_state->getFormObject()->getEntity();
+  // Saving send email flag to temporary private storage.
+  $tempStore = \Drupal::service('tempstore.private')->get('anonymous_subscriptions');
+  $id = $node->id() ?: 'new';
+  $tempStore->set('send_mail:' . $node->getType() . ':' . $id, $form_state->getValue('send_emails'));
+}
+
+/**
+ * Implements hook_node_insert().
+ */
+function anonymous_subscriptions_node_insert($node) {
+  // Resaving send_mail value for new nodes.
+  $tempStore = \Drupal::service('tempstore.private')->get('anonymous_subscriptions');
+  $tempStore->set('send_mail:' . $node->getType() . ':' . $node->id(), $tempStore->get('send_mail:' . $node->getType() . ':new'));
+  \Drupal::service('anonymous_subscriptions.default')->addPendingEmails($node);
+}
+
+/**
+ * Implements hook_node_update().
+ */
+function anonymous_subscriptions_node_update($node) {
+  \Drupal::service('anonymous_subscriptions.default')->addPendingEmails($node);
+}
+
+/**
+ * Implements hook_module_implements_alter().
+ */
+function anonymous_subscriptions_module_implements_alter(&$implementations, $hook) {
+  if ($hook == 'node_insert') {
+    // Move anonymous_subscriptions_node_insert() to the end of the list.
+    $group = $implementations['anonymous_subscriptions'];
+    unset($implementations['anonymous_subscriptions']);
+    $implementations['anonymous_subscriptions'] = $group;
+  }
+}
+
+function anonymous_subscriptions_page_attachments(array &$attachments) {
+  // Unconditionally attach the mymodule/lrv library.
+  $attachments['#attached']['library'][] = 'anonymous_subscriptions/jazz_footer_right';
+}

@@ -1,0 +1,39 @@
+<?php
+
+/**
+ * @file
+ * Contains jazz_payroll_section_banner.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function jazz_payroll_section_banner_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the jazz_payroll_section_banner module.
+    case 'help.page.jazz_payroll_section_banner':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('My Awesome Module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function jazz_payroll_section_banner_theme() {
+  return [
+    'jazz_payroll_section_banner' => [
+      'render element' => 'children',
+      'variables' =>
+      [
+        'data' => []
+      ]
+    ],
+  ];
+}

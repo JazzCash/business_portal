@@ -1,0 +1,10 @@
+uuid: 634e73bb-b652-4c18-905d-a3938127bc01
+langcode: en
+status: true
+dependencies: {  }
+id: technology_person_of_contact
+label: 'Technology Person of contact'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,33 @@
+
+business_workflow.regsiter_controller_main:
+  path: '/register'
+  defaults:
+    _controller: '\Drupal\business_workflow\Controller\RegsiterController::main'
+    _title: 'main'
+  requirements:
+    _permission: 'access content'
+
+business_workflow.otp_controller_otp_generate:
+  path: '/business_workflow/otpGenerate'
+  defaults:
+    _controller: '\Drupal\business_workflow\Controller\OtpController::otpGenerate'
+    _title: 'opt'
+  requirements:
+    _permission: 'access content'
+
+business_workflow.otp_controller_otp_verify:
+  path: '/business_workflow/otpVerify'
+  defaults:
+    _controller: '\Drupal\business_workflow\Controller\OtpController::otpVerify'
+    _title: 'opt'
+  requirements:
+    _permission: 'access content'
+business_workflow.business_mail_config_form:
+  path: '/admin/config/business_workflow/mail'
+  defaults:
+    _form: '\Drupal\business_workflow\Form\BusinessMailConfigForm'
+    _title: 'BusinessMailConfigForm'
+  requirements:
+    _permission: 'access administration pages'
+  options:
+    _admin_route: TRUE

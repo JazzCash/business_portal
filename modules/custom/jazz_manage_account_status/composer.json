@@ -1,0 +1,13 @@
+{
+    "name": "jazz_manage_account_status",
+    "type": "drupal-module",
+    "description": "My Awesome Module",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/jazz_manage_account_status",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/jazz_manage_account_status",
+        "source": "http://cgit.drupalcode.org/jazz_manage_account_status",
+    },
+}

@@ -1,0 +1,19 @@
+uuid: 6d4fb82f-82fc-41e4-8651-7e1bd910e97b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_official_email
+    - paragraphs.paragraphs_type.directors_information
+id: paragraph.directors_information.field_official_email
+field_name: field_official_email
+entity_type: paragraph
+bundle: directors_information
+label: 'Official Email'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

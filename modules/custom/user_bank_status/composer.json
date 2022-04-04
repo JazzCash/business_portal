@@ -1,0 +1,13 @@
+{
+    "name": "user_bank_status",
+    "type": "drupal-module",
+    "description": "My Awesome Module",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/user_bank_status",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/user_bank_status",
+        "source": "http://cgit.drupalcode.org/user_bank_status",
+    },
+}

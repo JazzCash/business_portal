@@ -1,0 +1,23 @@
+uuid: 7d806a17-488a-4add-9bda-7791972687b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.jazzcash_business
+  module:
+    - text
+id: node.jazzcash_business.body
+field_name: body
+entity_type: node
+bundle: jazzcash_business
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

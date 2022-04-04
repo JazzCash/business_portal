@@ -1,0 +1,19 @@
+uuid: 87dccd4c-cc93-4e95-bdd3-9bb4ff8f38cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_payment_collection_link_1
+    - node.type.payment_collection_banner_sectio
+id: node.payment_collection_banner_sectio.field_payment_collection_link_1
+field_name: field_payment_collection_link_1
+entity_type: node
+bundle: payment_collection_banner_sectio
+label: 'Payment Collection link 1'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

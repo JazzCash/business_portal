@@ -1,0 +1,5 @@
+name: 'cmssections'
+type: module
+description: 'module to list active and disabled modules'
+core: 8.x
+package: 'Custom'

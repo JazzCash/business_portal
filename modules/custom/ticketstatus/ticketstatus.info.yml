@@ -1,0 +1,5 @@
+name: 'Tickets Status'
+type: module
+description: 'Module to show ticket status with count'
+core: 8.x
+package: 'Custom'

@@ -1,0 +1,7 @@
+<!-- Add you custom twig html here -->
+<div class="contextual-region">
+	{# {{ data.context }} #}
+   <h1>{{ data.node.title.value }}</h1>
+    {{ data.node.body.value|raw }}
+    <img src="{{ file_url(data.node.field_pricing_list_icon.entity.fileuri) }}"/>
+</div>

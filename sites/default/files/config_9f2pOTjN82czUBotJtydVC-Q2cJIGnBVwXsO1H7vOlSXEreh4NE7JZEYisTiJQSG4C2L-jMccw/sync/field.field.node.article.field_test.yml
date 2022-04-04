@@ -1,0 +1,55 @@
+uuid: 0ccc3538-571e-4548-9b2f-62002d6216a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_test
+    - node.type.article
+    - paragraphs.paragraphs_type.test_paragraph
+  module:
+    - entity_reference_revisions
+id: node.article.field_test
+field_name: field_test
+entity_type: node
+bundle: article
+label: Test
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      test_paragraph: test_paragraph
+    target_bundles_drag_drop:
+      agreement:
+        weight: 10
+        enabled: false
+      authorize_personnel_details:
+        weight: 11
+        enabled: false
+      business_information:
+        weight: 12
+        enabled: false
+      corporate_collections:
+        weight: 13
+        enabled: false
+      directors_information:
+        weight: 14
+        enabled: false
+      online_payment_gateway:
+        weight: 15
+        enabled: false
+      settlement_details:
+        weight: 16
+        enabled: false
+      technology_person_of_contact:
+        weight: 17
+        enabled: false
+      test_paragraph:
+        enabled: true
+        weight: 18
+field_type: entity_reference_revisions

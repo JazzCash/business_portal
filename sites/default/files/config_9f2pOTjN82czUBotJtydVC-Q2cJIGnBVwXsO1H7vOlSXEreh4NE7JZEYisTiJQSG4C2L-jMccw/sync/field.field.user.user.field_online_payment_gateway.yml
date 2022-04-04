@@ -1,0 +1,31 @@
+uuid: 91a21b64-5796-454c-aa4a-609ec8c59843
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_online_payment_gateway
+    - paragraphs.paragraphs_type.online_payment_gateway
+  module:
+    - entity_reference_revisions
+    - user
+id: user.user.field_online_payment_gateway
+field_name: field_online_payment_gateway
+entity_type: user
+bundle: user
+label: 'Online Payment Gateway'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      online_payment_gateway: online_payment_gateway
+    target_bundles_drag_drop:
+      online_payment_gateway:
+        enabled: true
+        weight: 2
+field_type: entity_reference_revisions

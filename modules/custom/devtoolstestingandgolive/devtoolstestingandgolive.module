@@ -1,0 +1,32 @@
+<?php 
+
+function devtoolstestingandgolive_page_attachments(array &$page) {
+  $page['#attached']['library'][] = 'devtoolstestingandgolive/devtoolstestingandgolive_lib';
+}
+
+
+// function devtoolstestingandgolive_theme($existing, $type, $theme, $path) {
+//   return [
+//     'dev_tools_testing_and_golive' => [
+//       'variables' => ['dev_tools_testing_and_golive_array' => array() ],
+//     ],
+//   ];
+// }
+
+
+function devtoolstestingandgolive_preprocess(&$variables) {
+  $variables['dev_tools_testing_and_golive_path'] = 'modules/devtoolstestingandgolive/images';
+  }
+
+
+  function devtoolstestingandgolive_theme()
+  {
+      return [
+          'dev_tools_testing_and_golive'=>[
+              'variables' => [
+                  'data' => []
+              ]
+          ]
+      ];
+  }
+

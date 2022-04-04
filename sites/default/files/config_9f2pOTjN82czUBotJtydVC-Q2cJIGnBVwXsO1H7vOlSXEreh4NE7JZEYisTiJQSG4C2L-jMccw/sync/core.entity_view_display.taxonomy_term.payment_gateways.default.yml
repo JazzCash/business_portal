@@ -1,0 +1,32 @@
+uuid: 3902b46b-59f8-4813-92b7-e4c4b673d53c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.payment_gateways.field_icon
+    - taxonomy.vocabulary.payment_gateways
+  module:
+    - image
+    - text
+id: taxonomy_term.payment_gateways.default
+targetEntityType: taxonomy_term
+bundle: payment_gateways
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_icon:
+    weight: 1
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden: {  }

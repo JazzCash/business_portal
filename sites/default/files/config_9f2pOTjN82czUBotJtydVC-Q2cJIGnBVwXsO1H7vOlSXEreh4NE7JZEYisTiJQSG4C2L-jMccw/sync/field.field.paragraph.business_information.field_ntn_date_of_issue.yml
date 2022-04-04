@@ -1,0 +1,21 @@
+uuid: 6fae1192-e0da-49d6-8c40-8faa393f0ae0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_ntn_date_of_issue
+    - paragraphs.paragraphs_type.business_information
+  module:
+    - datetime
+id: paragraph.business_information.field_ntn_date_of_issue
+field_name: field_ntn_date_of_issue
+entity_type: paragraph
+bundle: business_information
+label: 'NTN Date of issue'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

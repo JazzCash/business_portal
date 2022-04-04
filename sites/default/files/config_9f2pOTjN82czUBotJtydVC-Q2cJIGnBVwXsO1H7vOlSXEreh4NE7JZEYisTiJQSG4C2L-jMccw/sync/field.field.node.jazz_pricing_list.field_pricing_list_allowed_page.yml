@@ -1,0 +1,29 @@
+uuid: ec1ff96e-a26e-4835-9e8e-57c470e4e0a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pricing_list_allowed_page
+    - node.type.jazz_pricing_list
+    - taxonomy.vocabulary.pricing_list_pages
+id: node.jazz_pricing_list.field_pricing_list_allowed_page
+field_name: field_pricing_list_allowed_page
+entity_type: node
+bundle: jazz_pricing_list
+label: 'Pricing List Allowed Page'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      pricing_list_pages: pricing_list_pages
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

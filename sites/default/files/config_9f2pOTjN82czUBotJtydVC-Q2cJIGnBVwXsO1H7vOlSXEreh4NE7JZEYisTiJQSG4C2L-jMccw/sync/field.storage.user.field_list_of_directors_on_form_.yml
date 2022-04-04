@@ -1,0 +1,23 @@
+uuid: 8e38a4d7-e689-40bd-863b-0a4e72dac2e4
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - user
+id: user.field_list_of_directors_on_form_
+field_name: field_list_of_directors_on_form_
+entity_type: user
+type: file
+settings:
+  display_field: false
+  display_default: false
+  uri_scheme: public
+  target_type: file
+module: file
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

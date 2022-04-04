@@ -1,0 +1,17 @@
+uuid: be733e42-0889-47d2-8804-421b146e02e5
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Testing And Go Live'
+type: testing_and_go_live
+description: 'Testing And Go Live module articles'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,26 @@
+uuid: ea87d7fd-6d11-4840-a446-b737e4c023ec
+langcode: en
+status: true
+dependencies:
+  module:
+    - register_iap
+    - system
+  theme:
+    - bootstrap
+id: footerregisterintegratepaymentblock
+theme: bootstrap
+region: footer
+weight: 0
+provider: null
+plugin: footer_block
+settings:
+  id: footer_block
+  label: 'Footer register integrate payment block'
+  provider: register_iap
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "/node/22\r\n/node/23\r\n/node/24\r\n/node/25\r\n/node/26\r\n/user/login"
+    negate: false
+    context_mapping: {  }

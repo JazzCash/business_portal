@@ -1,0 +1,40 @@
+uuid: e100150f-cacf-484b-9bfe-9b7c3578de17
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_directors_information
+    - paragraphs.paragraphs_type.directors_information
+  module:
+    - entity_reference_revisions
+    - user
+id: user.user.field_directors_information
+field_name: field_directors_information
+entity_type: user
+bundle: user
+label: 'Directors Information'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      directors_information: directors_information
+    target_bundles_drag_drop:
+      business_information:
+        weight: 5
+        enabled: false
+      corporate_collections:
+        weight: 6
+        enabled: false
+      directors_information:
+        enabled: true
+        weight: 7
+      online_payment_gateway:
+        weight: 8
+        enabled: false
+field_type: entity_reference_revisions

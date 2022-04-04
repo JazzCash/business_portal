@@ -1,0 +1,53 @@
+.block-jazz-videos .modal {
+    padding: 50px !important;
+}
+
+.block-jazz-videos .modal .modal-dialog {
+    width: 100%;
+}
+
+.block-jazz-videos .modal .modal-dialog iframe {
+    width: 100%;
+}
+
+.page-node-type-jazz-videos.modal-open {
+    background: #262626;
+    opacity: 0.8;
+    position: relative;
+    z-index: 7;
+}
+
+.block-jazz-videos .modal-header {
+    border: unset !important;
+}
+
+.block-jazz-videos h4 {
+    font-family: Work-Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 42.9409px;
+    line-height: 25px;
+    color: #FFF;
+}
+
+.page-node-type-jazz-videos .region-header h1 {
+    border: unset;
+}
+
+.close.top-btn {
+    font-size: 40px;
+    position: absolute;
+    right: 15px;
+    z-index: 999999999;
+    color: #fff;
+    text-shadow: 0 1px 0 #fff;
+}
+
+.close.top-btn:hover {
+    color: #fff;
+    text-shadow: 0 1px 0 #fff;
+}
+
+#block-jazzvideosblock .modal-content {
+    background: transparent;
+}

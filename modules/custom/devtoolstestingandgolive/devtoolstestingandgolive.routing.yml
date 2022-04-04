@@ -1,0 +1,10 @@
+
+testingandgolive.testing_and_golive:
+  path: '/admin/config/testingandgolive/settings'
+  defaults:
+    _form: '\Drupal\testingandgolive\Form\frontexploreproducts'
+    _title: 'main'
+  requirements:
+    _permission: 'access content'
+  options:
+    _admin_route: TRUE

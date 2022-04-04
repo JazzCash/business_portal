@@ -1,0 +1,158 @@
+.path-node section.col-sm-12 {
+    padding: 0;
+}
+
+.block-jazz-workflow-section {
+    width: 1366px;
+    max-width: 100%;
+    margin: 0 auto;
+    background: #FFE8A4;
+    padding: 50px 100px 90px 100px;
+}
+
+.block-jazz-workflow-section .parent-work-flow {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+.block-jazz-workflow-section .parent-work-flow .container-workflow {
+    width: 343px;
+    max-width: 100%;
+}
+
+.block-jazz-workflow-section .parent-work-flow .container-workflow .img {
+    width: 100%;
+    height: 250px;
+}
+
+
+/* .block-jazz-workflow-section {
+    width: 814px;
+    margin: 0 auto;
+    font-family: 'Work-Sans';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: center;
+    padding-bottom: 85px;
+} */
+
+.block-jazz-workflow-section .content p:nth-of-type(2) {
+    display: none;
+}
+
+.block-jazz-workflow-section .container-workflow p {
+    font-family: 'Work-Sans';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.block-jazz-workflow-section h1 {
+    background: #FFE8A4;
+    padding-top: 50px;
+    font-family: 'Work-Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 46px;
+    line-height: 56px;
+    text-align: center;
+    color: #262626;
+    width: 920px;
+    margin: 0 auto;
+}
+
+.block-jazz-workflow-section {
+    background: #FFE8A4;
+    margin-top: 100px;
+}
+
+.block-jazz-workflow-section .author {
+    display: none;
+}
+
+.block-jazz-workflow-section>p {
+    width: 814px;
+    margin: 0 auto;
+    font-family: 'Work-Sans';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: center;
+    padding-bottom: 85px;
+    padding-top: 40px;
+}
+
+.block-jazz-workflow-section>p:nth-of-type(2) {
+    display: none;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+    .block-jazz-workflow-section h1 {
+        max-width: 96%;
+        padding-top: 0px;
+    }
+    .block-jazz-workflow-section>p {
+        max-width: 90%;
+    }
+    .block-jazz-workflow-section .parent-work-flow {
+        padding: 0px 15px;
+        flex-wrap: wrap;
+    }
+    .block-jazz-workflow-section .parent-work-flow {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 15px;
+        flex-wrap: wrap;
+    }
+    .block-jazz-workflow-section {
+        background: #FFE8A4;
+        margin-top: 100px;
+        /* padding-bottom: 40px; */
+        padding: 50px 15px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .block-jazz-workflow-section h1 {
+        max-width: 100%;
+    }
+    .block-jazz-workflow-section>p {
+        max-width: 80%;
+    }
+    .block-jazz-workflow-section .parent-work-flow {
+        padding: 0px 30px;
+    }
+    .block-jazz-workflow-section .parent-work-flow .container-workflow {
+        width: 30%;
+    }
+    .block-jazz-workflow-section {
+        padding-bottom: 25px;
+        max-width: 96%;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+    .block-jazz-workflow-section .parent-work-flow {
+        padding: 0 30px;
+    }
+    .block-jazz-workflow-section .parent-work-flow .container-workflow {
+        width: 30%;
+        max-width: 100%;
+    }
+    .clients-review-section {
+        padding: 0 60px;
+    }
+    .block-jazz-workflow-section {
+        padding: 50px 50px 90px 50px;
+    }
+}

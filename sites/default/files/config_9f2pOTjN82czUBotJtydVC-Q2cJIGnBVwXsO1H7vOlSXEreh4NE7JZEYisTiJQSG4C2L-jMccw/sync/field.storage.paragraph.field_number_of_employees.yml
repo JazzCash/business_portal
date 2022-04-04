@@ -1,0 +1,20 @@
+uuid: ff43f508-c4cd-4a6e-9ee6-1b9c9be149f5
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_number_of_employees
+field_name: field_number_of_employees
+entity_type: paragraph
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

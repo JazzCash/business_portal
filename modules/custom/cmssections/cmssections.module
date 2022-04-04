@@ -1,0 +1,41 @@
+<?php
+
+/**
+ * @file
+ * Contains cmssections.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function cmssections_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the cmssections module.
+    case 'help.page.cmssections':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('module to list active and disabled modules') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function cmssections_theme() {
+  return [
+    'cmssections' => [
+      'render element' => 'children',
+    ],
+    'cms_sections_block' => [
+      'variables' => [
+        'data' => []
+      ],
+      'render element' => 'children',
+    ],
+  ];
+}

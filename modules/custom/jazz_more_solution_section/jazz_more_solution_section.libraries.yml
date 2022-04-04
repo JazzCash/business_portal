@@ -1,0 +1,7 @@
+jazz_home_solution:
+  version: 1.x
+  css:
+    theme:
+      css/main.css: {}
+  # js:
+  #   js/cuddly-slider.js: {}

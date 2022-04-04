@@ -1,0 +1,164 @@
+/* ------------------------ jazz payment banner section  ------------------------ */
+
+
+/* new changes start*/
+
+.block-jazz-payment-banner-section {
+    position: relative;
+}
+
+.banner-section img {
+    width: 100%;
+    height: 790px;
+}
+
+.new-container-jazz {
+    position: absolute;
+    top: 120px;
+    width: 1366px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    max-width: 100%;
+}
+
+.jazz-pay-new {
+    width: 1366px !important;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.block-jazz-payment-banner-section h1 {
+    font-size: 72px;
+    font-family: 'work-sans';
+    color: #fff;
+    padding-left: 122px;
+    width: 59%;
+    line-height: 76px;
+}
+
+.links-block {
+    display: flex;
+    padding-left: 122px;
+    padding-top: 40px;
+}
+
+.block-jazz-payment-banner-section a {
+    width: 200px;
+    height: 40px;
+    background: #FFC20C;
+    border-radius: 25px;
+    text-align: center;
+    padding-top: 10px;
+    color: #000;
+    font-family: 'work-sans';
+    display: block;
+}
+
+.block-jazz-payment-banner-section a:nth-of-type(2) {
+    width: 241px;
+    height: 40px;
+    background: #F3F3F3;
+    border-radius: 25px;
+    text-align: center;
+    padding-top: 10px;
+    color: #000;
+    font-family: 'work-sans';
+    margin-left: 50px;
+    display: block;
+}
+
+
+/* new changes closed*/
+
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+    .block-jazz-payment-banner-section a {
+        top: 60%;
+        left: 20px;
+    }
+    .block-jazz-payment-banner-section a {
+        padding: 12px 0px;
+        height: auto;
+    }
+    .block-jazz-payment-everywhere-section-block h1 {
+        font-size: 36px;
+        line-height: 45px;
+    }
+    .payment-everywhere-section {
+        padding: 0 20px;
+        flex-wrap: wrap;
+    }
+    .payment-everywhere {
+        width: 100%;
+        text-align: center;
+    }
+    .block-jazz-payment-banner-section a:nth-of-type(2) {
+        padding: 12px 0px;
+        height: auto;
+        top: 75%;
+        margin: 20px 0 0 0;
+        left: 0;
+    }
+    /* new changes start*/
+    .links-block {
+        padding-left: 30px;
+        padding-top: 250px;
+        display: block;
+    }
+    .block-jazz-payment-banner-section h1 {
+        position: absolute;
+        font-size: 40px;
+        font-family: 'work-sans';
+        color: #fff;
+        top: -20px;
+        width: auto;
+        line-height: 45px;
+        padding: 0 30px;
+    }
+    .block-jazz-payment-banner-section img {
+        width: 100%;
+        height: 600px;
+    }
+    /* new changes closed*/
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .block-jazz-payment-banner-section h1 {
+        position: absolute;
+        font-size: 48px;
+        font-family: 'work-sans';
+        color: #fff;
+        top: 0px;
+        padding-left: 122px;
+        width: 59%;
+        line-height: 50px;
+        margin-top: 20px;
+    }
+    .block-jazz-payment-banner-section a:nth-of-type(2) {
+        top: 72%;
+        left: 17%;
+    }
+    .payment-everywhere-section {
+        padding: 0 100px;
+    }
+    .payment-everywhere {
+        width: 30%;
+    }
+    .payment-3rd-img img {
+        width: 100%;
+    }
+    .payment-4rd-img img {
+        width: 100%;
+    }
+    .block-jazz-listing-section .contextual-region>p {
+        display: none;
+    }
+    .getstarted-section {
+        width: 25%;
+    }
+    .getstarted-section a {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {}

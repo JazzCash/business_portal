@@ -1,0 +1,167 @@
+uuid: 40876847-07b9-476f-a816-675f88e153be
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.business_information.field_average_salary_amount
+    - field.field.paragraph.business_information.field_business_mailing_address
+    - field.field.paragraph.business_information.field_business_name
+    - field.field.paragraph.business_information.field_date_of_incorporation
+    - field.field.paragraph.business_information.field_email_address
+    - field.field.paragraph.business_information.field_fax_number
+    - field.field.paragraph.business_information.field_frequency_of_salary_disbur
+    - field.field.paragraph.business_information.field_monthly_turnover
+    - field.field.paragraph.business_information.field_nature_of_business
+    - field.field.paragraph.business_information.field_ntn_date_of_issue
+    - field.field.paragraph.business_information.field_ntn_issuing_authority
+    - field.field.paragraph.business_information.field_ntn_number
+    - field.field.paragraph.business_information.field_number_of_employees
+    - field.field.paragraph.business_information.field_phone
+    - field.field.paragraph.business_information.field_place_of_incorporation
+    - field.field.paragraph.business_information.field_registration_date
+    - paragraphs.paragraphs_type.business_information
+  module:
+    - datetime
+id: paragraph.business_information.default
+targetEntityType: paragraph
+bundle: business_information
+mode: default
+content:
+  field_average_salary_amount:
+    weight: 14
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_business_mailing_address:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_business_name:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_date_of_incorporation:
+    weight: 6
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_email_address:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_fax_number:
+    weight: 3
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_frequency_of_salary_disbur:
+    weight: 15
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_monthly_turnover:
+    weight: 13
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_nature_of_business:
+    weight: 5
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_ntn_date_of_issue:
+    weight: 10
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_ntn_issuing_authority:
+    weight: 8
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_ntn_number:
+    weight: 9
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_number_of_employees:
+    weight: 12
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_phone:
+    weight: 2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_place_of_incorporation:
+    weight: 7
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_registration_date:
+    weight: 11
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+hidden: {  }

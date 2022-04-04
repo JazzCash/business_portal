@@ -1,0 +1,18 @@
+uuid: fd93e38c-6088-4c13-bf32-891ea99c8b7a
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Jazz Payments Everywhere Section'
+type: jazz_payments_everywhere_section
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

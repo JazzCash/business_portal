@@ -1,0 +1,28 @@
+uuid: 09808e68-cd86-4775-9659-c76fc37760fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.testing_and_go_live.body
+    - node.type.testing_and_go_live
+  module:
+    - text
+    - user
+id: node.testing_and_go_live.default
+targetEntityType: node
+bundle: testing_and_go_live
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

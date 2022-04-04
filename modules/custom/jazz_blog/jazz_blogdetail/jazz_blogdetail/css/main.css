@@ -1,0 +1,64 @@
+.view-blogs .detail-title {
+    font-family: Work-Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+    color: #000000;
+    mix-blend-mode: normal;
+    position: absolute;
+    left: 57.6%;
+    top: 0;
+    margin-top: 0;
+}
+
+.view.view-blogs {
+    margin: 0 auto;
+    width: 1154.68px;
+    max-width: 100%;
+}
+
+.view-blogs .view-content .views-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+}
+
+.view.view-blogs .blog-guides-search-form {
+    padding-left: 70px;
+}
+
+.view.view-blogs .view-content {
+    padding: 0 27px;
+}
+
+.view-blogs .view-content .views-row .detail-discrip {
+    width: 100%;
+    font-family: 'work-sans-normal';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7D7987;
+    mix-blend-mode: normal;
+    padding-top: 50px;
+}
+
+.view-blogs .view-content .views-row .img-detail .img-responsive {
+    width: 589px;
+    height: 271px;
+    max-width: 100%;
+}
+
+.view-blogs .view-content .views-row .detail-sub {
+    width: 42%;
+    padding-top: 50px;
+    font-family: 'work-sans-normal';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7D7987;
+    mix-blend-mode: normal;
+}

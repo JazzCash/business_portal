@@ -1,0 +1,11 @@
+forumsadmin.forum_edit_form:
+  path: '/admin/forum/{node}/edit'
+  defaults:
+    _form: '\Drupal\forumsadmin\Form\ForumEditForm'
+    _title: 'ForumEditForm'
+  requirements:
+    _access: 'TRUE'
+  options:
+    parameters:
+      node:
+        type: entity:node

@@ -1,0 +1,10 @@
+uuid: d0c88c5b-4680-4be6-9885-5e85928b52d0
+langcode: en
+status: true
+dependencies: {  }
+id: jazz_q_a
+label: 'Jazz Q&A'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

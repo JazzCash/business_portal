@@ -1,0 +1,34 @@
+uuid: 1541ea3a-bd86-42fc-9dcb-6d92d9212369
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.jazz_complaint.field_complaint_answer
+    - field.field.node.jazz_complaint.field_complaint_ticket
+    - field.field.node.jazz_complaint.field_jcomplaint_company_name
+    - field.field.node.jazz_complaint.field_jcomplaint_phone
+    - field.field.node.jazz_complaint.field_jcomplaint_type
+    - field.field.node.jazz_complaint.field_type_your_messages
+    - node.type.jazz_complaint
+  module:
+    - user
+_core:
+  default_config_hash: dXhiff28522nNP3WhFHsbTOF08Ti0AFqPHNF8KrbJ-g
+id: node.jazz_complaint.teaser
+targetEntityType: node
+bundle: jazz_complaint
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_complaint_answer: true
+  field_complaint_ticket: true
+  field_jcomplaint_company_name: true
+  field_jcomplaint_phone: true
+  field_jcomplaint_type: true
+  field_type_your_messages: true

@@ -1,0 +1,41 @@
+
+jazz_complaint.submit_complaint_controller_submit_complaint:
+  path: '/jazz-complaint'
+  defaults:
+    _controller: '\Drupal\jazz_complaint\Controller\SubmitComplaintController::submit_complaint'
+    _title: ''
+  requirements:
+    _permission: 'access content'
+
+jazz_complaint.submit_complaint_controller_view_complaint:
+  path: '/jazz-complaint/{node}'
+  defaults:
+    _controller: '\Drupal\jazz_complaint\Controller\SubmitComplaintController::view_complaint'
+    _title: 'View complaint'
+  requirements:
+    _permission: 'access content'
+  options:
+    parameters:
+      node:
+        type: entity:node
+jazz_complaint.search_complaint_form:
+  path: '/jazz_complaint/form/search_complaint'
+  defaults:
+    _form: '\Drupal\jazz_complaint\Form\SearchComplaintForm'
+    _title: 'SearchComplaintForm'
+  requirements:
+    _access: 'TRUE'
+jazz_complaint.node_edit_form:
+  path: '/admin/jazz_complaint/form/{node}/node_edit'
+  defaults:
+    _form: '\Drupal\jazz_complaint\Form\NodeEditForm'
+    _title: 'NodeEditForm'
+  requirements:
+    _access: 'TRUE'
+jazz_complaint.complaint_answer_from:
+  path: '/admin/jazz_complaint/form/{node}/complaint_answer_from'
+  defaults:
+    _form: '\Drupal\jazz_complaint\Form\ComplaintAnswerFrom'
+    _title: 'ComplaintAnswerFrom'
+  requirements:
+    _access: 'TRUE'

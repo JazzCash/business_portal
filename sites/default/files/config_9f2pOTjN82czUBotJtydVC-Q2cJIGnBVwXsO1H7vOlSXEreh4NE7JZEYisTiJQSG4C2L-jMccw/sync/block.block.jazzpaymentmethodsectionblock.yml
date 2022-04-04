@@ -1,0 +1,26 @@
+uuid: 5e9ef3bf-3584-44d6-8483-13ec20143b15
+langcode: en
+status: true
+dependencies:
+  module:
+    - jazz_payment_method_section
+    - system
+  theme:
+    - bootstrap
+id: jazzpaymentmethodsectionblock
+theme: bootstrap
+region: content
+weight: -19
+provider: null
+plugin: jazz_payment_method_section_block
+settings:
+  id: jazz_payment_method_section_block
+  label: 'Jazz payment method section block'
+  provider: jazz_payment_method_section
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/22
+    negate: false
+    context_mapping: {  }

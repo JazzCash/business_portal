@@ -1,0 +1,21 @@
+uuid: cc01f4a9-a253-4bb8-95ce-2c668ba341b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_blog_body
+    - node.type.blogs
+_core:
+  default_config_hash: _-ctx46Tg_y7YtQNSFJYzHpzENhTJQl3W4jMjgtZdq0
+id: node.blogs.field_blog_body
+field_name: field_blog_body
+entity_type: node
+bundle: blogs
+label: 'Blog Body'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

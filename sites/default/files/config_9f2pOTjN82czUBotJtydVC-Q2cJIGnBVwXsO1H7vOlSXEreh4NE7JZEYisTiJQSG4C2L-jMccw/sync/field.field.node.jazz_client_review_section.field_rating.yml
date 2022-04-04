@@ -1,0 +1,23 @@
+uuid: 3458e677-db52-4655-8923-2e1af6108ebb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_rating
+    - node.type.jazz_client_review_section
+id: node.jazz_client_review_section.field_rating
+field_name: field_rating
+entity_type: node
+bundle: jazz_client_review_section
+label: Rating
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: !!float 1
+  max: !!float 5
+  prefix: ''
+  suffix: ''
+field_type: float

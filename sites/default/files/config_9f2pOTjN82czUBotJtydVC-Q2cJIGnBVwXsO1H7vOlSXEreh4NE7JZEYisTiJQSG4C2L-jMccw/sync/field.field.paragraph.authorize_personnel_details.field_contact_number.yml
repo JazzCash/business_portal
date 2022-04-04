@@ -1,0 +1,19 @@
+uuid: 4c04e74c-52c6-48ea-aa7c-f4f32cd77d58
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_contact_number
+    - paragraphs.paragraphs_type.authorize_personnel_details
+id: paragraph.authorize_personnel_details.field_contact_number
+field_name: field_contact_number
+entity_type: paragraph
+bundle: authorize_personnel_details
+label: 'Contact Number'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

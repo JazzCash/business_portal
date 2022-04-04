@@ -1,0 +1,26 @@
+<div style="margin-left: 20px;">
+
+
+    <div class="container ml-5" style="margin-bottom: 70px;">
+      <div class="row" style="margin-top: 30px;">
+
+        <div class="col-7"><h5>Developer Tool</h5>
+          <p>Get up and running with libraries, keys, and integration tools.</p>
+          <div class="my-5">
+            <h5>CLI</h5>
+            <p>Interact with us from your terminal to bootstrap sample projects, send test mode API requests, and debug your integration.</p>
+          </div>
+        <div class="float-right">
+          <button class="btn btn-warning rounded-pill">Setup The CLI</button>
+        </div>
+        </div>
+
+        <div class="col-5 text-center">
+          <img src="images/CLI.png" alt="" style="width: 17em; height: 17em;">
+        </div>
+
+      </div>
+      </div>
+
+    </div>
+</div>

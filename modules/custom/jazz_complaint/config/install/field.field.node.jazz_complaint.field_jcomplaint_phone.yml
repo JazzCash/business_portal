@@ -1,0 +1,21 @@
+uuid: 2c214da0-427f-4efc-be60-1d166646a996
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_jcomplaint_phone
+    - node.type.jazz_complaint
+_core:
+  default_config_hash: K5aWasnPZ-RdXXeQJIeUdFHfLDR41pyBFTbewqP-nhY
+id: node.jazz_complaint.field_jcomplaint_phone
+field_name: field_jcomplaint_phone
+entity_type: node
+bundle: jazz_complaint
+label: 'Phone Number'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

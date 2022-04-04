@@ -1,0 +1,39 @@
+
+jazzcash_community.community_controller_community:
+  path: '/jazz-community'
+  defaults:
+    _controller: '\Drupal\jazzcash_community\Controller\CommunityController::community'
+    _title: 'Community'
+  requirements:
+    _permission: 'access content'
+jazzcash_community.ask_question_form:
+  path: '/jazzcash_community/form/ask_question'
+  defaults:
+    _form: '\Drupal\jazzcash_community\Form\AskQuestionForm'
+    _title: 'AskQuestionForm'
+  requirements:
+    _access: 'TRUE'
+
+jazzcash_community.discussion_page_controller_discussion:
+  path: '/jazzcash_community/discussion/{node}'
+  defaults:
+    _controller: '\Drupal\jazzcash_community\Controller\DiscussionPageController::discussion'
+    _title: 'Discussion'
+  requirements:
+    _permission: 'access content'
+  options:
+    parameters:
+      node:
+        type: entity:node
+
+jazzcash_community.discussion_like:
+  path: '/jazzcash_community/discussion/{node}/likedislike'
+  defaults:
+    _controller: '\Drupal\jazzcash_community\Controller\DiscussionPageController::discussionLike'
+    _title: 'Discussion'
+  requirements:
+    _permission: 'access content'
+  options:
+    parameters:
+      node:
+        type: entity:node

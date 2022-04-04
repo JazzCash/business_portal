@@ -1,0 +1,41 @@
+<?php
+
+/**
+ * @file
+ * Contains jazz_css.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function jazz_css_help($route_name, RouteMatchInterface $route_match)
+{
+  switch ($route_name) {
+      // Main module help for the jazz_css module.
+    case 'help.page.jazz_css':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Module to add css of site') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implement hook_page_attachments_alter().
+ */
+function jazz_css_page_attachments_alter(&$attachments)
+{
+  if (\Drupal::service('router.admin_context')->isAdminRoute()) {
+    //add admin library
+    $attachments['#attached']['library'][] = 'jazz_css/admin';
+  } else {
+    //add theme
+    $attachments['#attached']['library'][] = 'jazz_css/theme';
+  }
+  //add combined
+  $attachments['#attached']['library'][] = 'jazz_css/combined';
+}

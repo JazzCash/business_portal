@@ -1,0 +1,19 @@
+uuid: 2f65893b-b75e-41b1-a7e1-8d13d42a16da
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_official_email
+    - paragraphs.paragraphs_type.test_paragraph
+id: paragraph.test_paragraph.field_official_email
+field_name: field_official_email
+entity_type: paragraph
+bundle: test_paragraph
+label: 'Official Email'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

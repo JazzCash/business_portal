@@ -1,0 +1,23 @@
+uuid: e9e45992-ea18-424f-a9ee-e35bfd8e9792
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_jcomplaint_type
+    - node.type.jazz_complaint
+  module:
+    - options
+_core:
+  default_config_hash: j78yQyL1ME37kqbWqIyWS59lqN8vLE4pvfaBzk0HlDU
+id: node.jazz_complaint.field_jcomplaint_type
+field_name: field_jcomplaint_type
+entity_type: node
+bundle: jazz_complaint
+label: 'Complaint Type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

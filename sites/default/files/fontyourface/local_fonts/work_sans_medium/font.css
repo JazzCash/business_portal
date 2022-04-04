@@ -1,0 +1,7 @@
+@font-face {
+font-family: 'work-sans-medium';
+font-weight: 500;
+font-style: normal;
+src: url('font.woff') format('woff');
+font-display: auto;
+}

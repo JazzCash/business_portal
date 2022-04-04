@@ -1,0 +1,14 @@
+uuid: a0ffc025-d45b-4947-8995-96c71e6a050b
+langcode: en
+status: true
+dependencies: {  }
+id: work_sans
+label: 'Work Sans'
+font_family: work-sans
+font_classification:
+  serif: '0'
+  sans-serif: '0'
+  slab-serif: '0'
+  handwriting: '0'
+  decorative: '0'
+  monospace: '0'

@@ -1,0 +1,37 @@
+uuid: 34414034-5ed0-4f0a-ab29-1f0cfdbb4ad7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.jazz_get_started_now_section.field_get_started_section_link
+    - field.field.node.jazz_get_started_now_section.field_get_started_section_serial
+    - node.type.jazz_get_started_now_section
+  module:
+    - user
+id: node.jazz_get_started_now_section.default
+targetEntityType: node
+bundle: jazz_get_started_now_section
+mode: default
+content:
+  field_get_started_section_link:
+    weight: 101
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_get_started_section_serial:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

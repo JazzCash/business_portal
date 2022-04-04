@@ -1,0 +1,12 @@
+.user-count-block {
+    //padding: 100px;
+    list-style: none;
+}
+
+.user-count-container {
+    display: inline-block;
+    min-width: 100px;
+    min-height: 100px;
+    padding: 5px;
+    margin: 5px;
+}

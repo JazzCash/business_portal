@@ -1,0 +1,6 @@
+<!-- Add you custom twig html here -->
+{% for content in data.content %}
+<div>
+<a href="/help-article/{{ content.id }}">{{ content.title }}</a>
+</div>
+{% endfor %}

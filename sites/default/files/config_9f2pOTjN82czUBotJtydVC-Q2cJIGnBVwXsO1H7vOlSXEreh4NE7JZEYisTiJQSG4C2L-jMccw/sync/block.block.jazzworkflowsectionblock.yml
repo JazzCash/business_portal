@@ -1,0 +1,26 @@
+uuid: ed3f140b-d41a-445a-9d66-931122d62973
+langcode: en
+status: true
+dependencies:
+  module:
+    - jazz_workflow_section
+    - system
+  theme:
+    - bootstrap
+id: jazzworkflowsectionblock
+theme: bootstrap
+region: content
+weight: -15
+provider: null
+plugin: jazz_workflow_section_block
+settings:
+  id: jazz_workflow_section_block
+  label: 'Jazz workflow section block'
+  provider: jazz_workflow_section
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/22
+    negate: false
+    context_mapping: {  }

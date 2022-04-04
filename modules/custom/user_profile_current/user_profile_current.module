@@ -1,0 +1,46 @@
+<?php
+
+/**
+ * @file
+ * Contains user_profile_current.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function user_profile_current_help($route_name, RouteMatchInterface $route_match)
+{
+  switch ($route_name) {
+      // Main module help for the user_profile_current module.
+    case 'help.page.user_profile_current':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('My Awesome Module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+function user_profile_current_user_presave($account)
+{
+  //set current user id
+  $account->field_last_updated_by->setValue(\Drupal::currentUser()->id());
+}
+
+/**
+ * Implements hook_theme().
+ */
+function user_profile_current_theme()
+{
+  return [
+    'user_profile_current_block' => [
+      'variables' => [
+        'data' => []
+      ],
+      'render element' => 'children',
+    ],
+  ];
+}

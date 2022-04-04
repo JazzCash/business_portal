@@ -1,0 +1,19 @@
+uuid: 3f17628c-21b3-41b5-99b9-8ebf54a97532
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_video_section_description
+    - paragraphs.paragraphs_type.jazz_video_section_data
+id: paragraph.jazz_video_section_data.field_video_section_description
+field_name: field_video_section_description
+entity_type: paragraph
+bundle: jazz_video_section_data
+label: 'Video Section Description'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

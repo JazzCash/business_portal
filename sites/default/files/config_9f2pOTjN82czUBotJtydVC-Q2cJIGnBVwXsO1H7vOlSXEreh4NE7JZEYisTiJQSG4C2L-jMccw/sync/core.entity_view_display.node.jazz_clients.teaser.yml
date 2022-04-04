@@ -1,0 +1,22 @@
+uuid: 40b71ace-b18b-4548-a959-064e44f62d35
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.jazz_clients.field_jazz_client_image
+    - node.type.jazz_clients
+  module:
+    - user
+id: node.jazz_clients.teaser
+targetEntityType: node
+bundle: jazz_clients
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_jazz_client_image: true

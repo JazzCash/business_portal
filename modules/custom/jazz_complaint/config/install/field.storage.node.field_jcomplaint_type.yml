@@ -1,0 +1,27 @@
+uuid: 6658a590-cee3-45da-99e6-059c6ef59c75
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_jcomplaint_type
+field_name: field_jcomplaint_type
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Finance
+      label: Finance
+    -
+      value: Technical
+      label: Technical
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

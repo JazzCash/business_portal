@@ -1,0 +1,21 @@
+uuid: 72d99049-46f5-48bc-a2d6-404e14b4dcfe
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.company_type
+  module:
+    - text
+id: taxonomy_term.company_type.default
+targetEntityType: taxonomy_term
+bundle: company_type
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

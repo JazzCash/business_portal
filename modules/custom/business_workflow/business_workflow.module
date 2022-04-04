@@ -1,0 +1,192 @@
+<?php
+
+/**
+ * @file
+ * Contains business_workflow.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function business_workflow_help($route_name, RouteMatchInterface $route_match)
+{
+  switch ($route_name) {
+      // Main module help for the business_workflow module.
+    case 'help.page.business_workflow':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('My Awesome Module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+//implement hook_form_alter()
+function business_workflow_form_alter(&$form, &$form_state, $form_id)
+{
+  if ($form_id == 'user_register_form') {
+    $form['actions']['submit']['#submit'][] = 'business_workflow_custom_register_submit';
+  }
+}
+
+function business_workflow_custom_register_submit(&$form, $form_state)
+{
+  // $url = \Drupal\Core\Url::fromUserInput('/user/login');
+  $form_state->setRedirect("user.login");
+  return;
+}
+
+/**
+ * Implements hook_theme().
+ */
+function business_workflow_theme()
+{
+  return [
+    'business_workflow' => [
+      'render element' => 'children',
+    ],
+    'custom_register_form' => array(
+      'render element' => 'form',
+      'template' => 'custom-register-form',
+    ),
+  ];
+}
+
+
+/**
+ * Implements hook_cron().
+ */
+function business_workflow_cron()
+{
+
+  $config = \Drupal::config('business_workflow.businessmailconfig');
+  $emailsString = $config->get("emails");
+  $days = $config->get("days");
+  $days = $days == 0 ? 1 : $days + 1;
+  $daysMax = strtotime("-" . ($days - 1) . " days");
+  $daysMin = strtotime("-" . ($days + 1) . " days");
+  $daysFormated = date("Y-m-d", strtotime("-" . ($days) . " days"));
+  $emailsList = explode("\n", $emailsString);
+  //get users created less between that day
+  $query = \Drupal::entityQuery('user')
+    ->condition('created', $daysMin, '>')
+    ->condition('created', $daysMax, '<');
+  $uids = $query->execute();
+  $users = \Drupal\user\Entity\User::loadMultiple($uids);
+
+  //send email to the users
+  $mailManager = \Drupal::service('plugin.manager.mail');
+  $module = 'business_workflow';
+  $key = 'user_five_days_notification';
+  $key2 = 'user_five_days_notification_admin';
+  $send = true;
+  foreach ($users as $user) {
+    $date = date("Y-m-d", $user->getCreatedTime());
+    //check for exact date
+    if ($date == $daysFormated) {
+      $to = $user->getEmail();
+      $params['message'] = ['Your account has been created'];
+      $params['subject'] = 'Account created';
+      $langcode = $user->getPreferredLangcode();
+      $result = $mailManager->mail($module, $key, $to, $langcode, $params, NULL, $send);
+      foreach ($emailsList as $email) {
+        $params2['message'] = ['Your account has been created'];
+        $params2['subject'] = 'Account created';
+        $langcode2 = $user->getPreferredLangcode();
+        $result = $mailManager->mail($module, $key2, $email, $langcode2, $params2, NULL, $send);
+      }
+    }
+  }
+}
+
+function business_workflow_mail($key, &$message, $params)
+{
+  if ($key == "user_five_days_notification") {
+    $message['subject'] = $params['subject'];
+    $message['body'] = $params['message'];
+    $message['body'][] = '<p>' . t('Your account has been created 5days ago') . '</p>';
+  } else if ($key == "user_five_days_notification_admin") {
+    $message['subject'] = $params['subject'];
+    $message['body'] = $params['message'];
+    $message['body'][] = '<p>' . t('Account has been 5 days old') . '</p>';
+  }
+}
+
+function business_workflow_preprocess(&$variables, $hook)
+{
+
+  $variables['workflow_path'] = file_create_url(drupal_get_path('module', 'business_workflow') . '/images');
+}
+
+//implement a hook when new user is created
+function business_workflow_user_insert($user)
+{
+  $data = [];
+  $data["uid"] = $user->id();
+
+  $data["Full Name"] = $user->field_full_name->value;
+  $data["Full Name"] = $user->field_name_of_business_company->value;
+  $data["Full Name"] = $user->field_mobile_number->value;
+  $data["Full Name"] = $user->field_corporate_collections->value;
+
+  $data["created"] = date("Y-m-d", $user->getCreatedTime());
+  $data["changed"] = date("Y-m-d", $user->getChangedTime());
+  $data["name"] = $user->getUsername();
+  $data["mail"] = $user->getEmail();
+  $data["status"] = $user->isActive();
+  $data["roles"] = print_r($user->getRoles(), 1);
+  $data["roles"] = print_r($user->getRoles(), 1);
+  $dataRows = "";
+  foreach ($data as $key => $value) {
+    $dataRows .= "<tr><td>$key</td><td>$value</td></tr>";
+  }
+
+  // instantiate and use the dompdf class
+  $dompdf = new \Dompdf\Dompdf();
+  $dompdf->loadHtml('
+  <style>
+  table, td, th {
+    border: 1px solid black;
+}
+
+table {
+border-collapse: collapse;
+width: 100%;
+}
+
+
+td {
+vertical-align: middle;
+text-align: center;
+}
+  </style>
+  <table>
+  <thead><th>Field</th><th>Value</th></thead>
+  <tbody>
+  ' . $dataRows . '
+  </tbody>
+  </table>
+  <p>
+  Where does it come from?
+  Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+  
+  The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+  <p>
+  ');
+
+  // (Optional) Setup the paper size and orientation
+  $dompdf->setPaper('A4', 'landscape');
+
+  // Render the HTML as PDF
+  $dompdf->render();
+  //get output
+  $output = $dompdf->output();
+  //save to drupal file
+  $file = file_save_data($output, "public://user-register-" . $user->id() . ".pdf", \Drupal\Core\File\FileSystemInterface::EXISTS_RENAME);
+  //set user field and save
+  $user->field_form_pdf->setValue([$file]);
+  $user->save();
+}

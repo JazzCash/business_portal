@@ -1,0 +1,22 @@
+uuid: b7b98001-b822-4b24-ac81-1223fa0daa94
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.jazz_home_screen_workflow_sectio
+id: node.jazz_home_screen_workflow_sectio.promote
+field_name: promote
+entity_type: node
+bundle: jazz_home_screen_workflow_sectio
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

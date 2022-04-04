@@ -1,0 +1,24 @@
+uuid: 1f987a36-13cd-465e-a516-5b1461b097b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.jazz_complaint
+_core:
+  default_config_hash: xzzShl6cXTAJUZR5sf84G_t7qFocwR8OlfCOfh9W3Ec
+id: node.jazz_complaint.promote
+field_name: promote
+entity_type: node
+bundle: jazz_complaint
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

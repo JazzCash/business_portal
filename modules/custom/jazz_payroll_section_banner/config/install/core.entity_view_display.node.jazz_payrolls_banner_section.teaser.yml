@@ -1,0 +1,26 @@
+uuid: 6d9ab04b-bedf-48d5-8ce0-6d3415ea35ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.jazz_payrolls_banner_section.field_payroll_banner_image
+    - field.field.node.jazz_payrolls_banner_section.field_payroll_banner_link_1
+    - field.field.node.jazz_payrolls_banner_section.field_payroll_banner_link_2
+    - node.type.jazz_payrolls_banner_section
+  module:
+    - user
+id: node.jazz_payrolls_banner_section.teaser
+targetEntityType: node
+bundle: jazz_payrolls_banner_section
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_payroll_banner_image: true
+  field_payroll_banner_link_1: true
+  field_payroll_banner_link_2: true

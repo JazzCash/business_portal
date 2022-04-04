@@ -1,0 +1,18 @@
+uuid: 2bb44ae0-15b0-4048-acbd-b327b8cb1f1c
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_average_salary_amount
+field_name: field_average_salary_amount
+entity_type: paragraph
+type: float
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

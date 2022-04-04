@@ -1,0 +1,5 @@
+name: 'user_admin_manager'
+type: module
+description: 'My Awesome Module'
+core: 8.x
+package: 'Custom'

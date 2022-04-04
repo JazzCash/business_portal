@@ -1,0 +1,42 @@
+<?php
+
+/**
+ * @file
+ * Contains register_iap.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function register_iap_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the register_iap module.
+    case 'help.page.register_iap':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Module for footer block register integrate accept payments') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+
+/**
+ * Implements hook_theme().
+ */
+function register_iap_theme() {
+  return [
+    'register_iap' => [
+      'render element' => 'children',
+    ],
+    'footer_block' => [
+      'variables' => [
+        'data' => NULL
+      ],
+      'render element' => 'children',
+    ],
+  ];
+}

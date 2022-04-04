@@ -1,0 +1,19 @@
+uuid: ec62b37c-2b6c-48bd-928c-5cde683b7756
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_business_mailing_address
+    - paragraphs.paragraphs_type.business_information
+id: paragraph.business_information.field_business_mailing_address
+field_name: field_business_mailing_address
+entity_type: paragraph
+bundle: business_information
+label: 'Business Mailing Address'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

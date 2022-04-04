@@ -1,0 +1,10 @@
+<!-- Add you custom twig html here -->
+<h1>Get started now</h1>
+<div class="get-started-container">
+    {% for content in data.content %}
+    <div class="getstarted-section">
+        <h1>{{ content.serial }}</h1>
+        <a href="{{ content.link }}">{{ content.title }}</a>
+    </div>
+    {% endfor %}
+</div>

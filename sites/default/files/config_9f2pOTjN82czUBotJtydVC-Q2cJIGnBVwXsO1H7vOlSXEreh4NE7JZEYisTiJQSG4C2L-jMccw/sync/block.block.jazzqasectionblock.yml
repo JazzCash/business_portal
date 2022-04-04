@@ -1,0 +1,26 @@
+uuid: 3f4e1581-5738-463f-ad4b-6b12fc56a005
+langcode: en
+status: true
+dependencies:
+  module:
+    - jazz_q_a_section
+    - system
+  theme:
+    - bootstrap
+id: jazzqasectionblock
+theme: bootstrap
+region: content
+weight: -6
+provider: null
+plugin: jazz_qa_section_block
+settings:
+  id: jazz_qa_section_block
+  label: 'Jazz qa section block'
+  provider: jazz_q_a_section
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "/node/23\r\n/node/24\r\n/node/25\r\n/node/26"
+    negate: false
+    context_mapping: {  }

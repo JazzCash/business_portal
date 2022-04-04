@@ -1,0 +1,21 @@
+uuid: 38906fb5-655b-4ef4-8ba9-d27cb013b377
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_jazz_q_a_section_link
+field_name: field_jazz_q_a_section_link
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

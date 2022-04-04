@@ -1,0 +1,26 @@
+uuid: d6504112-2e6a-4291-82c6-8c876d55a315
+langcode: en
+status: true
+dependencies:
+  module:
+    - jazz_get_started_now_section
+    - system
+  theme:
+    - bootstrap
+id: jazzgetstartednowsectionblock
+theme: bootstrap
+region: content
+weight: -9
+provider: null
+plugin: jazz_get_started_now_section_block
+settings:
+  id: jazz_get_started_now_section_block
+  label: 'Jazz get started now section block'
+  provider: jazz_get_started_now_section
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "/node/23\r\n/node/24\r\n/node/25\r\n/node/26"
+    negate: false
+    context_mapping: {  }

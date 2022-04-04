@@ -1,0 +1,19 @@
+uuid: a71a9621-3629-4427-a43c-de28cb84f491
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_nature_of_business
+    - paragraphs.paragraphs_type.business_information
+id: paragraph.business_information.field_nature_of_business
+field_name: field_nature_of_business
+entity_type: paragraph
+bundle: business_information
+label: 'Nature of Business'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

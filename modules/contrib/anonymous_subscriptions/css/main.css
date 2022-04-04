@@ -1,0 +1,114 @@
+* {
+    /* background-color: red !important; */
+}
+
+.footer .region.region-footer {
+    display: flex;
+}
+
+section#block-anonymoussubscription {
+    width: 50%;
+    background: #393939;
+    color: #fff;
+    padding: 98px 150px 0 0px;
+}
+
+section#block-anonymoussubscription h2 {
+    font-family: Work-Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    color: #fff;
+}
+
+section#block-anonymoussubscription label {
+    color: #DDDDDD;
+}
+
+section#block-anonymoussubscription input#edit-email {
+    width: auto;
+    height: 64px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    max-width: 100%;
+    position: relative;
+}
+
+section#block-anonymoussubscription form {
+    position: relative;
+}
+
+section#block-anonymoussubscription form button {
+    position: absolute;
+    bottom: 8px;
+    width: 120.14px;
+    height: 48px;
+    background: #262626;
+    border-radius: 4px;
+    right: 50px;
+    color: #fff;
+}
+
+section#block-anonymoussubscription form .form-type-email.js-form-type-email {
+    padding-top: 25px;
+}
+
+section#block-anonymoussubscription form p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+    font-family: 'work-sans-normal';
+    color: #DDDDDD;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+    .footer .region.region-footer {
+        flex-wrap: wrap;
+    }
+    /* .block-register-iap.contextual-region {
+        float: left;
+        width: 100%;
+        padding: 15px 20px;
+    } */
+    section#block-anonymoussubscription {
+        width: 100%;
+        background: #393939;
+        color: #fff;
+        padding: 20px 20px 20px 20px;
+    }
+    ul.pri-section {
+        display: block;
+        width: 100%;
+    }
+    ul.social-icons {
+        width: 75%;
+    }
+    .block-register-iap {
+        background: #393939;
+        padding: 116px 20px 50px 20px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* .block-register-iap.contextual-region {
+        position: relative;
+        color: #fff;
+        background: #393939;
+        width: 50%;
+        padding: 50px 50px 85px 20px;
+    } */
+    section#block-anonymoussubscription {
+        width: 50%;
+        background: #393939;
+        color: #fff;
+        padding: 50px 20px 85px 50px;
+    }
+    .block-register-iap {
+        background: #393939;
+        padding: 69px 20px 50px 20px;
+    }
+}

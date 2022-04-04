@@ -1,0 +1,32 @@
+uuid: 9eec967b-1041-4dc5-afb1-2492f58fdf07
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.jazz_home_screen_workflow_sectio.body
+    - field.field.node.jazz_home_screen_workflow_sectio.field_workflow_images_and_descri
+    - node.type.jazz_home_screen_workflow_sectio
+  module:
+    - text
+    - user
+id: node.jazz_home_screen_workflow_sectio.teaser
+targetEntityType: node
+bundle: jazz_home_screen_workflow_sectio
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_workflow_images_and_descri: true

@@ -1,0 +1,20 @@
+uuid: af4753a9-3c80-4d71-9b31-6545d3ff60e1
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - taxonomy
+id: paragraph.field_frequency_of_salary_disbur
+field_name: field_frequency_of_salary_disbur
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

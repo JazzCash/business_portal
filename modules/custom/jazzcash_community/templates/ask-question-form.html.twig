@@ -1,0 +1,21 @@
+{#
+/**
+* @file
+* Default theme implementation to display a block.
+*
+* @see template_preprocess_block()
+*
+* @ingroup themeable
+*/
+#}
+{% set classes = [
+    'clear-both',
+    'ask-question-form'
+] %}
+<div {{attributes.addClass(classes)}}>
+	<div class="row">
+		<div class="col-md-10">{{ form.title }}</div>
+		<div class="col-md-2">{{ form.submit }}</div>
+	</div>
+	{{ form|without('title', 'submit') }}
+</div>

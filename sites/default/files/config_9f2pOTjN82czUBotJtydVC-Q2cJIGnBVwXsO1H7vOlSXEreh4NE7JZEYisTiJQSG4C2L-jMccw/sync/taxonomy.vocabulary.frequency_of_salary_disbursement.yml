@@ -1,0 +1,8 @@
+uuid: 8e794f19-047c-4759-bfad-d3b3ee1f2dc5
+langcode: en
+status: true
+dependencies: {  }
+name: 'Frequency of salary disbursements'
+vid: frequency_of_salary_disbursement
+description: ''
+weight: 0

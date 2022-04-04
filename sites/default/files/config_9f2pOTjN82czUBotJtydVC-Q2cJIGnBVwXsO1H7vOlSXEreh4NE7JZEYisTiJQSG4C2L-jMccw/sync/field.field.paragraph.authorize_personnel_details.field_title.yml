@@ -1,0 +1,19 @@
+uuid: 08863553-0d51-4a9d-8009-97ff8a8099ff
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.authorize_personnel_details
+id: paragraph.authorize_personnel_details.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: authorize_personnel_details
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

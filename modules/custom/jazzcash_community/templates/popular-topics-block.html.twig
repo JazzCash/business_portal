@@ -1,0 +1,28 @@
+{#
+/**
+* @file
+* Default theme implementation to display a block.
+*
+* @see template_preprocess_block()
+*
+* @ingroup themeable
+*/
+#}
+{% set classes = [
+    'clear-both',
+    'jazzcash-community-popular-topics-wrapper'
+] %}
+<div {{attributes.addClass(classes)}}>
+	<h1>Popular Topics</h1>
+	<div class="jazzcash-community-popular-topics">
+		{% for term in data %}
+			<div class="jazzcash-community-popular-topics-item" data-id="term-{{ term.tid }}">
+
+				<div class="img-icon">
+					<img src="{{ term.icon }}"/>
+				</div>
+				<h3>{{ term.name }}</h3>
+			</div>
+		{% endfor %}
+	</div>
+</div>

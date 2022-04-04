@@ -1,0 +1,26 @@
+uuid: 0e0e0d38-340a-4737-bb9c-c4223251e14a
+langcode: en
+status: true
+dependencies:
+  module:
+    - jazz_qr_banner_section
+    - system
+  theme:
+    - bootstrap
+id: jazzqrbannersectionblock
+theme: bootstrap
+region: content
+weight: -16
+provider: null
+plugin: jazz_qr_banner_section_block
+settings:
+  id: jazz_qr_banner_section_block
+  label: 'Jazz qr banner section block'
+  provider: jazz_qr_banner_section
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/26
+    negate: false
+    context_mapping: {  }

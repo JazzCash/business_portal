@@ -1,0 +1,20 @@
+uuid: ab7a2bf5-f1eb-4a0a-baee-f6c6e76fb857
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - user
+id: node.field_liked_by
+field_name: field_liked_by
+entity_type: node
+type: entity_reference
+settings:
+  target_type: user
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

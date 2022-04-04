@@ -1,0 +1,30 @@
+uuid: 1b762f58-9e76-4020-af8e-025339fd3f7e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.jazz_payments_everywhere_section.field_payment_everywhere_image
+    - node.type.jazz_payments_everywhere_section
+  module:
+    - image
+    - user
+id: node.jazz_payments_everywhere_section.default
+targetEntityType: node
+bundle: jazz_payments_everywhere_section
+mode: default
+content:
+  field_payment_everywhere_image:
+    weight: 101
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

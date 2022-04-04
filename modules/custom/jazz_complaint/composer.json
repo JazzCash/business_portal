@@ -1,0 +1,13 @@
+{
+    "name": "jazz_complaint",
+    "type": "drupal-module",
+    "description": "Jazz complaint module",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/jazz_complaint",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/jazz_complaint",
+        "source": "http://cgit.drupalcode.org/jazz_complaint",
+    },
+}

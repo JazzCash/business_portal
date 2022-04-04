@@ -1,0 +1,26 @@
+uuid: e4ba2dbf-5f02-4676-82bf-54f5d7412813
+langcode: en
+status: true
+dependencies:
+  module:
+    - banner_section
+    - system
+  theme:
+    - bootstrap
+id: bannerblock_2
+theme: bootstrap
+region: content
+weight: -2
+provider: null
+plugin: banner_block
+settings:
+  id: banner_block
+  label: 'Banner block'
+  provider: banner_section
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: /jazz-community
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,32 @@
+{#
+/**
+* @file
+* Default theme implementation to display a block.
+*
+* @see template_preprocess_block()
+*
+* @ingroup themeable
+*/
+#}
+{% set classes = [
+    'clear-both container-ticket',
+] %}
+<h1><span lclass="light-clr">Category: </span>Blog, Community</h1>
+<div{{attributes.addClass(classes)}}>
+	<div class="soved-test">
+		Solved:
+		{{ data.solved }}
+	</div>
+	<div class="pending-test">
+		Pending:
+		{{ data.pending }}
+	</div>
+	<div class="inprogress-test">
+		inprogress:
+		{{ data.inprogress }}
+	</div>
+	<div class="onhold-test">
+		onhold:
+		{{ data.onhold }}
+	</div>
+</div>

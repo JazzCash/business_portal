@@ -1,0 +1,26 @@
+uuid: 4ac25abb-4341-4a49-9640-1d880fa8255d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.payment_section_3.field_payment_section3_body
+    - field.field.node.payment_section_3.field_payment_section3_image
+    - field.field.node.payment_section_3.field_payment_section3_link
+    - node.type.payment_section_3
+  module:
+    - user
+id: node.payment_section_3.teaser
+targetEntityType: node
+bundle: payment_section_3
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_payment_section3_body: true
+  field_payment_section3_image: true
+  field_payment_section3_link: true

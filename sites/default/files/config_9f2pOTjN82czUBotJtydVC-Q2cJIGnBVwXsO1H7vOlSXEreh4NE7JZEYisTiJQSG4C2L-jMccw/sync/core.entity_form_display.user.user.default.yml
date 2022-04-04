@@ -1,0 +1,238 @@
+uuid: 80f93130-b066-4ceb-a88d-240682fafdaa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.user.user.field_agreement
+    - field.field.user.user.field_authorize_personnel_detail
+    - field.field.user.user.field_business_information
+    - field.field.user.user.field_certificate_of_commencemen
+    - field.field.user.user.field_certificate_of_incorporati
+    - field.field.user.user.field_company_type
+    - field.field.user.user.field_corporate_collections
+    - field.field.user.user.field_directors_information
+    - field.field.user.user.field_full_name
+    - field.field.user.user.field_level_2_branchless_banking
+    - field.field.user.user.field_list_of_directors_on_form_
+    - field.field.user.user.field_memorandum_and_articles_of
+    - field.field.user.user.field_mobile_number
+    - field.field.user.user.field_name_of_business_company
+    - field.field.user.user.field_ntn_certificate
+    - field.field.user.user.field_online_payment_gateway
+    - field.field.user.user.field_photocopies_of_cnic_of_all
+    - field.field.user.user.field_resolution_of_board_of_dir
+    - field.field.user.user.field_settlement_details
+    - field.field.user.user.field_technology_person_of_conta
+    - field.field.user.user.user_picture
+    - image.style.thumbnail
+  module:
+    - file
+    - image
+    - paragraphs
+    - user
+_core:
+  default_config_hash: K-1rBM8mTIkFp9RqOC2tMRUukOQ1xbRCfSKK8dEddnA
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  account:
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_agreement:
+    type: entity_reference_paragraphs
+    weight: 19
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_authorize_personnel_detail:
+    type: entity_reference_paragraphs
+    weight: 15
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_business_information:
+    type: entity_reference_paragraphs
+    weight: 13
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_certificate_of_commencemen:
+    type: file_generic
+    weight: 21
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  field_certificate_of_incorporati:
+    type: file_generic
+    weight: 22
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  field_company_type:
+    weight: 11
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_corporate_collections:
+    type: entity_reference_paragraphs
+    weight: 9
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_directors_information:
+    type: entity_reference_paragraphs
+    weight: 14
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_full_name:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_level_2_branchless_banking:
+    type: file_generic
+    weight: 23
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  field_list_of_directors_on_form_:
+    type: file_generic
+    weight: 24
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  field_memorandum_and_articles_of:
+    type: file_generic
+    weight: 25
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  field_mobile_number:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_name_of_business_company:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_ntn_certificate:
+    type: file_generic
+    weight: 26
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  field_online_payment_gateway:
+    type: entity_reference_paragraphs
+    weight: 8
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_photocopies_of_cnic_of_all:
+    type: file_generic
+    weight: 27
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  field_resolution_of_board_of_dir:
+    type: file_generic
+    weight: 28
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  field_settlement_details:
+    type: entity_reference_paragraphs
+    weight: 17
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_technology_person_of_conta:
+    type: entity_reference_paragraphs
+    weight: 16
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  user_picture:
+    type: image_image
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    weight: 6
+    region: content
+hidden:
+  contact: true
+  language: true
+  timezone: true

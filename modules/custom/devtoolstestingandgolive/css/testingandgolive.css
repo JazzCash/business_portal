@@ -1,0 +1,45 @@
+.testing-and-golive{
+    margin-top: 50px;
+}
+
+.testing-and-golive-box{
+	background: #FFFFFF;
+    border: 1px solid #BEBEBE;
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 10px;
+    text-decoration: none;
+    margin-top:50px;
+}
+
+.testing-and-golive-box:hover{
+	background: #FFFFFF;
+    border: 1px solid #FFC20C;
+    box-sizing: border-box;
+    border-radius: 20px;
+    
+}
+
+.testing-and-golive .container-fluid .row .col-sm-3 a{
+	color:#000000;
+}
+
+
+
+.testing-and-golive .container-fluid .row .col-sm-3 a:hover{
+	color:  #888585;
+
+}
+
+.testing-and-golive-title p{
+	color:#525252;
+	font-size: 1em;
+}
+
+.testing-and-golive-title h1{
+	color:#000000;
+	font-size: 1.6em;
+}
+.testing-and-golive-title-a h3{
+	font-size: 1.2em;
+}

@@ -1,0 +1,13 @@
+{% for content in data.content %}
+<div class="banner-section">
+    <img class="img" src="{{ content.image }}">
+    <div class="new-container-jazz">
+        <div class="jazz-pay-new">
+            <h1>{{ content.title }}</h1>
+            <div class="links-block">
+                <a href="{{ base_path }}register">Get Started</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}

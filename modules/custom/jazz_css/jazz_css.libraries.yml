@@ -1,0 +1,21 @@
+admin:
+  version: 1.x
+  css:
+    theme:
+      css/admin.css: {}
+  js:
+    js/admin.js: {}
+theme:
+  version: 1.x
+  css:
+    theme:
+      css/theme.css: {}
+  js:
+    js/theme.js: {}
+combined:
+  version: 1.x
+  css:
+    theme:
+      css/combined.css: {}
+  js:
+    js/combined.js: {}

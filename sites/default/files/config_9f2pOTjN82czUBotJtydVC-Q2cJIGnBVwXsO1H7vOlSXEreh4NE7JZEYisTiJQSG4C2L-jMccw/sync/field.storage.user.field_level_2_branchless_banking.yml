@@ -1,0 +1,23 @@
+uuid: 8b89022f-9af3-4d7e-9628-8df9c96e705a
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - user
+id: user.field_level_2_branchless_banking
+field_name: field_level_2_branchless_banking
+entity_type: user
+type: file
+settings:
+  display_field: false
+  display_default: false
+  uri_scheme: public
+  target_type: file
+module: file
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

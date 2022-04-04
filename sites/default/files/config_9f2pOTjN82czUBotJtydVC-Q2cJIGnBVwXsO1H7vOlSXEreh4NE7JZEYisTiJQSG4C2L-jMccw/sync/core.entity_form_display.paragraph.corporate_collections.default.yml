@@ -1,0 +1,46 @@
+uuid: 27e3f751-474c-4831-8db7-8dfce510ee28
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.corporate_collections.field_category
+    - field.field.paragraph.corporate_collections.field_display_name
+    - field.field.paragraph.corporate_collections.field_display_picture
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.corporate_collections
+  module:
+    - image
+id: paragraph.corporate_collections.default
+targetEntityType: paragraph
+bundle: corporate_collections
+mode: default
+content:
+  field_category:
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_display_name:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_display_picture:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+hidden:
+  created: true
+  status: true

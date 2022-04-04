@@ -1,0 +1,41 @@
+uuid: 89befb90-cec0-4d6b-9cfa-62f0e05307f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.technology_person_of_contact.field_contact_number
+    - field.field.paragraph.technology_person_of_contact.field_full_name
+    - field.field.paragraph.technology_person_of_contact.field_official_email
+    - paragraphs.paragraphs_type.technology_person_of_contact
+id: paragraph.technology_person_of_contact.default
+targetEntityType: paragraph
+bundle: technology_person_of_contact
+mode: default
+content:
+  field_contact_number:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_full_name:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_official_email:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+hidden:
+  created: true
+  status: true

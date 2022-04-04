@@ -1,0 +1,14 @@
+uuid: 5ae83d29-dce4-4270-88a0-7ad4c3d39d90
+langcode: en
+status: true
+dependencies: {  }
+id: work_sans_medium
+label: 'Work Sans Medium'
+font_family: work-sans-medium
+font_classification:
+  serif: '0'
+  sans-serif: '0'
+  slab-serif: '0'
+  handwriting: '0'
+  decorative: '0'
+  monospace: '0'

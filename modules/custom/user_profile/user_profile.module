@@ -1,0 +1,44 @@
+<?php
+
+/**
+ * @file
+ * Contains user_profile.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function user_profile_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the user_profile module.
+    case 'help.page.user_profile':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('User to list count of users') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function user_profile_theme() {
+  return [
+    'user_profile_block' => [
+      'variables' => [
+        'data' => []
+      ],
+      'render element' => 'children',
+    ],
+  ];
+}
+
+
+function user_profile_preprocess(&$variables, $hook) {
+  $variables['user_profile_image_path'] = file_create_url(drupal_get_path('module', 'user_profile') . '/images');
+
+}

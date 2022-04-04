@@ -1,0 +1,83 @@
+{#
+/**
+* @file
+* Default theme implementation to display a block.
+*
+* @see template_preprocess_block()
+*
+* @ingroup themeable
+*/
+#}
+{% set classes = [
+    'clear-both',
+    'user-count-block'
+] %}
+
+
+{# <ul{{attributes.addClass(classes)}}>
+	<li class='user-count-container'>
+		<p>New Request</p>
+		<div>{{ data.block|length }}</div>
+	</li>
+
+</ul> #}
+
+
+{# {% for content in data.graphdata %}
+    <div class="img-client">
+        {{ content.name }}</br>
+		{{ content.id }} 
+		</br></br></br>
+    </div>
+{% endfor %} #}
+
+
+
+<script>
+window.onload = function () {
+
+	let jsonData = {{ data.graphdata2|raw }};
+
+var chart = new CanvasJS.Chart("chartContainer", {
+	theme:"light2",
+	animationEnabled: true,
+	title:{
+		text: "Today’s Traffic - Ecosystem Portal"
+	},
+	axisY :{
+		title: "Number of Viewers",
+		suffix: "mn"
+	},
+	toolTip: {
+		shared: "true"
+	},
+	legend:{
+		cursor:"pointer",
+		itemclick : toggleDataSeries
+	},
+	data: [{
+		type: "spline",
+		visible: true,
+		showInLegend: true,
+		yValueFormatString: "##.00mn",
+		name: "User Data",
+		dataPoints: jsonData
+	}]
+});
+chart.render();
+
+function toggleDataSeries(e) {
+	if (typeof(e.dataSeries.visible) === "undefined" || e.dataSeries.visible ){
+		e.dataSeries.visible = false;
+	} else {
+		e.dataSeries.visible = true;
+	}
+	chart.render();
+}
+
+}
+</script>
+
+
+<div id="chartContainer" style="height: 370px; width: 100%;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>

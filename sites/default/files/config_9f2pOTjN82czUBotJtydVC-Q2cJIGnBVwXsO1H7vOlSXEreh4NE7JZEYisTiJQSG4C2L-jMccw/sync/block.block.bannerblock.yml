@@ -1,0 +1,26 @@
+uuid: 7cea516b-c5d6-4f6a-bc8c-ea020bcb2391
+langcode: en
+status: true
+dependencies:
+  module:
+    - banner_section
+    - system
+  theme:
+    - bootstrap
+id: bannerblock
+theme: bootstrap
+region: content
+weight: -22
+provider: null
+plugin: banner_block
+settings:
+  id: banner_block
+  label: 'Banner block'
+  provider: banner_section
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/22
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,26 @@
+uuid: 7236244d-27fa-4182-8675-1d0559613356
+langcode: en
+status: true
+dependencies:
+  module:
+    - jazz_payroll_section_banner
+    - system
+  theme:
+    - bootstrap
+id: jazzpayrollsectionbanner
+theme: bootstrap
+region: content
+weight: -17
+provider: null
+plugin: jazz_payroll_section_banner
+settings:
+  id: jazz_payroll_section_banner
+  label: 'Jazz payroll section banner'
+  provider: jazz_payroll_section_banner
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/25
+    negate: false
+    context_mapping: {  }

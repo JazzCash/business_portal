@@ -1,0 +1,40 @@
+uuid: 6f6f4150-3896-47e6-a457-fd41e2226487
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.agreement.field_accept_terms_conditions
+    - field.field.paragraph.agreement.field_date
+    - field.field.paragraph.agreement.field_full_name
+    - paragraphs.paragraphs_type.agreement
+  module:
+    - datetime
+id: paragraph.agreement.default
+targetEntityType: paragraph
+bundle: agreement
+mode: default
+content:
+  field_accept_terms_conditions:
+    weight: 2
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_date:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_full_name:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

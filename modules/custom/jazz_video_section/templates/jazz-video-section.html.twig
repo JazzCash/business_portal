@@ -1,0 +1,24 @@
+<!-- Add you custom twig html here -->
+{% for content in data.content %}
+  <h1 class="center">{{ content.title }}</h1>
+  <div class="video-container">
+    {% for paras in content.videoblocks %}
+    <div class="child-conatner">
+      <div class="video-item">
+      {# <video width="320" height="240" controls>
+      <source src="{{ paras.blockvideolink }}">
+      </video> #}
+      <iframe width="320" height="240" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+</iframe>
+
+    </div>
+    <div class="video-title">
+      <h1>{{ paras.blocktitle }}</h1>
+    </div>
+    <div class="video-discr">
+      <p>{{ paras.blockbody }}</p>
+    </div>
+    </div>
+    {% endfor %}
+  </div>
+{% endfor %}

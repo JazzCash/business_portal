@@ -1,0 +1,20 @@
+uuid: 2c7f6839-37c9-4584-9933-9f938609a08e
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: 5UCsy7fPrplJ4cGuve6hG5Wv_etSahRkVrTA5fbNFYY
+name: 'Jazz complaint'
+type: jazz_complaint
+description: ''
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: true

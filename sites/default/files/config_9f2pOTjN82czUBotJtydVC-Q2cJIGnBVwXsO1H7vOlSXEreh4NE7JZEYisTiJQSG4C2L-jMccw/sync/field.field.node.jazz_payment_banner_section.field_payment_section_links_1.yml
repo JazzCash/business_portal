@@ -1,0 +1,19 @@
+uuid: 03f0fa30-92f1-4683-8c74-088bfd50719a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_payment_section_links_1
+    - node.type.jazz_payment_banner_section
+id: node.jazz_payment_banner_section.field_payment_section_links_1
+field_name: field_payment_section_links_1
+entity_type: node
+bundle: jazz_payment_banner_section
+label: 'Payment Section Links 1'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

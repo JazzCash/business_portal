@@ -1,0 +1,55 @@
+uuid: 67a71377-e2a4-4244-aa27-fa4192a338c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.payment_gateways.field_icon
+    - image.style.thumbnail
+    - taxonomy.vocabulary.payment_gateways
+  module:
+    - image
+    - path
+    - text
+id: taxonomy_term.payment_gateways.default
+targetEntityType: taxonomy_term
+bundle: payment_gateways
+mode: default
+content:
+  description:
+    type: text_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_icon:
+    weight: 101
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  name:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 100
+    region: content
+    third_party_settings: {  }
+hidden: {  }

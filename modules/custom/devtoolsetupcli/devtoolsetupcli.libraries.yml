@@ -1,0 +1,7 @@
+devtoolsetupcli_lib:
+  version: 1.x
+  css:
+    theme:
+      css/setup_cli.css: {}
+  js:
+    js/setup_cli.js: {}

@@ -1,0 +1,38 @@
+uuid: 81777742-6923-4ff7-b76b-5222ebf44ebb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_payment_collection_banner_
+    - node.type.payment_collection_banner_sectio
+  module:
+    - image
+id: node.payment_collection_banner_sectio.field_payment_collection_banner_
+field_name: field_payment_collection_banner_
+entity_type: node
+bundle: payment_collection_banner_sectio
+label: 'Payment Collection Banner Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: false
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * @file
+ * Install/update/uninstall functions for the anonymous subscription module.
+ */
+
+use Drupal\anonymous_subscriptions\Form\SettingsForm;
+
+/**
+ * Implements hook_uninstall().
+ */
+function anonymous_subscriptions_uninstall() {
+  Drupal::configFactory()->getEditable(SettingsForm::$configName)->delete();
+}

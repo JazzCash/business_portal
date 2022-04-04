@@ -1,0 +1,19 @@
+uuid: 86e3b448-08f6-4a44-bf72-323cc9d9f0c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_more_solution_link
+    - node.type.jazz_more_solutions_section
+id: node.jazz_more_solutions_section.field_more_solution_link
+field_name: field_more_solution_link
+entity_type: node
+bundle: jazz_more_solutions_section
+label: 'More Solution Link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

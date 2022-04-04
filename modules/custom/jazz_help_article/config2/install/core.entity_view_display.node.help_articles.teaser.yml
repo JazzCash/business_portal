@@ -1,0 +1,26 @@
+uuid: 6b3281f4-010f-4ee6-86a1-c1c93596d72f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.help_articles.field_help_article_body
+    - field.field.node.help_articles.field_help_article_type
+    - field.field.node.help_articles.field_help_article_video_links
+    - node.type.help_articles
+  module:
+    - user
+id: node.help_articles.teaser
+targetEntityType: node
+bundle: help_articles
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_help_article_body: true
+  field_help_article_type: true
+  field_help_article_video_links: true

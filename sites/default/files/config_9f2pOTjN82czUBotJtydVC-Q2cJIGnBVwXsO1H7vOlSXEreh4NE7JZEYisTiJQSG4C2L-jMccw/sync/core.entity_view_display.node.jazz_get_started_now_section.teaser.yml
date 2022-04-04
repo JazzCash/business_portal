@@ -1,0 +1,24 @@
+uuid: 8a216d75-33fb-46f1-9930-344f433f575c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.jazz_get_started_now_section.field_get_started_section_link
+    - field.field.node.jazz_get_started_now_section.field_get_started_section_serial
+    - node.type.jazz_get_started_now_section
+  module:
+    - user
+id: node.jazz_get_started_now_section.teaser
+targetEntityType: node
+bundle: jazz_get_started_now_section
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_get_started_section_link: true
+  field_get_started_section_serial: true

@@ -1,0 +1,19 @@
+uuid: 97732e09-0989-4981-ae65-d558a8060897
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_business_name
+    - paragraphs.paragraphs_type.business_information
+id: paragraph.business_information.field_business_name
+field_name: field_business_name
+entity_type: paragraph
+bundle: business_information
+label: 'Business Name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

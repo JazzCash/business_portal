@@ -1,0 +1,26 @@
+uuid: ac272b4d-003f-48e7-9485-ca0d1cedc2b3
+langcode: en
+status: true
+dependencies:
+  module:
+    - jazz_payment_section_4
+    - system
+  theme:
+    - bootstrap
+id: jaazpayment4sectionblock
+theme: bootstrap
+region: content
+weight: -11
+provider: null
+plugin: jaaz_payment4section_block
+settings:
+  id: jaaz_payment4section_block
+  label: 'Jaaz payment4section block'
+  provider: jazz_payment_section_4
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "/node/23\r\n/node/24\r\n/node/25\r\n/node/26"
+    negate: false
+    context_mapping: {  }

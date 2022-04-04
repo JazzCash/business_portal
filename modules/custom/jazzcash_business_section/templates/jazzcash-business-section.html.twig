@@ -1,0 +1,9 @@
+<!-- Add you custom twig html here -->
+{% for content in data.content %}
+<div class="business-section">
+    <img class="img" src="{{ content.image }}">
+    <h1>{{ content.title }}</h1>
+    <div class="business-title">{{ content.body|raw }}</div>
+    <a href="{{ content.link }}">Get Started</a>
+</div>
+{% endfor %}

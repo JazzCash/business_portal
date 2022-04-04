@@ -1,0 +1,10 @@
+uuid: f7e625c5-e56a-4861-8256-b96d64f2a3c3
+langcode: en
+status: true
+dependencies: {  }
+id: directors_information
+label: 'Directors Information'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

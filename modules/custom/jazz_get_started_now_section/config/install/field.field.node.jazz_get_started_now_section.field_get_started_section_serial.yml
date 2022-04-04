@@ -1,0 +1,19 @@
+uuid: a6f9bfbe-223a-490b-917d-ac1d4ca09a0b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_get_started_section_serial
+    - node.type.jazz_get_started_now_section
+id: node.jazz_get_started_now_section.field_get_started_section_serial
+field_name: field_get_started_section_serial
+entity_type: node
+bundle: jazz_get_started_now_section
+label: 'Serial Number'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

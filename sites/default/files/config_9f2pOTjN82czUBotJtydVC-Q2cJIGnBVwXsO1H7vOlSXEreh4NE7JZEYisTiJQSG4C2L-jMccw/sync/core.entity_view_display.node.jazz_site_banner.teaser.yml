@@ -1,0 +1,26 @@
+uuid: 35b80e1c-37da-4bdc-bdbd-adcdf9e34294
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.jazz_site_banner.field_banner_allowed_page
+    - field.field.node.jazz_site_banner.field_banner_image
+    - field.field.node.jazz_site_banner.field_banner_link
+    - node.type.jazz_site_banner
+  module:
+    - user
+id: node.jazz_site_banner.teaser
+targetEntityType: node
+bundle: jazz_site_banner
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_banner_allowed_page: true
+  field_banner_image: true
+  field_banner_link: true

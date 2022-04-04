@@ -1,0 +1,13 @@
+{
+    "name": "jazz_css",
+    "type": "drupal-module",
+    "description": "Module to add css of site",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/jazz_css",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/jazz_css",
+        "source": "http://cgit.drupalcode.org/jazz_css",
+    },
+}

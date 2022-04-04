@@ -1,0 +1,28 @@
+uuid: 5a324ba7-7855-484c-80f2-361569233af2
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.jazz_footer_left_section.field_jazz_footer_left_body
+    - field.field.node.jazz_footer_left_section.field_jazz_footer_left_image
+    - field.field.node.jazz_footer_left_section.field_jazz_footer_left_link
+    - field.field.node.jazz_footer_left_section.field_jazz_footer_left_social
+    - node.type.jazz_footer_left_section
+  module:
+    - user
+id: node.jazz_footer_left_section.teaser
+targetEntityType: node
+bundle: jazz_footer_left_section
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_jazz_footer_left_body: true
+  field_jazz_footer_left_image: true
+  field_jazz_footer_left_link: true
+  field_jazz_footer_left_social: true

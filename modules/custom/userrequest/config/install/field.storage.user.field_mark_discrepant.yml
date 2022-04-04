@@ -1,0 +1,18 @@
+uuid: 62ee6b29-af4a-4670-b778-bd606e38e77f
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.field_mark_discrepant
+field_name: field_mark_discrepant
+entity_type: user
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

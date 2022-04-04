@@ -1,0 +1,24 @@
+uuid: 8d03c0a2-ce44-4c44-8c86-dfbfe782f072
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.jazz_more_solutions_section.field_more_solution_image
+    - field.field.node.jazz_more_solutions_section.field_more_solution_link
+    - node.type.jazz_more_solutions_section
+  module:
+    - user
+id: node.jazz_more_solutions_section.teaser
+targetEntityType: node
+bundle: jazz_more_solutions_section
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_more_solution_image: true
+  field_more_solution_link: true

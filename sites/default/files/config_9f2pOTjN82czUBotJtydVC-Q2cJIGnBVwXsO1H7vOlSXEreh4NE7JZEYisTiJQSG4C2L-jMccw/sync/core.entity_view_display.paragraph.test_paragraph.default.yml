@@ -1,0 +1,29 @@
+uuid: 0527620c-6fe7-4238-93c4-8dd92d6a170e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.test_paragraph.field_official_email
+    - field.field.paragraph.test_paragraph.field_title
+    - paragraphs.paragraphs_type.test_paragraph
+id: paragraph.test_paragraph.default
+targetEntityType: paragraph
+bundle: test_paragraph
+mode: default
+content:
+  field_official_email:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_title:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

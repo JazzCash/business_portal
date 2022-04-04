@@ -1,0 +1,10 @@
+uuid: 380a31f6-1ecd-4125-b435-97626d53fe75
+langcode: en
+status: true
+dependencies: {  }
+id: settlement_details
+label: 'Settlement Details'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

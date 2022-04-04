@@ -1,0 +1,8 @@
+<!-- Add you custom twig html here -->
+<div class="clients-section">
+    {% for content in data.content %}
+    <div class="img-client">
+        <img class="img" src="{{ content.image }}">
+    </div>
+    {% endfor %}
+</div>

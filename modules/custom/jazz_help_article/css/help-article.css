@@ -1,0 +1,67 @@
+.help-content-container{
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    grid-gap: 30px;
+    padding: 50px;
+}
+
+/* .jha-term{
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+} */
+
+.jha-term{
+    margin: 50px 20px;
+}
+
+.jha-term-node{
+    width: 250px;
+}
+
+.jha-term-node a h3{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 12px;
+    color: #6F6F6F;
+    text-decoration: none;
+}
+.jha-term-node a h3:hover{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 12px;
+    color: rgb(56, 55, 55);
+}
+.jha-term ul{
+    list-style: none;
+}
+
+/* search button  */
+
+
+.fg--search{
+    text-align: center;
+    text-align: -webkit-center;
+}
+.help-page-form{
+    border: 1px solid black;
+    width: 45vw;
+    border-radius: 25px;
+    height: 50px;
+}
+.help-page-search-field{
+    border: none;
+   margin: 5px;
+    width: 35vw;
+    height: 40px;
+}
+
+.help-page-search-button{
+    border: none;
+    background: url('../../../../modules/custom/jazz_help_article/images/search.png') no-repeat top left;
+   width: 35px;
+    height: 40px;
+}

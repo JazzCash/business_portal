@@ -1,0 +1,23 @@
+uuid: e15ce901-0cc7-431b-9408-258bb20bbe62
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_onhold
+    - node.type.jazz_complaint
+id: node.jazz_complaint.field_onhold
+field_name: field_onhold
+entity_type: node
+bundle: jazz_complaint
+label: onhold
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,13 @@
+{
+    "name": "jazz_q_a_section",
+    "type": "drupal-module",
+    "description": "My Awesome Module",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/jazz_q_a_section",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/jazz_q_a_section",
+        "source": "http://cgit.drupalcode.org/jazz_q_a_section",
+    },
+}

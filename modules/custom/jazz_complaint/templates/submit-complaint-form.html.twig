@@ -1,0 +1,20 @@
+<h1>Write Us</h1>
+{{ dump(form|keys) }}
+<div>
+	<div>{{ form.title }}</div>
+	<div>{{ form.field_jcomplaint_company_name }}</div>
+	<div>{{ form.field_jcomplaint_type }}</div>
+	<div>{{ form.field_jcomplaint_phone }}</div>
+	<div>{{ form.field_priority }}</div>
+	<div>{{ form.field_type_your_messages }}</div>
+	
+	<div>
+		<h3>Thanks! we will respond back by email and phone</h3>
+		{{ form.actions }}
+	</div>
+</div>
+<div class="form-additional-info">
+	{{ form.form_id }}
+	{{ form.form_build_id }}
+	{{ form.form_token }}
+</div>

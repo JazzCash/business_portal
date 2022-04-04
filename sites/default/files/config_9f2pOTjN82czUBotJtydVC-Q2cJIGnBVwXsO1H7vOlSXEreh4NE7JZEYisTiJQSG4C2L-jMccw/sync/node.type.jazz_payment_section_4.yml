@@ -1,0 +1,18 @@
+uuid: 48a30f4a-9b38-490b-bdd3-0c04515116d0
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Jazz Payment Section 4'
+type: jazz_payment_section_4
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

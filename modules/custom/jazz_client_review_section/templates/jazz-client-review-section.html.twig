@@ -1,0 +1,23 @@
+<!-- Add you custom twig html here -->
+<h1>Don’t take our word for it.</h1>
+<div class="clients-review-section">
+    {% for content in data.content %}
+        <div class="clients-container">
+            <div class="clients-review-fch">
+            <div class="client-img">
+                <img class="img" src="{{ content.image }}">
+            </div>
+            <div class="title">
+                <h1 class="name">{{ content.title }}</h1>
+                <p>{{ content.city }}</p>
+            </div>
+            <div class="rating-client">
+                <p>{{ content.rating }}</p>
+            </div>
+            </div>
+            <div class="clients-review-discription">
+                <p>{{ content.body|raw }}</p>
+            </div>
+        </div>
+    {% endfor %}
+</div>

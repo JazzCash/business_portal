@@ -1,0 +1,26 @@
+<div class="testing-and-golive">
+  <div class="container-fluid">
+          
+          <div class="row">
+        <div class="testing-and-golive-title">
+          <h1>Testing And Go Live</h1>
+        </div>
+        
+       {% for content in data.content %}
+
+
+            <div class="col-sm-3 col-md-offset-1 testing-and-golive-box">
+             <a href="" class="testing-and-golive-title-a">
+              
+              <h3>{{ content.title }}</h3>
+              <img src="{{ payment_Module_path }}/" alt="" />
+              <p>{{ content.body|striptags }}</p>
+             </a>
+            </div>
+
+        {% endfor %}
+
+
+          </div>
+        </div>
+      </div>

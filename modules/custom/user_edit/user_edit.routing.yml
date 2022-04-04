@@ -1,0 +1,8 @@
+
+user_edit.regsiter_controller_main:
+  path: '/user-edit'
+  defaults:
+    _controller: '\Drupal\user_edit\Controller\RegsiterController::main'
+    _title: 'main'
+  requirements:
+    _permission: 'access content'

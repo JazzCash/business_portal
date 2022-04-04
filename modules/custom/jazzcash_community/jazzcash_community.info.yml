@@ -1,0 +1,7 @@
+name: 'Jazzcash Community'
+type: module
+description: 'Jazzcash commnutiny module'
+core: 8.x
+package: 'Custom'
+dependencies:
+  - drupal:forum

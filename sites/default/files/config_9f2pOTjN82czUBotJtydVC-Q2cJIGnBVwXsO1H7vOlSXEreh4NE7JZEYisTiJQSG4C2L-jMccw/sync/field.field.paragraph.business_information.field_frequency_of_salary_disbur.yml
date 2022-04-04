@@ -1,0 +1,29 @@
+uuid: 5a079e68-592e-43bb-b071-d980c14aadad
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_frequency_of_salary_disbur
+    - paragraphs.paragraphs_type.business_information
+    - taxonomy.vocabulary.frequency_of_salary_disbursement
+id: paragraph.business_information.field_frequency_of_salary_disbur
+field_name: field_frequency_of_salary_disbur
+entity_type: paragraph
+bundle: business_information
+label: 'Frequency of salary disbursements'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      frequency_of_salary_disbursement: frequency_of_salary_disbursement
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

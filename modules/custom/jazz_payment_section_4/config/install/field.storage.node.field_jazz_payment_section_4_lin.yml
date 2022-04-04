@@ -1,0 +1,21 @@
+uuid: 8272a066-0b95-43e5-a2f0-c722fdcd9805
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_jazz_payment_section_4_lin
+field_name: field_jazz_payment_section_4_lin
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

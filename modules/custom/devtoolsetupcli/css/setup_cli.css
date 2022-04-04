@@ -1,0 +1,24 @@
+.dev-tools-cli-container .container .row h2{
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.dev-tools-cli-button button{
+    float: right;
+    height: 47.9999885559082px;
+    width: 194px;
+    top: 0px;
+    border-radius: 100px;
+    background-color: #FFC20C;
+    
+
+}
+.dev-tools-cli-image{
+    width: 270px;
+    height: 270px;
+}

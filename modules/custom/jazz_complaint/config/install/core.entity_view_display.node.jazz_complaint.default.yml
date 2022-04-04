@@ -1,0 +1,74 @@
+uuid: 4c4ba396-d474-436d-9f16-d61f32a64d70
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.jazz_complaint.field_complaint_answer
+    - field.field.node.jazz_complaint.field_complaint_ticket
+    - field.field.node.jazz_complaint.field_jcomplaint_company_name
+    - field.field.node.jazz_complaint.field_jcomplaint_phone
+    - field.field.node.jazz_complaint.field_jcomplaint_type
+    - field.field.node.jazz_complaint.field_type_your_messages
+    - node.type.jazz_complaint
+  module:
+    - options
+    - text
+    - user
+_core:
+  default_config_hash: ObXXq68Q2qIk6KrOXYLHyw7P9P8Tj7l9B0eunSdpsHw
+id: node.jazz_complaint.default
+targetEntityType: node
+bundle: jazz_complaint
+mode: default
+content:
+  field_complaint_answer:
+    weight: 106
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_complaint_ticket:
+    weight: 105
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_jcomplaint_company_name:
+    weight: 101
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_jcomplaint_phone:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_jcomplaint_type:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_type_your_messages:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

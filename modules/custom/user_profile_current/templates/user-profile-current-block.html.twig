@@ -1,0 +1,695 @@
+{#
+/**
+* @file
+* Default theme implementation to display a block.
+*
+* @see template_preprocess_block()
+*
+* @ingroup themeable
+*/
+#}
+{% set classes = [
+    'clear-both',
+    'user-count-block'
+] %}
+
+
+
+
+{# start #}
+
+
+{% for content in data.content %}
+  
+
+
+
+  <div class="container">
+    <div style="border-radius: 18px;" class="panel panel-default">
+      <div class="row">
+        <div class="col-xs-6 col-sm-6 col-lg-6">
+          <div class="panel-body merchant-profile-image"><img src="{{ content.image }}"></div>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-lg-6">
+          <div class="panel-body pull-right"><button type="button" class="btn btn-circle">
+          {# {{ content.bankstatus }} #}
+          {% if content.businessstatus == 'Approved' %}
+          {{ content.bankstatus }}
+          {% elseif content.status == 'Approved' %}
+            {{ content.businessstatus }}
+          {% else %}
+          {{ content.status }}
+          {% endif %}
+          </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-6 col-sm-6 col-lg-6">
+          <div class="panel-body">{{ content.full_name }}</div>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-lg-6">
+          <div class="panel-body pull-right">Contact Number: {{ content.mobile }} <img src="{{ user_profile_image_path }}/greencheck.png"></div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-6 col-sm-6 col-lg-6">
+          <div class="panel-body">{{ content.company_type }}</div>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-lg-6">
+          <div class="panel-body pull-right">Email Address: {{ content.email }} <img src="{{ user_profile_image_path }}/greencheck.png"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="container">
+
+    <div style="border-color: #FFE085;" class="panel panel-warning">
+      <div class="row">
+        <div class="col-xs-2 col-sm-2 col-lg-2">
+          <div class="panel-body"><img src="{{ user_profile_image_path }}/icons8-more-details-30.png"></div>
+        </div>
+        <div class="col-xs-7 col-sm-7 col-lg-7">
+          <div class="panel-body"><b>Business Information</b></div>
+        </div>
+        <div class="col-xs-1 col-sm-1 col-lg-1">
+          <div class="panel-body pull-right"> <img src="{{ user_profile_image_path }}/greencheck.png"></div>
+        </div>
+        <div class="col-xs-1 col-sm-1 col-lg-1">
+          <div class="panel-body pull-right"><img src="{{ user_profile_image_path }}/icons8-chevron-24.png"></div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+
+
+
+
+  <div class="container">
+    <div class="col-sm-12">
+      <table style="width:100%">
+      {% for paras in content.business %}
+        <tr>
+          <td>Business Name:</td>
+          <td><b>{{ paras.business_name }}</b></td>
+          <td>Business Mailing Address</td>
+          <td><b>{{ paras.business_mailing_address }}</b></td>
+        </tr>
+        <tr>
+          <td>Phone </td>
+          <td><b>{{ paras.phone }}</b></td>
+          <td>Fax No</td>
+          <td><b>{{ paras.fax_number }}</b></td>
+        </tr>
+        <tr>
+          <td>Email Address</td>
+          <td><b>{{ paras.email_address }}</b></td>
+          <td>Nature of Business</td>
+          <td><b>{{ paras.nature_of_business }}</b></td>
+        </tr>
+        <tr>
+          <td>Date and place of Incorp.</td>
+          <td><b>{{ paras.date_of_incorporation }}</b></td>
+          <td>NTN</td>
+          <td><b>{{ paras.ntn_number }}</b></td>
+        </tr>
+        <tr>
+          <td>NTN Issuing Authority</td>
+          <td><b>{{ paras.ntn_issuing_authority }}</b></td>
+          <td>NTN Date of Issue</td>
+          <td><b>{{ paras.ntn_date_of_issue }}</b></td>
+        </tr>
+        <tr>
+          <td>Registration Date</td>
+          <td><b>{{ paras.registration_date }}</b></td>
+          <td>Monthly Turnover</td>
+          <td><b>Rs {{ paras.monthly_turnover }}</b></td>
+        </tr>
+        <tr>
+          <td>Number of employees</td>
+          <td><b>{{ paras.number_of_employees }}</b></td>
+          <td>Frequency of salary disbursements</td>
+          <td><b>{{ paras.frequency_of_salary_disbur }}</b></td>
+        </tr>
+        <tr>
+          <td>Average Salary amount</td>
+          <td><b>Rs. {{ paras.average_salary_amount }}</b></td>
+
+        </tr>
+       {% endfor %}
+      </table>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div  style="border-color: #FFE085;" class="panel panel-warning">
+      <div class="row">
+        <div class="col-xs-2 col-sm-2 col-lg-2">
+          <div class="panel-body"><img src="{{ user_profile_image_path }}/icons8-more-details-30.png"></div>
+        </div>
+        <div class="col-xs-7 col-sm-7 col-lg-7">
+          <div class="panel-body"><b>Directors Information</b></div>
+        </div>
+        <div class="col-xs-1 col-sm-1 col-lg-1">
+          <div class="panel-body pull-right"> <img src="{{ user_profile_image_path }}/greencheck.png"></div>
+        </div>
+        <div class="col-xs-1 col-sm-1 col-lg-1">
+          <div class="panel-body pull-right"><img src="{{ user_profile_image_path }}/icons8-chevron-24.png"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="container">
+    <table style="width:100%">
+    {% for dparas in content.directors %}
+      <tr>
+        <td>Full Name</td>
+        <td><b>{{ dparas.full_name }}</b></td>
+        <td>Official Email</td>
+        <td><b>{{ dparas.official_email }}</b></td>
+      </tr>
+      <tr>
+        <td>Contact no</td>
+        <td><b>{{ dparas.contact_number }}</b></td>
+        <td>Title</td>
+        <td><b>{{ dparas.title }}</b></td>
+      </tr>
+      {% endfor %}
+    </table>
+  </div>
+
+
+  <div class="container">
+    <div  style="border-color: #FFE085;" class="panel panel-warning">
+      <div class="row">
+        <div class="col-xs-2 col-sm-2 col-lg-2">
+          <div class="panel-body"><img src="{{ user_profile_image_path }}/icons8-more-details-30.png"></div>
+        </div>
+        <div class="col-xs-7 col-sm-7 col-lg-7">
+          <div class="panel-body"><b>Technology Person of contact</b></div>
+        </div>
+        <div class="col-xs-1 col-sm-1 col-lg-1">
+          <div class="panel-body pull-right"> <img src="{{ user_profile_image_path }}/greencheck.png"></div>
+        </div>
+        <div class="col-xs-1 col-sm-1 col-lg-1">
+          <div class="panel-body pull-right"><img src="{{ user_profile_image_path }}/icons8-chevron-24.png"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <table style="width:100%">
+    {% for tparas in content.technology %}
+      <tr>
+        <td>Full Name</td>
+        <td><b>{{ tparas.name }}</b></td>
+        <td>Official Email</td>
+        <td><b>{{ tparas.email }}</b></td>
+      </tr>
+      <tr>
+        <td>Contact no</td>
+        <td><b>{{ tparas.contact }}</b></td>
+      </tr>
+      {% endfor %}
+    </table>
+  </div>
+
+
+  <div class="container">
+    <div  style="border-color: #FFE085;" class="panel panel-warning">
+      <div class="row">
+        <div class="col-xs-2 col-sm-2 col-lg-2">
+          <div class="panel-body"><img src="{{ user_profile_image_path }}/icons8-more-details-30.png"></div>
+        </div>
+        <div class="col-xs-7 col-sm-7 col-lg-7">
+          <div class="panel-body"><b>Authorise Personnel Details</b></div>
+        </div>
+        <div class="col-xs-1 col-sm-1 col-lg-1">
+          <div class="panel-body pull-right"> <img src="{{ user_profile_image_path }}/greencheck.png"></div>
+        </div>
+        <div class="col-xs-1 col-sm-1 col-lg-1">
+          <div class="panel-body pull-right"><img src="{{ user_profile_image_path }}/icons8-chevron-24.png"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <table style="width:100%">
+    {% for aparas in content.authorize %}
+      <tr>
+        <td>Full Name</td>
+        <td><b>{{ aparas.name }}</b></td>
+        <td>Official Email</td>
+        <td><b>{{ aparas.email }}</b></td>
+      </tr>
+      <tr>
+        <td>Contact no</td>
+        <td><b>{{ aparas.contact }}</b></td>
+        <td>Title</td>
+        <td><b>{{ aparas.title }}</b></td>
+      </tr>
+      {% endfor %}
+    </table>
+  </div>
+
+
+  <div class="container">
+    <div  style="border-color: #FFE085;" class="panel panel-warning">
+      <div class="row">
+        <div class="col-xs-2 col-sm-2 col-lg-2">
+          <div class="panel-body"><img src="{{ user_profile_image_path }}/icons8-more-details-30.png"></div>
+        </div>
+        <div class="col-xs-7 col-sm-7 col-lg-7">
+          <div class="panel-body"><b>Authorise Personnel Details</b></div>
+        </div>
+        <div class="col-xs-1 col-sm-1 col-lg-1">
+          <div class="panel-body pull-right"> <img src="{{ user_profile_image_path }}/greencheck.png"></div>
+        </div>
+        <div class="col-xs-1 col-sm-1 col-lg-1">
+          <div class="panel-body pull-right"><img src="{{ user_profile_image_path }}/icons8-chevron-24.png"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="container">
+    <table style="width:100%">
+    {% for sparas in content.settelment %}
+      <tr>
+        <td>Bank Name</td>
+        <td><b>{{ sparas.bank_name }}</b></td>
+        <td>Acc Holder Name</td>
+        <td><b>{{ sparas.account_holder_name }}</b></td>
+      </tr>
+      <tr>
+        <td>Bank Account No</td>
+        <td><b>{{ sparas.bank_account_number }}</b></td>
+        <td>Acc Holder Mobile No</td>
+        <td><b>{{ sparas.account_holder_mobile_numb }}</b></td>
+      </tr>
+      <tr>
+        <td>Acc Holder Email</td>
+        <td><b>{{ sparas.account_holder_email }}</b></td>
+      </tr>
+       {% endfor %}
+    </table>
+  </div>
+
+
+
+
+
+
+  <div class="container">
+
+    <div   class="panel panel-warning" style="background-color: #FFE8A4;">
+      <div class="row">
+        <div class="col-xs-2 col-sm-2 col-lg-2">
+          <div class="panel-body"> <img src="{{ user_profile_image_path }}/API.png"></div>
+        </div>
+        <div class="col-xs-10 col-sm-10 col-lg-10">
+          <div class="panel-body">Do you need API - Payment Gateway Portal Access?.</div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-lg-12">
+              <div class="panel-body">We will email you the credentals to your Tech POC.</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-lg-12">
+              <div class="panel-body">Api Intergration</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  <div class="container">
+    <div class="row ">
+      <div class="col-md-4 col-sm-4 ">
+        <div  class="panel panel-default" style="background-color: #FCFCFC">
+          <div class="row">
+            <div class="col-xs-3 col-sm-3 col-lg-3">
+              <div class="panel-body "><img
+                  src="{{ user_profile_image_path }}/icons8-engineering-drawing-applications-with-parts-and-details-24.png"></div>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-lg-6">
+              <div class="row">
+             
+                <div class="panel-body">Certificate of Commencement of Business</div>
+              </div>
+              <div class="row">
+                <div class="panel-body">
+                  <ul>
+                    {% for file_url in content.Certificate_of_Commencement_of_Business %}
+                        <li><a href="{{ file_url }}">Download Certificate of Commencement of Business</a></li>
+                    {% endfor %}
+                  </ul>
+              </div>
+              </div>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-lg-3">
+              <div class="panel-body pull-right"> <img src="{{ user_profile_image_path }}/greencheck.png"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-4">
+        <div class="panel panel-default" style="background-color: #FCFCFC">
+          <div class="row">
+            <div class="col-xs-3 col-sm-3 col-lg-3">
+              <div class="panel-body "><img
+                  src="{{ user_profile_image_path }}/icons8-engineering-drawing-applications-with-parts-and-details-24.png"></div>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-lg-6">
+              <div class="row">
+                <div class="panel-body">Certificate of Incorporation</div>
+              </div>
+              <div class="row">
+                <div class="panel-body">
+                  <ul>
+                    {% for file_url_certificate_of_incorporati in content.certificate_of_incorporati %}
+                        <li><a href="{{ file_url_certificate_of_incorporati }}">Download certificate of incorporation</a></li>
+                    {% endfor %}
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-lg-3">
+              <div class="panel-body pull-right"> <img src="{{ user_profile_image_path }}/greencheck.png"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-4">
+        <div class="panel panel-default" style="background-color: #FCFCFC">
+          <div class="row">
+            <div class="col-xs-3 col-sm-3 col-lg-3">
+              <div class="panel-body "><img
+                  src="{{ user_profile_image_path }}/icons8-engineering-drawing-applications-with-parts-and-details-24.png"></div>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-lg-6">
+              <div class="row">
+               <div class="panel-body">Level 2 Branchless Banking Account Form</div>
+              </div>
+              <div class="row">
+                <div class="panel-body">
+                  <ul>
+                    {% for file_url_field_level_2_branchless_banking in content.level_2_branchless_banking %}
+                        <li><a href="{{ file_url_field_level_2_branchless_banking }}">Download level 2 branchless banking</a></li>
+                    {% endfor %}
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-lg-3">
+              <div class="panel-body pull-right"> <img src="{{ user_profile_image_path }}/greencheck.png"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-4 col-sm-4 col-lg-4">
+        <div class="panel panel-default" style="background-color: #FCFCFC">
+          <div class="row">
+            <div class="col-xs-3 col-sm-3 col-lg-3">
+              <div class="panel-body "><img
+                  src="{{ user_profile_image_path }}/icons8-engineering-drawing-applications-with-parts-and-details-24.png"></div>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-lg-6">
+              <div class="row">
+
+
+                <div class="panel-body">List of Directors on ‘Form-A/Form-B’</div>
+              </div>
+              <div class="row">
+                <div class="panel-body">
+                  <ul>
+                    {% for file_url_list_of_directors_on_form_ in content.list_of_directors_on_form_ %}
+                        <li><a href="{{ file_url_list_of_directors_on_form_ }}">Download list of directors on form</a></li>
+                    {% endfor %}
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-lg-3">
+              <div class="panel-body pull-right"> <img src="{{ user_profile_image_path }}/greencheck.png"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-4 col-sm-4 col-lg-4">
+        <div class="panel panel-default" style="background-color: #FCFCFC">
+          <div class="row">
+            <div class="col-xs-3 col-sm-3 col-lg-3">
+              <div class="panel-body "><img
+                  src="{{ user_profile_image_path }}/icons8-engineering-drawing-applications-with-parts-and-details-24.png"></div>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-lg-6">
+              <div class="row">
+
+                <div class="panel-body">Photocopies of CNIC of all the directors and persons authorized</div>
+              </div>
+              <div class="row">
+                <div class="panel-body">
+                   <ul>
+                      {% for file_url_photocopies_of_cnic_of_all in content.photocopies_of_cnic_of_all %}
+                        <li><a href="{{ file_url_photocopies_of_cnic_of_all }}">Download photocopies of cnic of all</a></li>
+                      {% endfor %}
+                    </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-lg-3">
+              <div class="panel-body pull-right"> <img src="{{ user_profile_image_path }}/greencheck.png"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-4 col-sm-4 col-lg-4">
+        <div class="panel panel-default" style="background-color: #FCFCFC">
+          <div class="row">
+            <div class="col-xs-3 col-sm-3 col-lg-3">
+              <div class="panel-body "><img
+                  src="{{ user_profile_image_path }}/icons8-engineering-drawing-applications-with-parts-and-details-24.png"></div>
+            </div>
+
+        <div class="col-xs-6 col-sm-6 col-lg-6">
+              <div class="row">
+                <div class="panel-body">Resolution of Board of Directors</div>
+              </div>
+              <div class="row">
+                <div class="panel-body">
+                  <ul>
+                    {% for file_url_resolution_of_board_of_dir in content.resolution_of_board_of_dir %}
+                        <li><a href="{{ file_url_resolution_of_board_of_dir }}">Download resolution of board of dir</a></li>
+                    {% endfor %}
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-lg-3">
+              <div class="panel-body pull-right"> <img src="{{ user_profile_image_path }}/greencheck.png"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-4 col-sm-4 col-lg-4">
+        <div class="panel panel-default" style="background-color: #FCFCFC">
+          <div class="row">
+            <div class="col-xs-3 col-sm-3 col-lg-3">
+              <div class="panel-body "><img
+                  src="{{ user_profile_image_path }}/icons8-engineering-drawing-applications-with-parts-and-details-24.png"></div>
+            </div>
+
+                        <div class="col-xs-6 col-sm-6 col-lg-6">
+              <div class="row">
+                <div class="panel-body">Memorandum and Articles of Association</div>
+              </div>
+              <div class="row">
+                <div class="panel-body">
+                  <ul>
+                    {% for file_url_memorandum_and_articles_of in content.memorandum_and_articles_of %}
+                        <li><a href="{{ file_url_memorandum_and_articles_of }}">Download file url memorandum and articles of</a></li>
+                    {% endfor %}
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-lg-3">
+              <div class="panel-body pull-right"> <img src="{{ user_profile_image_path }}/greencheck.png"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-4 col-sm-4 col-lg-4">
+        <div class="panel panel-default" style="background-color: #FCFCFC">
+          <div class="row">
+            <div class="col-xs-3 col-sm-3 col-lg-3">
+              <div class="panel-body "><img
+                  src="{{ user_profile_image_path }}/icons8-engineering-drawing-applications-with-parts-and-details-24.png"></div>
+            </div>
+
+
+            <div class="col-xs-6 col-sm-6 col-lg-6">
+              <div class="row">
+              <div class="panel-body">NTN Certificate</div>
+              </div>
+              <div class="row">
+                <div class="panel-body">
+                  <ul>
+                  {% for file_url_ntn_certificate in content.ntn_certificate %}
+                      <li><a href="{{ file_url_ntn_certificate }}">Download file url ntn certificate</a></li>
+                  {% endfor %}
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-lg-3">
+              <div class="panel-body pull-right"> <img src="{{ user_profile_image_path }}/greencheck.png"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div  style="border-color: #FFE085;" class="panel panel-warning">
+      <div class="row">
+        <div class="col-xs-2 col-sm-2 col-lg-2">
+          <div class="panel-body"><img src="{{ user_profile_image_path }}/icons8-more-details-30.png"></div>
+        </div>
+        <div class="col-xs-7 col-sm-7 col-lg-7">
+          <div class="panel-body"><b>Bank Approver Details</b></div>
+        </div>
+        <div class="col-xs-1 col-sm-1 col-lg-1">
+          <div class="panel-body pull-right"><img src="{{ user_profile_image_path }}/greencheck.png"></div>
+        </div>
+        <div class="col-xs-1 col-sm-1 col-lg-1">
+          <div class="panel-body pull-right"><img src="{{ user_profile_image_path }}/icons8-chevron-24.png"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    
+{# {% for bparas in content.bank_approver_detail %}
+  <div class="container">
+    <table style="width:100%">
+    
+      <tr>
+        <td>Risk Category</td>
+        <td><button type="button" class="btn btn-circle btn-danger">{{ bparas.riskcategory }} </button></td>
+        <td>CBC Status</td>
+        <td><img src="{{ user_profile_image_path }}/greencheck.png">{{ bparas.cbcstatus }}</td>
+        <td>ECIB Status</td>
+        <td><b>{{ bparas.ecibstatus }}</b></td>
+      </tr>
+    </table>
+  </div>
+
+
+  <div class="h-divider my-5">
+  </div>
+
+  <div class="container">
+    <table style="width:100%">
+      <tr>
+        <td>Agent ID1</td>
+        <td>{{ content.lastUpdatedByUserName }}</td>
+        <td><b>{{ bparas.agentid }} </b></td>
+        <td>Account Opener Approval</td>
+        <td><b>{{ content.status }}</b></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><b></b></td>
+        <td></td>
+        <td>Business Approval</td>
+        {% if content.status == 'Approved' %}
+        <td><b>{{ content.businessstatus }} </b></td>
+        {% else %}
+          <td><b>Pending</b></td>
+          {% endif %}
+      </tr>
+      <tr>
+      <td></td>
+        <td></td>
+        <td></td>
+        <td>Bank Approval</td>
+        {% if content.businessstatus == 'Approved' %}
+        <td><b>{{ content.bankstatus }} </b></td>
+        {% else %}
+          <td><b>Pending</b></td>
+          {% endif %}
+      </tr>
+      
+    </table>
+  </div>
+ {% endfor %} #}
+<div class="container">
+    <table style="width:100%">
+      <tr>
+        <td>Agent ID1</td>
+        <td>{{ content.lastUpdatedByUserName }}</td>
+        <td><b>{{ bparas.agentid }} </b></td>
+        <td>Account Opener Approval</td>
+        <td><b>{{ content.status }}</b></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><b></b></td>
+        <td></td>
+        <td>Business Approval</td>
+        {% if content.status == 'Approved' %}
+        <td><b>{{ content.businessstatus }} </b></td>
+        {% else %}
+          <td><b>Pending</b></td>
+          {% endif %}
+      </tr>
+      <tr>
+      <td></td>
+        <td></td>
+        <td></td>
+        <td>Bank Approval</td>
+        {% if content.businessstatus == 'Approved' %}
+        <td><b>{{ content.bankstatus }} </b></td>
+        {% else %}
+          <td><b>Pending</b></td>
+          {% endif %}
+      </tr>
+      
+    </table>
+  </div>
+  {% endfor %}

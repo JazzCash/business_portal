@@ -1,0 +1,144 @@
+.jazz-module {
+    background-color: rgba(255, 0, 0, 0.15);
+}
+
+.jazz-module.active {
+    background-color: rgba(0, 128, 0, 0.205);
+}
+
+.jazz-module input {
+    width: 20px;
+    height: 20px;
+    cursor: revert;
+    user-select: none;
+    pointer-events: none;
+}
+
+.jazz-module.active input {
+    background-color: greenyellow;
+}
+
+.cms-contianer {
+    border: 1px solid #DFE0EB;
+    border-radius: 8px;
+    width: 48%;
+    float: left;
+    margin-top: 50px;
+}
+
+.cms-title h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+    color: #252733;
+}
+
+.lins-cms ul {
+    padding-left: 0;
+}
+
+.lins-cms li.jazz-module.active {
+    list-style-type: none;
+    background: transparent;
+    padding: 10px 20px;
+}
+
+
+/*  */
+
+input[type="checkbox"]:checked+label::after {
+    content: '';
+    position: absolute;
+    width: 1.2ex;
+    height: 0.4ex;
+    background: rgba(0, 0, 0, 0);
+    top: 0.9ex;
+    left: 0.4ex;
+    border: 3px solid blue;
+    border-top: none;
+    border-right: none;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+input[type="checkbox"] {
+    line-height: 2.1ex;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    position: absolute;
+    left: -999em;
+}
+
+input[type="checkbox"]+label {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+input[type="checkbox"]+label::before {
+    content: "";
+    display: inline-block;
+    vertical-align: -25%;
+    height: 2ex;
+    width: 2ex;
+    background-color: white;
+    border: 1px solid rgb(166, 166, 166);
+    border-radius: 4px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.25);
+    margin-right: 0.5em;
+}
+
+.lins-cms li.jazz-module.active span {
+    background: #FFC20C;
+    padding: 5px 3px 5px 7px;
+    text-align: center;
+    border-radius: 50%;
+    margin: 10px 10px 10px 10px;
+}
+
+.lins-cms li.jazz-module.active span::after {
+    display: none;
+}
+
+.lins-cms li.jazz-module {
+    padding: 10px 66px;
+    list-style-type: none;
+    background: transparent;
+    position: relative;
+}
+
+.lins-cms li.jazz-module span::after {
+    content: '';
+    width: 26px;
+    position: absolute;
+    height: 26px;
+    left: 30px;
+    border: 2px solid #C5C7CD;
+    border-radius: 50%;
+}
+
+.block-cmssections {
+    width: 48%;
+    float: right;
+    /* margin: 50px 0 0px 0px; */
+    padding-right: 50px;
+}
+
+[data-action="show-more"] {
+    padding: 10px;
+    list-style: none;
+    cursor: pointer;
+}
+
+[data-action="show-less"] {
+    padding: 10px;
+    list-style: none;
+    cursor: pointer;
+}

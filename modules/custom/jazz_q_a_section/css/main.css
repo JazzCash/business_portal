@@ -1,0 +1,82 @@
+.block-jazz-q-a-section {
+    width: 1366px;
+    padding: 0 100px;
+    max-width: 100%;
+    margin: 0 auto;
+    /* padding: 0 121px; */
+}
+
+.qa-parent {
+    display: flex;
+    justify-content: space-between;
+}
+
+.qa-section {
+    width: 35%;
+}
+
+.tabs-container {
+    width: 58%;
+    background: #F3F3F3;
+}
+
+.qa-section h1 {
+    font-family: 'work-sans-normal';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #525252;
+}
+
+.qa-section a {
+    background: #FFC20C;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.16);
+    width: 194px;
+    display: block;
+    border-radius: 25px;
+    font-family: 'work-sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #161616;
+    padding: 8px;
+}
+
+.tabs-container .panel-group {
+    margin-bottom: 0px;
+}
+
+.tabs-container .panel-default>.panel-heading {
+    background: #F3F3F3 !important;
+    height: 67px;
+    padding-top: 25px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+    .tabs-container {
+        width: 100%;
+        background: #F3F3F3;
+        margin-top: 25px;
+    }
+    .qa-parent {
+        display: block;
+    }
+    .qa-section {
+        width: 100%;
+    }
+    .block-jazz-q-a-section {
+        max-width: 85%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .block-jazz-q-a-section {
+        padding-top: 50px;
+    }
+    .block-jazz-q-a-section {
+        max-width: 90%;
+    }
+}

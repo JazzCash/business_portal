@@ -1,0 +1,26 @@
+uuid: 621bc3fd-041f-4b0a-a377-777fc1eecd44
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.jazz_qr_banner_section.field_qr_banner_image
+    - field.field.node.jazz_qr_banner_section.field_qr_banner_link_1
+    - field.field.node.jazz_qr_banner_section.field_qr_banner_link_2
+    - node.type.jazz_qr_banner_section
+  module:
+    - user
+id: node.jazz_qr_banner_section.teaser
+targetEntityType: node
+bundle: jazz_qr_banner_section
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_qr_banner_image: true
+  field_qr_banner_link_1: true
+  field_qr_banner_link_2: true

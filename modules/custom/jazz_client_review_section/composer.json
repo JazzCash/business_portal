@@ -1,0 +1,13 @@
+{
+    "name": "jazz_client_review_section",
+    "type": "drupal-module",
+    "description": "My Awesome Module",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/jazz_client_review_section",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/jazz_client_review_section",
+        "source": "http://cgit.drupalcode.org/jazz_client_review_section",
+    },
+}

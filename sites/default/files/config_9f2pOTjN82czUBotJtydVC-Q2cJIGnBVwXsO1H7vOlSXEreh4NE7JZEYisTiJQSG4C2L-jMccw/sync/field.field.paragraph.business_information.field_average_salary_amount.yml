@@ -1,0 +1,23 @@
+uuid: 7abc1c01-96ea-452b-8893-fd760dacc1c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_average_salary_amount
+    - paragraphs.paragraphs_type.business_information
+id: paragraph.business_information.field_average_salary_amount
+field_name: field_average_salary_amount
+entity_type: paragraph
+bundle: business_information
+label: 'Average Salary Amount'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

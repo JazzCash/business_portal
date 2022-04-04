@@ -1,0 +1,38 @@
+uuid: 750b08a4-8dff-4056-8b4a-3e906fe86839
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_more_solution_image
+    - node.type.jazz_more_solutions_section
+  module:
+    - image
+id: node.jazz_more_solutions_section.field_more_solution_image
+field_name: field_more_solution_image
+entity_type: node
+bundle: jazz_more_solutions_section
+label: 'More Solution Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: false
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

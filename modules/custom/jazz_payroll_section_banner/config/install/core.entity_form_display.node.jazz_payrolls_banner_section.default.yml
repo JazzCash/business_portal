@@ -1,0 +1,94 @@
+uuid: 5b207f86-1700-46ef-b395-3fadb98269f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.jazz_payrolls_banner_section.field_payroll_banner_image
+    - field.field.node.jazz_payrolls_banner_section.field_payroll_banner_link_1
+    - field.field.node.jazz_payrolls_banner_section.field_payroll_banner_link_2
+    - image.style.thumbnail
+    - node.type.jazz_payrolls_banner_section
+  module:
+    - image
+    - path
+id: node.jazz_payrolls_banner_section.default
+targetEntityType: node
+bundle: jazz_payrolls_banner_section
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_payroll_banner_image:
+    weight: 121
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_payroll_banner_link_1:
+    weight: 122
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_payroll_banner_link_2:
+    weight: 123
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 15
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 120
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 16
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+hidden: {  }

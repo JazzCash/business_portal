@@ -1,0 +1,7 @@
+jazz_manage_blog.node_edit_form:
+  path: '/admin/jazz_manage_blog/form/{node}/node_edit'
+  defaults:
+    _form: '\Drupal\jazz_manage_blog\Form\NodeEditForm'
+    _title: 'NodeEditForm'
+  requirements:
+    _access: 'TRUE'

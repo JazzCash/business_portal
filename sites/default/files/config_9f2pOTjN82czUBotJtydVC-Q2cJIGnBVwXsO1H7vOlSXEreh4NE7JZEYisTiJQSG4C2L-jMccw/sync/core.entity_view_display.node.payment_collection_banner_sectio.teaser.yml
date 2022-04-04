@@ -1,0 +1,26 @@
+uuid: f8766c4a-d860-4791-9308-89bb5cdb1dfa
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.payment_collection_banner_sectio.field_payment_collection_banner_
+    - field.field.node.payment_collection_banner_sectio.field_payment_collection_link_1
+    - field.field.node.payment_collection_banner_sectio.field_payment_collection_link_2
+    - node.type.payment_collection_banner_sectio
+  module:
+    - user
+id: node.payment_collection_banner_sectio.teaser
+targetEntityType: node
+bundle: payment_collection_banner_sectio
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_payment_collection_banner_: true
+  field_payment_collection_link_1: true
+  field_payment_collection_link_2: true

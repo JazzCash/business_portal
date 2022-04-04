@@ -1,0 +1,23 @@
+uuid: af171dfc-c3d9-41d2-b89e-867ddca45212
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.jazz_home_screen_workflow_sectio
+  module:
+    - text
+id: node.jazz_home_screen_workflow_sectio.body
+field_name: body
+entity_type: node
+bundle: jazz_home_screen_workflow_sectio
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

@@ -1,0 +1,102 @@
+<?php
+
+/**
+ * @file
+ * Contains jazz_blogdetail.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function jazz_blogdetail_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the jazz_blogdetail module.
+    case 'help.page.jazz_blogdetail':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('My Awesome Module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function jazz_blogdetail_theme($existing, $type, $theme, $path) {
+  return [
+    'jazz_blogdetail' => [
+      'render element' => 'children',
+    ],
+
+     // Views templates.
+     'page_blogdetail_views_view' => [
+      'template' => 'blog-blogdetail-views-view',
+      'base hook' => 'views_view',
+      'path' => $path . '/templates/views'
+    ],
+    // Views unformatted templates.
+    'page_blogdetail_views_view_unformated' => [
+      'template' => 'blog-blogdetail-views-view-unformated',
+      'base hook' => 'views_view_unformatted',
+      'path' => $path . '/templates/views'
+    ],
+    // Views unformatted templates.
+    'page_blogdetail_view_fields' => [
+      'template' => 'blog-blogdetail-view-fields',
+      'base hook' => 'views_view_fields',
+      'path' => $path . '/templates/views'
+    ],
+  ];
+}
+
+/**
+ * Implements hook_theme_suggestions_page_alter().
+ */
+function jazz_blogdetail_theme_suggestions_views_view_alter(array &$suggestions, array $variables)
+{
+  $view = $variables['view'];
+  if ($view->id() == "blogs" && $view->current_display == "blogdetail") {
+    $suggestions[] = "page_blogdetail_views_view";
+  }
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ *
+ * Add views unformatted template suggestions.
+ * 
+ * @inheritdoc
+ */
+function jazz_blogdetail_theme_suggestions_views_view_unformatted_alter(array &$suggestions, array $variables)
+{
+  $view = $variables['view'];
+  if ($view->id() == "blogs" && $view->current_display == "blogdetail") {
+    $suggestions[] = "page_blogdetail_views_view_unformated";
+  }
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ *
+ * Add views unformatted template suggestions.
+ * 
+ * @inheritdoc
+ */
+function jazz_blogdetail_theme_suggestions_views_view_fields_alter(array &$suggestions, array $variables)
+{
+  $view = $variables['view'];
+  if ($view->id() == "blogs" && $view->current_display == "blogdetail") {
+    $suggestions[] = "page_blogdetail_view_fields";
+  }
+}
+
+
+// ---------------------- //
+function jazz_blogdetail_page_attachments(array &$attachments) {
+  // Unconditionally attach the mymodule/lrv library.
+  $attachments['#attached']['library'][] = 'jazz_blogdetail/jazz_details';
+}

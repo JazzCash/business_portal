@@ -1,0 +1,212 @@
+{% set container = theme.settings.fluid_container ? 'container-fluid' : 'container' %}
+{# Navbar #}
+{% if page.navigation or page.navigation_collapsible %}
+  {% block navbar %}
+    {%
+      set navbar_classes = [
+        'navbar',
+        theme.settings.navbar_inverse ? 'navbar-inverse' : 'navbar-default',
+        theme.settings.navbar_position ? 'navbar-' ~ theme.settings.navbar_position|clean_class : container,
+      ]
+    %}
+    <header{{ navbar_attributes.addClass(navbar_classes) }} id="navbar" role="banner">
+      {% if not navbar_attributes.hasClass(container) %}
+        <div class="{{ container }}">
+      {% endif %}
+      <div class="navbar-header">
+        {{ page.navigation }}
+        {# .btn-navbar is used as the toggle for collapsed navbar content #}
+        {% if page.navigation_collapsible %}
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+            <span class="sr-only">{{ 'Toggle navigation'|t }}</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        {% endif %}
+      </div>
+
+      {# Navigation (collapsible) #}
+      {% if page.navigation_collapsible %}
+        <div id="navbar-collapse" class="navbar-collapse collapse">
+          {{ page.navigation_collapsible }}
+        </div>
+      {% endif %}
+      {% if not navbar_attributes.hasClass(container) %}
+        </div>
+      {% endif %}
+    </header>
+  {% endblock %}
+{% endif %}
+
+{# Main #}
+{% block main %}
+  <div role="main" class="main-container {{ container }} js-quickedit-main-content">
+    <div class="row">
+
+      {# Header #}
+      {% if page.header %}
+        {% block header %}
+          <div class="col-sm-12" role="heading">
+            {{ page.header }}
+          </div>
+        {% endblock %}
+      {% endif %}
+
+      {# Sidebar First #}
+      {% if page.sidebar_first %}
+        {% block sidebar_first %}
+          <aside class="col-sm-3" role="complementary">
+            {{ page.sidebar_first }}
+          </aside>
+        {% endblock %}
+      {% endif %}
+
+      {# Content #}
+      {%
+        set content_classes = [
+          page.sidebar_first and page.sidebar_second ? 'col-sm-6',
+          page.sidebar_first and page.sidebar_second is empty ? 'col-sm-9',
+          page.sidebar_second and page.sidebar_first is empty ? 'col-sm-9',
+          page.sidebar_first is empty and page.sidebar_second is empty ? 'col-sm-12'
+        ]
+      %}
+      <section{{ content_attributes.addClass(content_classes) }}>
+
+        {# Highlighted #}
+        {% if page.highlighted %}
+          {% block highlighted %}
+            <div class="highlighted">{{ page.highlighted }}</div>
+          {% endblock %}
+        {% endif %}
+
+        {# Help #}
+        {% if page.help %}
+          {% block help %}
+            {{ page.help }}
+          {% endblock %}
+        {% endif %}
+
+        {# Content #}
+        {% block content %}
+          <div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <!--featured-imagebox-->
+            <div class="featured-imagebox ">
+                <div class="ttm-box-view-content-inner">
+                    <!-- featured-thumbnail -->
+                    <div>
+                        <img class="img-fluid" src="{{ base_path ~ directory }}/images/Group.png" alt="image">
+                        <br>
+                        <br>
+                        <h2> Developers</h2>
+                        <p>As a Developers account you'll get</p><br>
+                        <p> &nbsp;&nbsp; ✔ &nbsp;&nbsp;An account in your own name</p>
+                        <p> &nbsp;&nbsp; ✔&nbsp;&nbsp;Two personal cards in your name</p>
+                        <p>&nbsp; &nbsp;✔&nbsp;&nbsp;Access for your accountant</p>
+                        <br>
+                    
+                        <p>We bring together everything that’s required to build <br> websites and apps that accept payments and send <br> payouts. </p>
+                    </div><!-- featured-thumbnail end-->
+                </div>
+                
+            </div><!-- featured-imagebox end-->
+        </div>
+        <div style="background-color: #E5E5E5;" class="col-sm-6">
+            <!--featured-imagebox-->
+            <div style="margin-top: 5rem;" class="featured-imagebox ">
+                <div class="ttm-box-view-content-inner">
+                    <div class="featured-content">
+                        <div class="featured-title">
+                            <img src="{{ base_path ~ directory }}/images/Group_2.png" style="float: left; margin-left: 3rem; margin-top: 1rem;" alt="">
+                            <h3 style="margin-left: 7rem;">Welcome back to the <br>
+                                JazzCash Developer Portal<br><br></h3>
+                        </div>
+                        <div style="margin-left:3rem ;" class="featured-desc">
+                            <p>Test your applications before going live and enable access to 
+                                JazzCash customers<br><br></p> <br><br><br>
+                                
+                                <div style="margin-left: -1rem;" class="col-md-11">
+                                  
+                                   <form class="user-login-form" data-drupal-selector="user-login-form" action="" method="post" id="user-login-form" accept-charset="UTF-8">
+  
+
+                                        <div class="form-item js-form-item form-type-textfield js-form-type-textfield form-item-name js-form-item-name form-group">
+                                        <label for="edit-name" class="control-label js-form-required form-required">Username</label>
+                                        <input autocorrect="none" autocapitalize="none" spellcheck="false" autofocus="autofocus" data-drupal-selector="edit-name" class="form-text required form-control" type="text" id="edit-name" name="name" value="" size="60" maxlength="60" required="required" aria-required="true" title="" data-toggle="tooltip" data-original-title="Enter your jazzcash username.">
+                                        </div>
+                                        <div class="form-item js-form-item form-type-password js-form-type-password form-item-pass js-form-item-pass form-group">
+                                        <label for="edit-pass" class="control-label js-form-required form-required">Password</label>
+                                        <input data-drupal-selector="edit-pass" class="form-text required form-control" type="password" id="edit-pass" name="pass" size="60" maxlength="128" required="required" aria-required="true" title="" data-toggle="tooltip" data-original-title="Enter the password that accompanies your username.">
+                                        </div>
+                                        <input autocomplete="off" data-drupal-selector="form-s8xoeb2npqnf7fhhsyp2mh-hs-pffq6ifgg6ytw-nue" type="hidden" name="form_build_id" value="form-s8xoEb2NpQNF7FHHsyP2MH-hs-pfFq6IFgg6YTW-NuE">
+                                        <input data-drupal-selector="edit-user-login-form" type="hidden" name="form_id" value="user_login_form">
+                                        <div data-drupal-selector="edit-actions" class="form-actions form-group js-form-wrapper form-wrapper" id="edit-actions">
+                                       
+                                        <button data-drupal-selector="edit-submit" class="button js-form-submit form-submit btn-primary btn icon-before login-form-submit" type="submit" id="edit-submit" name="op" value="Log in"><span class="icon glyphicon glyphicon-log-in" aria-hidden="true"></span>
+                                        Log in</button>
+
+                                        </div>
+
+
+
+                                    </form>
+                                    
+                                </div>
+                                <br>
+                                <div class="row">
+                                <div class="col-8"></div>
+                                {# <div class="col-4">  <button class="login-page-submit" type="submit"> <img  src="{{ login_page_block_mod_path }}/Capture.PNG"> </button></div> #}
+                                
+                                </div>
+
+                                
+                                
+                                    
+                                
+                                
+                                <br><br><br><br>
+                                <div style="width: 100%; " class="col-md-11">
+                                <hr>
+                                </div>
+                                <p style="float: left;">&nbsp;&nbsp;&nbsp;Don’t have an account? &nbsp;&nbsp;</p>
+                                <a style="color: #FFC20C; " href="{{ base_path }}register"><b>Sign Up</b></a>
+                        
+                                <div class="subscribe-response"></div>
+                        
+                                
+                            </div>
+
+                </div>
+                
+                    
+                </div>
+            </div><!-- featured-imagebox end-->
+        </div>
+        
+        
+    </div>
+</div>
+        {% endblock %}
+      </section>
+
+      {# Sidebar Second #}
+      {% if page.sidebar_second %}
+        {% block sidebar_second %}
+          <aside class="col-sm-3" role="complementary">
+            {{ page.sidebar_second }}
+          </aside>
+        {% endblock %}
+      {% endif %}
+    </div>
+  </div>
+{% endblock %}
+
+{% if page.footer %}
+  {% block footer %}
+    <footer class="footer {{ container }}" role="contentinfo">
+      {{ page.footer }}
+    </footer>
+  {% endblock %}
+{% endif %}

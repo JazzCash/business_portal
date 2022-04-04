@@ -1,0 +1,10 @@
+<!-- Add you custom twig html here -->
+<h1>Accept Online Payments from anywhere</h1>
+<div class="payment-everywhere-section">
+    {% for content in data.content %}
+    <div class="payment-everywhere">
+        <img class="img" src="{{ content.image }}">
+        <p>{{ content.title }}</p>
+    </div>
+    {% endfor %}
+</div>

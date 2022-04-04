@@ -1,0 +1,58 @@
+{#
+/**
+* @file
+* Default theme implementation to display a block.
+*
+* @see template_preprocess_block()
+*
+* @ingroup themeable
+*/
+#}
+{% set classes = [
+    'clear-both',
+    'ask-question-form'
+] %}
+<div {{attributes.addClass(classes)}}>
+	<h1>FORMkotak</h1>
+	<div class="qaform-fake-container row">
+		<div class="col-md-10">
+			{{ form.title }}</div>
+		<div
+			class="col-md-2">
+			<!-- Button trigger modal -->
+			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+				Submit
+			</button>
+		</div>
+	</div>
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalCenterTitle">Create new question</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body qaform-actual-container">
+					{{ form.title }}
+					{{ form.taxonomy_forums }}
+					{{ form.body }}
+					<details>
+						{{ form|without('title', 'taxonomy_forums', 'body', 'actions') }}
+					</details>
+				</div>
+				<div class="modal-footer row">
+					<div class="col-md-2">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+					<div class="col-md-2">
+						{{ form.actions }}
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,21 @@
+uuid: accfb1d3-28c8-4022-a5b3-fb154bd1b548
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_jcomplaint_phone
+field_name: field_jcomplaint_phone
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

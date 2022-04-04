@@ -1,0 +1,22 @@
+uuid: 0a1b25a1-7165-437f-af4b-9ba122fb64ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.jazz_videos.field_jazz_video_url
+    - node.type.jazz_videos
+  module:
+    - user
+id: node.jazz_videos.teaser
+targetEntityType: node
+bundle: jazz_videos
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_jazz_video_url: true

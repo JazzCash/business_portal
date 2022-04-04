@@ -1,0 +1,19 @@
+uuid: f5c2a556-71d1-43ac-b698-3fbe1a19ce9d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_official_email
+    - paragraphs.paragraphs_type.technology_person_of_contact
+id: paragraph.technology_person_of_contact.field_official_email
+field_name: field_official_email
+entity_type: paragraph
+bundle: technology_person_of_contact
+label: 'Official Email'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

@@ -1,0 +1,13 @@
+{
+    "name": "register_iap",
+    "type": "drupal-module",
+    "description": "Module for footer block register integrate accept payments",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/register_iap",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/register_iap",
+        "source": "http://cgit.drupalcode.org/register_iap",
+    },
+}

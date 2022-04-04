@@ -1,0 +1,13 @@
+{
+    "name": "jazz_morearticles_blog",
+    "type": "drupal-module",
+    "description": "My Awesome Module",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/jazz_morearticles_blog",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/jazz_morearticles_blog",
+        "source": "http://cgit.drupalcode.org/jazz_morearticles_blog",
+    },
+}

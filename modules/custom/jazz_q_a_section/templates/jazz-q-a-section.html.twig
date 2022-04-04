@@ -1,0 +1,30 @@
+<!-- Add you custom twig html here -->
+<div class="qa-parent">
+      {% for content in data.content %}
+      <div class="qa-section">
+            <img class="img" src="{{ content.image }}">
+            <h1>{{ content.title }}</h1>
+            <a href="{{ content.link }}">Knowledge base</a>
+      </div>
+      <div class="tabs-container">
+            {% for paras in content.qablocks %}      
+                  <div class="panel-group" id="accordion{{ paras.qa_id }}">
+                        <div class="panel panel-default">
+                              <div class="panel-heading">
+                              <h1 class="panel-title">
+                              <a data-toggle="collapse" data-parent="#accordion{{ paras.qa_id }}" href="#collapse1{{ paras.qa_id }}">{{ paras.qatitle }}</a>
+
+                              </h1>
+                              </div>
+                              <div id="collapse1{{ paras.qa_id }}" class="panel-collapse collapse in">
+                              <div class="panel-body">
+                                    {{ paras.qabody|raw }}
+                              </div>
+                              </div>
+                        </div>
+                  </div>      
+                  
+            {% endfor %}   
+      </div>      
+{% endfor %}
+</div>

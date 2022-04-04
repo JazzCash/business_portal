@@ -1,0 +1,29 @@
+uuid: 593f093a-5a74-4c9e-bf3c-99146e5f0e7c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_select_bank
+    - paragraphs.paragraphs_type.settlement_details
+    - taxonomy.vocabulary.bank_names
+id: paragraph.settlement_details.field_select_bank
+field_name: field_select_bank
+entity_type: paragraph
+bundle: settlement_details
+label: 'Select Bank'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      bank_names: bank_names
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

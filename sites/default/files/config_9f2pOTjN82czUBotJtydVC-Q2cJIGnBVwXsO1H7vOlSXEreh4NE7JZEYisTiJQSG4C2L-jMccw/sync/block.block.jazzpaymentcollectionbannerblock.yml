@@ -1,0 +1,26 @@
+uuid: 2a66fa44-11b4-4a57-aa91-0ebfc9685878
+langcode: en
+status: true
+dependencies:
+  module:
+    - jazz_payment_collection_banner_s
+    - system
+  theme:
+    - bootstrap
+id: jazzpaymentcollectionbannerblock
+theme: bootstrap
+region: content
+weight: -20
+provider: null
+plugin: jazz_payment_collection_banner_block
+settings:
+  id: jazz_payment_collection_banner_block
+  label: 'Jazz payment collection banner block'
+  provider: jazz_payment_collection_banner_s
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/24
+    negate: false
+    context_mapping: {  }

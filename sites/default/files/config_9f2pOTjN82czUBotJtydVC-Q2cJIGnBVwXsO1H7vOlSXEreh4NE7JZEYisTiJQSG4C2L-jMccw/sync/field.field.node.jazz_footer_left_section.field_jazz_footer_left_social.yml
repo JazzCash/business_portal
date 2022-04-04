@@ -1,0 +1,70 @@
+uuid: fdfe3bdb-0cbf-4c56-8424-895f9a688c42
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_jazz_footer_left_social
+    - node.type.jazz_footer_left_section
+    - paragraphs.paragraphs_type.social_icons_data
+  module:
+    - entity_reference_revisions
+id: node.jazz_footer_left_section.field_jazz_footer_left_social
+field_name: field_jazz_footer_left_social
+entity_type: node
+bundle: jazz_footer_left_section
+label: 'Social Links'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      social_icons_data: social_icons_data
+    target_bundles_drag_drop:
+      agreement:
+        weight: 15
+        enabled: false
+      authorize_personnel_details:
+        weight: 16
+        enabled: false
+      business_information:
+        weight: 17
+        enabled: false
+      corporate_collections:
+        weight: 18
+        enabled: false
+      directors_information:
+        weight: 19
+        enabled: false
+      footer_left_section_link:
+        weight: 20
+        enabled: false
+      jazz_q_a:
+        weight: 21
+        enabled: false
+      jazz_video_section_data:
+        weight: 22
+        enabled: false
+      online_payment_gateway:
+        weight: 23
+        enabled: false
+      settlement_details:
+        weight: 24
+        enabled: false
+      social_icons_data:
+        enabled: true
+        weight: 25
+      technology_person_of_contact:
+        weight: 26
+        enabled: false
+      test_paragraph:
+        weight: 27
+        enabled: false
+      workflow_section:
+        weight: 28
+        enabled: false
+field_type: entity_reference_revisions

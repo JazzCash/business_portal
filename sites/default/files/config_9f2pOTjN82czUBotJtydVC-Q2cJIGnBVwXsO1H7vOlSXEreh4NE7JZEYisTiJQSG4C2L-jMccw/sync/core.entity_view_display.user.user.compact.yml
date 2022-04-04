@@ -1,0 +1,69 @@
+uuid: 6b720bdb-2137-433e-a56d-4062610ab576
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.user.compact
+    - field.field.user.user.field_agreement
+    - field.field.user.user.field_authorize_personnel_detail
+    - field.field.user.user.field_business_information
+    - field.field.user.user.field_certificate_of_commencemen
+    - field.field.user.user.field_certificate_of_incorporati
+    - field.field.user.user.field_company_type
+    - field.field.user.user.field_corporate_collections
+    - field.field.user.user.field_directors_information
+    - field.field.user.user.field_full_name
+    - field.field.user.user.field_level_2_branchless_banking
+    - field.field.user.user.field_list_of_directors_on_form_
+    - field.field.user.user.field_memorandum_and_articles_of
+    - field.field.user.user.field_mobile_number
+    - field.field.user.user.field_name_of_business_company
+    - field.field.user.user.field_ntn_certificate
+    - field.field.user.user.field_online_payment_gateway
+    - field.field.user.user.field_photocopies_of_cnic_of_all
+    - field.field.user.user.field_resolution_of_board_of_dir
+    - field.field.user.user.field_settlement_details
+    - field.field.user.user.field_technology_person_of_conta
+    - field.field.user.user.user_picture
+    - image.style.thumbnail
+  module:
+    - image
+    - user
+_core:
+  default_config_hash: '-cLsS3M3JycipXQt9rEb81_HxKneReoGuRh8ijcOPXs'
+id: user.user.compact
+targetEntityType: user
+bundle: user
+mode: compact
+content:
+  user_picture:
+    type: image
+    weight: 0
+    region: content
+    settings:
+      image_style: thumbnail
+      image_link: content
+    third_party_settings: {  }
+    label: hidden
+hidden:
+  field_agreement: true
+  field_authorize_personnel_detail: true
+  field_business_information: true
+  field_certificate_of_commencemen: true
+  field_certificate_of_incorporati: true
+  field_company_type: true
+  field_corporate_collections: true
+  field_directors_information: true
+  field_full_name: true
+  field_level_2_branchless_banking: true
+  field_list_of_directors_on_form_: true
+  field_memorandum_and_articles_of: true
+  field_mobile_number: true
+  field_name_of_business_company: true
+  field_ntn_certificate: true
+  field_online_payment_gateway: true
+  field_photocopies_of_cnic_of_all: true
+  field_resolution_of_board_of_dir: true
+  field_settlement_details: true
+  field_technology_person_of_conta: true
+  member_for: true

@@ -1,0 +1,43 @@
+uuid: 390b6e4b-db15-4c83-b8cf-4f02710b888c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_authorize_personnel_detail
+    - paragraphs.paragraphs_type.authorize_personnel_details
+  module:
+    - entity_reference_revisions
+    - user
+id: user.user.field_authorize_personnel_detail
+field_name: field_authorize_personnel_detail
+entity_type: user
+bundle: user
+label: 'Authorize Personnel Details'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      authorize_personnel_details: authorize_personnel_details
+    target_bundles_drag_drop:
+      authorize_personnel_details:
+        enabled: true
+        weight: 6
+      business_information:
+        weight: 7
+        enabled: false
+      corporate_collections:
+        weight: 8
+        enabled: false
+      directors_information:
+        weight: 9
+        enabled: false
+      online_payment_gateway:
+        weight: 10
+        enabled: false
+field_type: entity_reference_revisions

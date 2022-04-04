@@ -1,0 +1,153 @@
+uuid: 07d5e719-5d91-4bff-9cbe-f7043686c364
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.business_information.field_average_salary_amount
+    - field.field.paragraph.business_information.field_business_mailing_address
+    - field.field.paragraph.business_information.field_business_name
+    - field.field.paragraph.business_information.field_date_of_incorporation
+    - field.field.paragraph.business_information.field_email_address
+    - field.field.paragraph.business_information.field_fax_number
+    - field.field.paragraph.business_information.field_frequency_of_salary_disbur
+    - field.field.paragraph.business_information.field_monthly_turnover
+    - field.field.paragraph.business_information.field_nature_of_business
+    - field.field.paragraph.business_information.field_ntn_date_of_issue
+    - field.field.paragraph.business_information.field_ntn_issuing_authority
+    - field.field.paragraph.business_information.field_ntn_number
+    - field.field.paragraph.business_information.field_number_of_employees
+    - field.field.paragraph.business_information.field_phone
+    - field.field.paragraph.business_information.field_place_of_incorporation
+    - field.field.paragraph.business_information.field_registration_date
+    - paragraphs.paragraphs_type.business_information
+  module:
+    - datetime
+id: paragraph.business_information.default
+targetEntityType: paragraph
+bundle: business_information
+mode: default
+content:
+  field_average_salary_amount:
+    weight: 14
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_business_mailing_address:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_business_name:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_date_of_incorporation:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_email_address:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_fax_number:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_frequency_of_salary_disbur:
+    weight: 15
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_monthly_turnover:
+    weight: 13
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_nature_of_business:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_ntn_date_of_issue:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_ntn_issuing_authority:
+    weight: 8
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_ntn_number:
+    weight: 9
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_number_of_employees:
+    weight: 12
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_phone:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_place_of_incorporation:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_registration_date:
+    weight: 11
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+hidden:
+  created: true
+  status: true

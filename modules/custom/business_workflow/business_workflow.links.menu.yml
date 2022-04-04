@@ -1,0 +1,6 @@
+business_workflow.business_mail_config_form:
+  title: 'Business Workflow Mails Config'
+  route_name: business_workflow.business_mail_config_form
+  description: 'A description for the menu entry'
+  parent: system.admin_config_system
+  weight: 99

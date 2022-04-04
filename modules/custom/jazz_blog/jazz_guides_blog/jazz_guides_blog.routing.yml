@@ -1,0 +1,7 @@
+jazz_guides_blog.]:
+  path: '/jazz_guides_blog/form/blogs_filter'
+  defaults:
+    _form: '\Drupal\jazz_guides_blog\Form\BlogsFilterForm'
+    _title: 'BlogsFilterForm'
+  requirements:
+    _access: 'TRUE'

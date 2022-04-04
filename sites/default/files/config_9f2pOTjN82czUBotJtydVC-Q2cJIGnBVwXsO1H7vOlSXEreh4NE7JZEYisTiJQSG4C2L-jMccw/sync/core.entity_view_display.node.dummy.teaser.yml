@@ -1,0 +1,32 @@
+uuid: 8d2a63fa-84f8-48f6-a8ec-c127afbdb8a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.dummy.body
+    - field.field.node.dummy.field_dummy_test
+    - node.type.dummy
+  module:
+    - text
+    - user
+id: node.dummy.teaser
+targetEntityType: node
+bundle: dummy
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_dummy_test: true

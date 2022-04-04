@@ -1,0 +1,23 @@
+uuid: 512cb170-aa47-4393-9a7d-70fd042860d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_complaint_answer
+    - node.type.jazz_complaint
+  module:
+    - text
+_core:
+  default_config_hash: hebuVhrRhXymQvoCgAlwOmO38vwbdFP-1VkRngdhMIY
+id: node.jazz_complaint.field_complaint_answer
+field_name: field_complaint_answer
+entity_type: node
+bundle: jazz_complaint
+label: 'Complaint Answer'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

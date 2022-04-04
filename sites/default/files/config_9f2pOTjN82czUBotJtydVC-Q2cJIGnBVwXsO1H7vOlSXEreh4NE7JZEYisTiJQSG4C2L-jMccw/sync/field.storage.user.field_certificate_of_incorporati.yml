@@ -1,0 +1,23 @@
+uuid: 8eadafc9-a40c-4a21-876d-bbfe55b3982e
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - user
+id: user.field_certificate_of_incorporati
+field_name: field_certificate_of_incorporati
+entity_type: user
+type: file
+settings:
+  display_field: false
+  display_default: false
+  uri_scheme: public
+  target_type: file
+module: file
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

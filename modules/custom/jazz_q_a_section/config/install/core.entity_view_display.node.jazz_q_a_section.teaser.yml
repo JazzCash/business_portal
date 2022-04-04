@@ -1,0 +1,26 @@
+uuid: d9df39c0-2e76-4049-afaa-620809048202
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.jazz_q_a_section.field_jazz_q_a_section_data
+    - field.field.node.jazz_q_a_section.field_jazz_q_a_section_image
+    - field.field.node.jazz_q_a_section.field_jazz_q_a_section_link
+    - node.type.jazz_q_a_section
+  module:
+    - user
+id: node.jazz_q_a_section.teaser
+targetEntityType: node
+bundle: jazz_q_a_section
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_jazz_q_a_section_data: true
+  field_jazz_q_a_section_image: true
+  field_jazz_q_a_section_link: true

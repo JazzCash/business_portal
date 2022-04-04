@@ -1,0 +1,30 @@
+uuid: 2a13f1bc-8463-4314-9a87-2b586f66a432
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.jazz_clients.field_jazz_client_image
+    - node.type.jazz_clients
+  module:
+    - image
+    - user
+id: node.jazz_clients.default
+targetEntityType: node
+bundle: jazz_clients
+mode: default
+content:
+  field_jazz_client_image:
+    weight: 101
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

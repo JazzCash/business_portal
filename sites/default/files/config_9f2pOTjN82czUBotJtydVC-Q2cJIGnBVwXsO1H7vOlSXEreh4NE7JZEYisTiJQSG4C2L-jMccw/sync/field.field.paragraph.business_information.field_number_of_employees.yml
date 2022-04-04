@@ -1,0 +1,23 @@
+uuid: 793409d0-3f6a-436e-8aa3-ad299864219d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_number_of_employees
+    - paragraphs.paragraphs_type.business_information
+id: paragraph.business_information.field_number_of_employees
+field_name: field_number_of_employees
+entity_type: paragraph
+bundle: business_information
+label: 'Number of Employees'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

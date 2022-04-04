@@ -1,0 +1,13 @@
+{
+    "name": "jazz_videos",
+    "type": "drupal-module",
+    "description": "My Awesome Module",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/jazz_videos",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/jazz_videos",
+        "source": "http://cgit.drupalcode.org/jazz_videos",
+    },
+}

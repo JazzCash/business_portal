@@ -1,0 +1,26 @@
+uuid: e787e805-dd0a-4e40-86b9-cf86e434947b
+langcode: en
+status: true
+dependencies:
+  module:
+    - jazz_clients
+    - system
+  theme:
+    - bootstrap
+id: jazzclientsblock
+theme: bootstrap
+region: content
+weight: -7
+provider: null
+plugin: jazz_clients_block
+settings:
+  id: jazz_clients_block
+  label: 'Jazz clients block'
+  provider: jazz_clients
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/22
+    negate: false
+    context_mapping: {  }

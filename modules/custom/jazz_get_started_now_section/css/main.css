@@ -1,0 +1,99 @@
+.block-jazz-get-started-now-section {
+    width: 1366px;
+    padding: 0 100px;
+    max-width: 100%;
+    margin: 250px auto 0 auto;
+}
+
+.get-started-container {
+    display: flex;
+    justify-content: space-between;
+    width: 967px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.getstarted-section h1 {
+    width: 38px;
+    height: 38px;
+    background: #A22621;
+    color: #fff;
+    font-family: 'work-sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    border-radius: 50%;
+    padding-top: 3px;
+}
+
+.getstarted-section a {
+    font-family: 'work-sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    color: #262626;
+}
+
+.getstarted-section a:hover {
+    color: #262626;
+}
+
+.getstarted-section {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.12);
+    border-radius: 12px;
+    width: 27%;
+    height: 158px;
+    padding: 10px 24px 24px 24px;
+}
+
+.block-jazz-get-started-now-section>h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 46px;
+    line-height: 60px;
+    text-align: center;
+    color: #262626;
+    font-family: 'Work-Sans';
+    padding-bottom: 50px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+    .get-started-container {
+        flex-wrap: wrap;
+    }
+    .getstarted-section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .jazz-home-2nd-parent {
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    .jazz-home-2nd-sec {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .block-jazz-get-started-now-section {
+        width: 1442px;
+        max-width: 85%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .get-started-container {
+        padding-bottom: 50px;
+    }
+    .getstarted-section {
+        width: 25%;
+    }
+    .getstarted-section a {
+        font-size: 20px;
+    }
+}

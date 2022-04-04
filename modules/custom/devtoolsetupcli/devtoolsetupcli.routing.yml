@@ -1,0 +1,10 @@
+
+devtoolsetupcli.setup_cli:
+  path: '/admin/config/devtoolsetupcli/settings'
+  defaults:
+    _form: '\Drupal\devtoolsetupcli\Form\setupcliform'
+    _title: 'main'
+  requirements:
+    _permission: 'access content'
+  options:
+    _admin_route: TRUE

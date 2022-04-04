@@ -1,0 +1,13 @@
+<!-- Add you custom twig html here -->
+{% for content in data.content %}
+            <h1>{{ content.title }}</h1>
+            {{ content.body|raw }}
+            <div class="parent-work-flow">
+      {% for paras in content.imageblocks %}
+                  <div class="container-workflow">
+                  <img class="img" src="{{ paras.blockimage }}">
+                  <p>{{ paras.blockbody }}</p>
+                  </div>
+      {% endfor %}
+      </div>
+{% endfor %}

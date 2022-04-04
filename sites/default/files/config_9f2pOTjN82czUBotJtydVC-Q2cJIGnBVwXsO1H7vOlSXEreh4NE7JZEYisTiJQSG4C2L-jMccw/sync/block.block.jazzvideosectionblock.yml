@@ -1,0 +1,26 @@
+uuid: 64ff31c7-eafa-416a-8257-9d2121f4b9da
+langcode: en
+status: true
+dependencies:
+  module:
+    - jazz_video_section
+    - system
+  theme:
+    - bootstrap
+id: jazzvideosectionblock
+theme: bootstrap
+region: content
+weight: -14
+provider: null
+plugin: jazz_video_section_block
+settings:
+  id: jazz_video_section_block
+  label: 'Jazz video section block'
+  provider: jazz_video_section
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/22
+    negate: false
+    context_mapping: {  }

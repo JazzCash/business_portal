@@ -1,0 +1,33 @@
+definitions:
+  contact__site_page:
+    enabled: true
+    menu_name: footer
+    parent: ''
+    weight: 0
+    expanded: false
+  standard__front_page:
+    enabled: false
+    menu_name: main
+    parent: ''
+    expanded: true
+    weight: 0
+  user__page:
+    weight: -50
+    menu_name: account
+    parent: ''
+    enabled: true
+    expanded: false
+  node__add_page:
+    menu_name: tools
+    parent: ''
+    weight: 0
+    expanded: true
+    enabled: true
+  user__logout:
+    weight: -50
+    parent: 'menu_link_content:505da110-bfde-4086-869b-efebff3206d2'
+    menu_name: account
+    enabled: true
+    expanded: false
+_core:
+  default_config_hash: o4bYR9ZupWb3AsOIizTUG4g-nu1mdJqA59UB7QT-ifQ

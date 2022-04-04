@@ -1,0 +1,34 @@
+uuid: 3f363695-7241-4f4e-8c52-b3504c345e1f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.jazz_payment_section_4.body
+    - field.field.node.jazz_payment_section_4.field_jazz_payment_section_4_ima
+    - field.field.node.jazz_payment_section_4.field_jazz_payment_section_4_lin
+    - node.type.jazz_payment_section_4
+  module:
+    - text
+    - user
+id: node.jazz_payment_section_4.teaser
+targetEntityType: node
+bundle: jazz_payment_section_4
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_jazz_payment_section_4_ima: true
+  field_jazz_payment_section_4_lin: true

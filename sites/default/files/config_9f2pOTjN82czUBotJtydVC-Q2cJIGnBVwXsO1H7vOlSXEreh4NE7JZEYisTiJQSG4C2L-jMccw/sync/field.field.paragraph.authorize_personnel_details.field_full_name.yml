@@ -1,0 +1,19 @@
+uuid: 48e16bbf-3e2c-496f-9bbb-282dfa98ca19
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_full_name
+    - paragraphs.paragraphs_type.authorize_personnel_details
+id: paragraph.authorize_personnel_details.field_full_name
+field_name: field_full_name
+entity_type: paragraph
+bundle: authorize_personnel_details
+label: 'Full Name'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,10 @@
+uuid: 6ad1f627-5ba3-4eb1-99db-1780c3ba12d9
+langcode: en
+status: true
+dependencies: {  }
+id: agreement
+label: Agreement
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

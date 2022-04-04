@@ -1,0 +1,19 @@
+uuid: afbe13a3-c97a-48b3-8777-07a8d0ea7be1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_support_article_link
+    - node.type.support_articles
+id: node.support_articles.field_support_article_link
+field_name: field_support_article_link
+entity_type: node
+bundle: support_articles
+label: 'Support Article Link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
