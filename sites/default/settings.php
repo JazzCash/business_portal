@@ -796,11 +796,11 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
 $databases['default']['default'] = array (
-  'database' => 'onboarding_18_03_22',
-  'username' => 'root',
-  'password' => '',
+  'database' => 'business_portal',
+  'username' => 'haroon123',
+  'password' => 'haroon123123',
   'prefix' => '',
-  'host' => 'localhost',
+  'host' => '',
   'port' => '3306',
   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
   'driver' => 'mysql',
